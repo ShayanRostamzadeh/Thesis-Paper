@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Taubmann et~al.(2016)Taubmann, Rakotondravony, and
+  Reiser]{taubmann2016CloudPhylactor}
+Benjamin Taubmann, Noelle Rakotondravony, and Hans~P. Reiser.
+\newblock {CloudPhylactor:} harnessing mandatory access control for virtual
+  machine introspection in cloud data centers.
+\newblock In \emph{2016 IEEE Trustcom/BigDataSE/ISPA}, pages 957--964, Aug
+  2016.
+\newblock \doi{10.1109/TrustCom.2016.0162}.
+
+\end{thebibliography}
