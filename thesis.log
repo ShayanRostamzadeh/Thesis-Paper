@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  24 SEP 2025 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  27 SEP 2025 13:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -180,25 +180,10 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 )
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
-eys2e.sty
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-08-13 L3 programming layer (loader) 
-
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
-))
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
 )
-Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count289
-\l__lipsum_a_int=\count290
-\l__lipsum_b_int=\count291
-
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
@@ -231,10 +216,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
 )
-\XKV@depth=\count292
+\XKV@depth=\count288
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count293
+\xargs@max=\count289
 \xargs@toksa=\toks21
 \xargs@toksb=\toks22
 )
@@ -313,14 +298,14 @@ libraryfiltered.code.tex
 \pgf@yd=\dimen170
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count294
-\c@pgf@countb=\count295
-\c@pgf@countc=\count296
-\c@pgf@countd=\count297
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
 \t@pgf@toka=\toks27
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
-\pgf@sys@id@count=\count298
+\pgf@sys@id@count=\count294
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -339,8 +324,8 @@ File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count299
-\pgfsyssoftpath@bigbuffer@items=\count300
+\pgfsyssoftpath@smallbuffer@items=\count295
+\pgfsyssoftpath@bigbuffer@items=\count296
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -357,7 +342,7 @@ code.tex)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen171
-\pgfmath@count=\count301
+\pgfmath@count=\count297
 \pgfmath@box=\box56
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
@@ -385,7 +370,7 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count302
+\c@pgfmathroundto@lastzeros=\count298
 ))
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
@@ -425,7 +410,7 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count303
+\pgf@picture@serial@count=\count299
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
@@ -460,8 +445,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 eshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen195
-\pgf@sys@shading@range@num=\count304
-\pgf@shadingcount=\count305
+\pgf@sys@shading@range@num=\count300
+\pgf@shadingcount=\count301
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -531,7 +516,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count306
+\pgf@plot@mark@count=\count302
 \pgfplotmarksize=\dimen256
 )
 \tikz@lastx=\dimen257
@@ -546,19 +531,19 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count307
-\tikznumberofchildren=\count308
-\tikznumberofcurrentchild=\count309
-\tikz@fig@count=\count310
+\tikztreelevel=\count303
+\tikznumberofchildren=\count304
+\tikznumberofcurrentchild=\count305
+\tikz@fig@count=\count306
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count311
-\pgfmatrixcurrentcolumn=\count312
-\pgf@matrix@numberofcolumns=\count313
+\pgfmatrixcurrentrow=\count307
+\pgfmatrixcurrentcolumn=\count308
+\pgf@matrix@numberofcolumns=\count309
 )
-\tikz@expandcount=\count314
+\tikz@expandcount=\count310
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -570,31 +555,31 @@ File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count315
-\calc@Bcount=\count316
+\calc@Acount=\count311
+\calc@Bcount=\count312
 \calc@Adimen=\dimen265
 \calc@Bdimen=\dimen266
 \calc@Askip=\skip66
 \calc@Bskip=\skip67
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count317
+\calc@Ccount=\count313
 \calc@Cskip=\skip68
 )
-\c@@todonotes@numberoftodonotes=\count318
+\c@@todonotes@numberoftodonotes=\count314
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count319
+\c@NAT@ctr=\count315
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count320
-\c@@ppsavesec=\count321
-\c@@ppsaveapp=\count322
+\c@@pps=\count316
+\c@@ppsavesec=\count317
+\c@@ppsaveapp=\count318
 )
 
 Class scrbook Warning: Usage of package `parskip' together
@@ -602,7 +587,7 @@ Class scrbook Warning: Usage of package `parskip' together
 (scrbook)              I'd suggest to use option
 (scrbook)              `parskip' with one of it's several values.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `parskip' on input line 91.
+(scrbook)              package `parskip' on input line 94.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
@@ -617,7 +602,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count323
+\etb@tempcnta=\count319
 )
 Couldn't patch \@startsection
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
@@ -634,7 +619,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count324
+\c@float@type=\count320
 \float@exts=\toks37
 \float@box=\box66
 \@float@everytoks=\toks38
@@ -653,8 +638,8 @@ e.tex
 \t@pgfplots@tokb=\toks40
 \t@pgfplots@tokc=\toks41
 \pgfplots@tmpa=\dimen267
-\c@pgfplots@coordindex=\count325
-\c@pgfplots@scanlineindex=\count326
+\c@pgfplots@coordindex=\count321
+\c@pgfplots@scanlineindex=\count322
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplots
 sysgeneric.code.tex))
@@ -679,13 +664,13 @@ e\pgfplotsliststructure.code.tex)
 e\pgfplotsliststructureext.code.tex)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count327
+\c@pgfplotsarray@tmp=\count323
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsmatrix.code.tex)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgf
 plotstableshared.code.tex
-\c@pgfplotstable@counta=\count328
+\c@pgfplotstable@counta=\count324
 \t@pgfplotstable@a=\toks45
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
@@ -698,7 +683,7 @@ sbinary.data.code.tex))
 sutil.verb.code.tex)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibr
 arypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count329
+\c@pgfplotslibrarysurf@no=\count325
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
 rypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -735,7 +720,7 @@ decorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen270
 \pgfdecoratedinputsegmentremainingdistance=\dimen271
 \pgf@decorate@distancetomove=\dimen272
-\pgf@decorate@repeatstate=\count330
+\pgf@decorate@repeatstate=\count326
 \pgfdecorationsegmentamplitude=\dimen273
 \pgfdecorationsegmentlength=\dimen274
 )
@@ -751,7 +736,7 @@ z/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 ions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
 rarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count331
+\pgfplots@numplots=\count327
 \pgfplots@xmin@reg=\dimen275
 \pgfplots@xmax@reg=\dimen276
 \pgfplots@ymin@reg=\dimen277
@@ -770,7 +755,7 @@ File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count332
+\multirow@cntb=\count328
 \multirow@dima=\skip72
 \bigstrutjot=\dimen281
 )
@@ -794,14 +779,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count333
+\inf@bad=\count329
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count334
-\leftroot@=\count335
+\uproot@=\count330
+\leftroot@=\count331
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count336
-\DOTSCASE@=\count337
+\classnum@=\count332
+\DOTSCASE@=\count333
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -814,20 +799,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen284
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count338
+\macc@depth=\count334
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count339
+\c@MaxMatrixCols=\count335
 \dotsspace@=\muskip18
-\c@parentequation=\count340
-\dspbrk@lvl=\count341
+\c@parentequation=\count336
+\dspbrk@lvl=\count337
 \tag@help=\toks47
-\row@=\count342
-\column@=\count343
-\maxfields@=\count344
+\row@=\count338
+\column@=\count339
+\maxfields@=\count340
 \andhelp@=\toks48
 \eqnshift@=\dimen285
 \alignsep@=\dimen286
@@ -844,8 +829,8 @@ LaTeX Info: Redefining \] on input line 2950.
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
@@ -866,6 +851,14 @@ Package: amsthm 2020/05/29 v2.20.6
 \dth@everypar=\toks56
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-08-13 L3 programming layer (loader) 
+
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count341
+))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
@@ -880,20 +873,20 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTright=\skip80
 \LTpre=\skip81
 \LTpost=\skip82
-\LTchunksize=\count345
+\LTchunksize=\count342
 \LTcapwidth=\dimen291
 \LT@head=\box71
 \LT@firsthead=\box72
 \LT@foot=\box73
 \LT@lastfoot=\box74
 \LT@gbox=\box75
-\LT@cols=\count346
-\LT@rows=\count347
-\c@LT@tables=\count348
-\c@LT@chunks=\count349
+\LT@cols=\count343
+\LT@rows=\count344
+\c@LT@tables=\count345
+\c@LT@chunks=\count346
 \LT@p@ftn=\toks57
 )
-Class scrbook Info: longtable captions redefined on input line 109.
+Class scrbook Info: longtable captions redefined on input line 112.
 
 (pgf-pie.sty
 Package: pgf-pie 2011/10/02 v0.2 Some LaTeX macros for pie chart by using PGF/T
@@ -901,9 +894,9 @@ ikz package.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
 \pgfpie@angleEnd=\skip83
-\c@pgfpie@explodeLength=\count350
-\c@pgfpie@colorLength=\count351
-\c@pgfpie@sliceLength=\count352
+\c@pgfpie@explodeLength=\count347
+\c@pgfpie@colorLength=\count348
+\c@pgfpie@sliceLength=\count349
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -933,24 +926,24 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count353
+\pdfpages@includegraphics@status=\count350
 \AM@pagebox=\box76
 \AM@global@opts=\toks58
-\AM@pagecnt=\count354
+\AM@pagecnt=\count351
 \AM@toc@title=\toks59
 \AM@lof@heading=\toks60
-\c@AM@survey=\count355
+\c@AM@survey=\count352
 \AM@templatesizebox=\box77
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
-\c@tracingmulticols=\count356
+\c@tracingmulticols=\count353
 \mult@box=\box78
 \multicol@leftmargin=\dimen297
-\c@unbalance=\count357
-\c@collectmore=\count358
-\doublecol@number=\count359
-\multicoltolerance=\count360
-\multicolpretolerance=\count361
+\c@unbalance=\count354
+\c@collectmore=\count355
+\doublecol@number=\count356
+\multicoltolerance=\count357
+\multicolpretolerance=\count358
 \full@width=\dimen298
 \page@free=\dimen299
 \premulticols=\dimen300
@@ -1001,16 +994,16 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \@tempa=\box119
 \@tempa=\box120
 \@tempa=\box121
-\c@minrows=\count362
-\c@columnbadness=\count363
-\c@finalcolumnbadness=\count364
+\c@minrows=\count359
+\c@columnbadness=\count360
+\c@finalcolumnbadness=\count361
 \last@try=\dimen303
 \multicolovershoot=\dimen304
 \multicolundershoot=\dimen305
 \mult@nat@firstbox=\box122
 \colbreak@box=\box123
-\mc@col@check@num=\count365
-\g__mc_curr_col_int=\count366
+\mc@col@check@num=\count362
+\g__mc_curr_col_int=\count363
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -1020,7 +1013,7 @@ Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count367
+\g_MT_multlinerow_int=\count364
 \l_MT_multwidth_dim=\dimen306
 \origjot=\skip86
 \l_MT_shortvdotswithinadjustabove_dim=\dimen307
@@ -1043,10 +1036,10 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@outerparindent=\dimen314
 \enit@toks=\toks61
 \enit@inbox=\box125
-\enit@count@id=\count368
-\enitdp@description=\count369
+\enit@count@id=\count365
+\enitdp@description=\count366
 )
-\c@mtpage=\count370
+\c@mtpage=\count367
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -1085,7 +1078,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count371
+\c@section@level=\count368
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
@@ -1093,8 +1086,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen315
-\Hy@linkcounter=\count372
-\Hy@pagecounter=\count373
+\Hy@linkcounter=\count369
+\Hy@pagecounter=\count370
  (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1102,7 +1095,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count374
+\Hy@SavedSpaceFactor=\count371
  (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1116,7 +1109,7 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count375
+\c@Hy@tempcnt=\count372
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen316
 
@@ -1128,7 +1121,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count376
+\Fld@menulength=\count373
 \Field@Width=\dimen317
 \Fld@charsize=\dimen318
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -1138,16 +1131,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count377
-\c@Item=\count378
-\c@Hfootnote=\count379
+\Hy@abspage=\count374
+\c@Item=\count375
+\c@Hfootnote=\count376
 )
 Package hyperref Info: Driver: hpdftex.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count380
-\c@bookmark@seq@number=\count381
+\Fld@listcount=\count377
+\c@bookmark@seq@number=\count378
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -1185,7 +1178,7 @@ Package cleveref Info: always capitalise cross-reference names on input line 78
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
-\babel@savecnt=\count382
+\babel@savecnt=\count379
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
 ne 2045.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
@@ -1205,7 +1198,7 @@ on input line 2078.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count383
+\bbl@dirlevel=\count380
 
 *************************************
 * Local config file bblopts.cfg used
@@ -1235,7 +1228,7 @@ Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count384
+\c@su@anzahl=\count381
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/isodate\english.idf
 File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
@@ -1243,14 +1236,14 @@ File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
 
 Define commands for English date format
 )
-\c@iso@tmpmonth=\count385
-\c@iso@yeartwo=\count386
-\c@iso@slash=\count387
-\c@iso@minus=\count388
-\c@iso@dot=\count389
-\c@iso@@slash=\count390
-\c@iso@@minus=\count391
-\c@iso@@dot=\count392
+\c@iso@tmpmonth=\count382
+\c@iso@yeartwo=\count383
+\c@iso@slash=\count384
+\c@iso@minus=\count385
+\c@iso@dot=\count386
+\c@iso@@slash=\count387
+\c@iso@@minus=\count388
+\c@iso@@dot=\count389
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
@@ -1299,8 +1292,8 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count393
-\c@continuedfloat=\count394
+\c@caption@flags=\count390
+\c@continuedfloat=\count391
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1310,17 +1303,17 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count395
+\c@subfigure=\count392
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count396
+\c@subtable=\count393
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count397
-\csq@gtype=\count398
-\csq@glevel=\count399
-\csq@qlevel=\count400
-\csq@maxlvl=\count401
-\csq@tshold=\count402
+\csq@reset=\count394
+\csq@gtype=\count395
+\csq@glevel=\count396
+\csq@qlevel=\count397
+\csq@maxlvl=\count398
+\csq@tshold=\count399
 \csq@ltx@everypar=\toks62
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
@@ -1341,48 +1334,53 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 198.
+(scrbook)           before \begin{document} on input line 201.
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count403
+\BKM@id=\count400
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (thesis.aux)
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 20
+1.
+ (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+(thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-Package scrbase Info: activating english \partname on input line 198.
-Package scrbase Info: activating english \chaptername on input line 198.
-Package scrbase Info: activating english \appendixname on input line 198.
-Package scrbase Info: activating english \figurename on input line 198.
-Package scrbase Info: activating english \tablename on input line 198.
-Package scrbase Info: activating english \contentsname on input line 198.
-Package scrbase Info: activating english \listfigurename on input line 198.
-Package scrbase Info: activating english \listtablename on input line 198.
-Package scrbase Info: activating english \bibname on input line 198.
-Package scrbase Info: activating english \indexname on input line 198.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+Package scrbase Info: activating english \partname on input line 201.
+Package scrbase Info: activating english \chaptername on input line 201.
+Package scrbase Info: activating english \appendixname on input line 201.
+Package scrbase Info: activating english \figurename on input line 201.
+Package scrbase Info: activating english \tablename on input line 201.
+Package scrbase Info: activating english \contentsname on input line 201.
+Package scrbase Info: activating english \listfigurename on input line 201.
+Package scrbase Info: activating english \listtablename on input line 201.
+Package scrbase Info: activating english \bibname on input line 201.
+Package scrbase Info: activating english \indexname on input line 201.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1422,16 +1420,16 @@ Package scrbase Info: activating english \indexname on input line 198.
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count404
+\scratchcounter=\count401
 \scratchdimen=\dimen328
 \scratchbox=\box126
-\nofMPsegments=\count405
-\nofMParguments=\count406
+\nofMPsegments=\count402
+\nofMParguments=\count403
 \everyMPshowfont=\toks63
-\MPscratchCnt=\count407
+\MPscratchCnt=\count404
 \MPscratchDim=\dimen329
-\MPnumerator=\count408
-\makeMPintoPDFobject=\count409
+\MPnumerator=\count405
+\makeMPintoPDFobject=\count406
 \everyMPtoPDFconversion=\toks64
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1470,40 +1468,88 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 198.
+Package hyperref Info: Link coloring OFF on input line 201.
 
 isodate: babel.sty has been loaded
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package csquotes Info: Making character " active on input line 198.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 206
-.
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+Package csquotes Info: Making character " active on input line 201.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
+09.
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 206
-.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+209.
 
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+209.
+
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+209.
+
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+209.
+
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 209.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 209.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 209.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 209.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 209.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 209.
 <img/logouni_en.png, id=6, 369.7815pt x 113.7048pt>
 File: img/logouni_en.png Graphic file (type png)
 <use img/logouni_en.png>
-Package pdftex.def Info: img/logouni_en.png  used on input line 207.
+Package pdftex.def Info: img/logouni_en.png  used on input line 210.
 (pdftex.def)             Requested size: 184.9429pt x 56.8696pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 252.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 252.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 252.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 252.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 252.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 252.
 
 
 [1
 
 
-{C:/Users/shaya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/logoun
-i_en.png>] (legals.tex
+{C:/Users/shaya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/shay
+a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./img/logouni_en.
+png>] (legals.tex
 
 [2
 
 
 ]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 52.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 52.
+
 Underfull \hbox (badness 10000) in paragraph at lines 51--54
 
  []
@@ -1563,33 +1609,40 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 6--6
  []
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 19.
+ine 9.
 
-LaTeX Warning: Reference `lst:log' on page 1 undefined on input line 23.
-
-<img/logouni.png, id=72, 240.9pt x 64.0794pt>
-File: img/logouni.png Graphic file (type png)
-<use img/logouni.png>
-Package pdftex.def Info: img/logouni.png  used on input line 39.
-(pdftex.def)             Requested size: 199.16933pt x 52.98055pt.
-
-Underfull \hbox (badness 4779) in paragraph at lines 44--45
-[]\T1/cmr/m/n/10 URLs can be added for ex-am-ple like this: []$\T1/cmtt/m/n/10 
-https : / / www . fim . uni-[]passau . de /
- []
-
-)
 
 [1
 
 
 
-{C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./i
-mg/logouni.png>]
+]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 3
+3.
+ (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
 
-[2] (chapters/2_background.tex
+[2]
 
-[3]
+LaTeX Warning: Reference `lst:log' on page 1 undefined on input line 61.
+
+<img/logouni.png, id=86, 240.9pt x 64.0794pt>
+File: img/logouni.png Graphic file (type png)
+<use img/logouni.png>
+Package pdftex.def Info: img/logouni.png  used on input line 77.
+(pdftex.def)             Requested size: 199.16933pt x 52.98055pt.
+
+Underfull \hbox (badness 7186) in paragraph at lines 82--83
+[]\T1/ppl/m/n/10 URLs can be added for ex-am-ple like this: []$\T1/cmtt/m/n/10 
+https : / / www . fim . uni-[]passau . de /
+ []
+
+) (chapters/2_background.tex
+
+[3 <./img/logouni.png>]
+
+[4]
 chapter 2.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1609,7 +1662,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/3_related.tex
 
-[4
+[5
 
 
 ]
@@ -1632,7 +1685,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/4_design.tex
 
-[5
+[6
 
 
 ]
@@ -1655,7 +1708,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/5_implementation.tex
 
-[6
+[7
 
 
 ]
@@ -1678,7 +1731,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/6_evaluation.tex
 
-[7
+[8
 
 
 ]
@@ -1701,7 +1754,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/7_conclusions.tex
 
-[8
+[9
 
 
 ]
@@ -1724,7 +1777,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/A_appendix.tex
 
-[9
+[10
 
 
 ]
@@ -1747,7 +1800,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 )
 
-[10
+[11
 
 
 ] (thesis.lof)
@@ -1756,7 +1809,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[11
+[12
 
 
 
@@ -1767,14 +1820,14 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[12
+[13
 
 
 
 
 ] (thesis.bbl)
 
-[13
+[14
 
 
 
@@ -1790,33 +1843,28 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 44298 strings out of 468133
- 1013274 string characters out of 5430712
- 1766959 words of memory out of 5000000
- 72113 multiletter control sequences out of 15000+600000
- 648117 words of font info for 92 fonts, out of 8000000 for 9000
+ 44124 strings out of 468133
+ 1007171 string characters out of 5430712
+ 1672568 words of memory out of 5000000
+ 71933 multiletter control sequences out of 15000+600000
+ 665320 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,10n,121p,11211b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl
+ 125i,10n,121p,11211b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm0700.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecti1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ectt1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\shaya\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\shaya\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\shaya\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\shaya\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\
-shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/U
-sers/shaya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfc
-han/uzcmi8a.pfb>
-Output written on thesis.pdf (18 pages, 239264 bytes).
+0\ecsx1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecsx1440.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt0900.pk><C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/shaya/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/shaya/AppData/Local/Programs/
+MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/shaya/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on thesis.pdf (19 pages, 219834 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

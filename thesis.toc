@@ -2,15 +2,16 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Some section...}{2}{section.1.1}%
-\contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Related Work}{5}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Architecture/System Design}{6}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Implementation}{7}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{8}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{9}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{10}{appendix.1.A}%
-\contentsline {chapter}{List of Figures}{11}{section*.5}%
-\contentsline {chapter}{List of Tables}{12}{section*.6}%
-\contentsline {chapter}{Bibliography}{13}{section*.7}%
+\contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Some section...}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Background}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Related Work}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Architecture/System Design}{7}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Implementation}{8}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{9}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{10}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Appendix}{11}{appendix.1.A}%
+\contentsline {chapter}{List of Figures}{12}{section*.8}%
+\contentsline {chapter}{List of Tables}{13}{section*.9}%
+\contentsline {chapter}{Bibliography}{14}{section*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

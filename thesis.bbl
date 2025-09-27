@@ -5,13 +5,13 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Taubmann et~al.(2016)Taubmann, Rakotondravony, and
+\bibitem[Taubmann et~al.(2025)Taubmann, Rakotondravony, and
   Reiser]{taubmann2016CloudPhylactor}
 Benjamin Taubmann, Noelle Rakotondravony, and Hans~P. Reiser.
 \newblock {CloudPhylactor:} harnessing mandatory access control for virtual
   machine introspection in cloud data centers.
 \newblock In \emph{2016 IEEE Trustcom/BigDataSE/ISPA}, pages 957--964, Aug
-  2016.
+  2025.
 \newblock \doi{10.1109/TrustCom.2016.0162}.
 
 \end{thebibliography}

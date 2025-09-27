@@ -6,10 +6,48 @@
 \chapter{Introduction}
 \label{chapter:introduction}
 
+\todo{Modify the text below}
+\section{Background and Motivation}
+In the past decade, mobile devices have transformed into indispensable tools that extend far beyond simple communication. Smartphones and tablets have become personal assistants, banking platforms, health trackers, entertainment centers, and even professional workstations. As their adoption has grown globally, so too has their integration into enterprise infrastructures. Organizations increasingly allow employees to use their own devices for professional tasks under Bring Your Own Device (BYOD) policies, driven by cost reduction, flexibility, and convenience. While BYOD enhances productivity and user satisfaction, it simultaneously introduces substantial security risks. Personal devices often lack the stringent controls applied to company-managed endpoints, thereby opening potential gateways for attackers into corporate networks.
 
-As the usage of  mobile applications increases and the centralization of information is more intensified, more internet connections take place. This would potentially open some doors for the adversaries to abuse these connections for their own benefit while user privacy is completely neglected.
+The shift in device usage has not gone unnoticed by cybercriminals. Mobile devices have become attractive targets for a range of malicious activities, including malware infections, phishing attacks, data exfiltration, unauthorized surveillance, and advanced persistent threats (APTs). Attackers exploit vulnerabilities not only within the Android operating system but also within third-party applications and insecure network connections. Moreover, the increasing use of mobile devices to access sensitive corporate resources and financial accounts amplifies the potential damage caused by successful intrusions. The security landscape for mobile platforms is, therefore, both dynamic and critical, requiring solutions that can adapt to evolving threats while remaining practical for everyday users.
 
-A huge threat that connection of mobile applications with internet brings along, is data exfiltration. Data exfiltration is an underlying concept for most of the applications to function correctly since their logic relies on connection to a back-end server via internet. This however, can theoretically endanger user privacy if user's consent is not taken into consideration. This could take place by utilizing the outbound connections. 
+
+
+
+
+
+
+
+In today's connected world, mobile devices have evolved from simple communication intermediaries to vital hubs not only for personal use but also professional activities. Smartphones, Tablets, and other similar portable devices now store sensitive information such as personal messages, financial intel, business-related documents and login credentials. Nowadays as mobile devices are increasingly integrating with enterprise businesses and consequently their associate networks through policies such as BYOD (Bring Your Own Device), we see them more frequently being subjected to cyber attacks including mobile malware, unauthorized access, data exfiltration, Advanced Persistent Threats (APTs), etc. This widespread adaption of mobile technology and its undeniable integration in our daily personal and professional lives in combination with users and companies reliance have considerably expanded the attack surface for adversaries.
+
+Most of enterprise network systems belong to a pool of PCs (Personal computers) and servers. Therefore, the majority of traditional cybersecurity measures often focus on such systems. However, the integration and usage of mobile devices in enterprise networks introduce unique challenges that require a different approach. The diversity of mobile devices' operating systems, varying security and privacy policies, constant updates and patches, and openness of certain app-ecosystems complicate protecting mobile devices. Among mobile operating systems, Android has gained the most popularity due to its open-source nature and flexibility to be implemented in various environments. This, in particular, has made android devices dominate the market which lead it to be the frequent and attractive target for cyber attackers. These malicious actors utilize malicious apps, network-based attacks and also abuse hardware and software vulnerabilities to compromise user's privacy and the organization's security.
+
+This paper is not the first to introduce defensive and preventive solutions to offensive security attempts made by malicious actors. However, it acts as a complementary extension for previously designed solutions such as \href{https://github.com/emanuele-f/PCAPdroid}{PCAPdroid} and \href{https://github.com/UCI-Networking-Group/AntMonitor}{Ant-Monitor}. While current solutions for mobile threat detection and network monitoring are well established and offer the foundation for capabilities such as network traffic analysis, app activity monitoring, and anomaly detection, they often lack real-time threat detection and automated integration of threat intelligence. These depict the complexity of mobile threats that is on continues growth. As a result, it exhibits a pressing need for a thorough, user-friendly, and implementable solutions that can actively monitor traffic, identify suspicious behaviour, and encourage users and organizations to respond and act effectively.
+
+From the applications mentioned above, PCAPdroid has been chosen as the underlying solution that provides not only the capabilities to passively sniff app-specific network traffic but also presents application metadata. According to its \href{https://emanuele-f.github.io/PCAPdroid/quick_start.html}{official website} PCAPdroid is an open source network capture and monitoring tool for android devices which works without root privileges. 
+
+The common use cases of PCAPdroid include:
+
+\begin{itemize}
+	\item Analyze the connections made by the apps installed into the device, both user and system apps.
+	\item Dump the device traffic as a PCAP and send it remotely for futher analysis (e.g. to Wireshark).
+	\item Decrypt the HTTPS/TLS traffic of a specific app
+	PCAPdroid leverages the android VpnService to receive all the traffic generated by the android apps. No external VPN is actually created, the traffic is processed locally by the app.
+\end{itemize}
+
+This application alongside the real-time threat detection provided by the project presented in this paper will expand the possibilities and ease the user interaction and notification in case of malicious activities.
+
+As the usage of mobile applications increases in business constellations and the centralization of information is more intensified, more internet connections and data transfer take place. This would potentially open some doors for the adversaries to abuse these connections for their own benefit while user privacy is completely neglected. A huge threat that connection of mobile applications with internet brings along, is data exfiltration. Data exfiltration is an underlying concept for most of the applications to function correctly since their logic relies on connection to a back-end server via internet. This however, can theoretically endanger user privacy if user's consent is not taken into consideration. This could take place by utilizing internet packets' outbound connections. The mobile threat detection application developed in this thesis addresses data transfer specifically.
+These challenges are addressed by combining real-time internet traffic monitoring, UID-to-application mapping, and finally threat intelligence integration.
+
+By leveraging the android's VpnService API the application-specific packets are inspected, their correlation with app-generated traffic is established and as the last step, the suspicious IP (Internet Protocol) addresses are cross-referenced with external thread detection databases such as AbuseIPDB. Using this approach the visibility of potential malicious activities is enhanced and also some actionable insights are provided that eventually can assist users and organizations to mitigate risks and potential vulnerabilities before the escalate into various security incidents.
+
+This thesis contributes to the field of mobile and android cybersecurity by illustrating an effective methodology for an app-level threat detection and intelligence, real-time monitoring, and also proactive risk management solution. The results and findings of this project, emphasizes both the potential and the limitations mobile threat detection systems and also represents a foundation for future work, research and actions in securing android devices in our increasingly complex and hyperconnected environments.
+
+
+
+
 
 
 In order to start using this template, change the values inside \texttt{thesis.tex} to your liking. \emph{It is strongly advised to only change what is necessary (language, names etc.).} Please also remember to remove the "REMOVE ME LATER" part when you are done. Below you can find some examples of important \LaTeX-commands.
@@ -67,5 +105,5 @@ URLs can be added for example like this: \url{https://www.fim.uni-passau.de/tech
 \section{Some section...}
 \label{sec:some-section}
 
-\lipsum
+%\lipsum
 %\lipsum[3-56]
