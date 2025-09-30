@@ -6,8 +6,6 @@
 \chapter{Introduction}
 \label{chapter:introduction}
 
-\todo{Modify the text below}
-\todo{should i implement the deviations from the first idea of the app?}
 \section{Background and Motivation}
 In today's connected world, mobile devices have evolved from simple communication intermediaries to vital hubs not only for personal use but also professional activities. They have undoubtedly become personal assistance, banking platforms, health trackers and entertainment centers, and also professional workstations. Smartphones, Tablets, and other similar portable devices now store sensitive information such as personal messages, financial intel, business-related documents and login credentials. Nowadays as mobile devices are increasingly integrating with enterprise businesses and consequently their associate networks through policies such as BYOD (Bring Your Own Device), we see them more frequently being subjected to cyber attacks including mobile malware, unauthorized access, data exfiltration, Advanced Persistent Threats (APTs), etc. This widespread adaption of mobile technology and its undeniable integration in our daily personal and professional lives in combination with users and companies reliance have considerably expanded the attack surface for adversaries. Additionally, the on-going increase in the use of mobile devices to access sensitive corporate and financial resources also amplifies the potential damage an intrusion can lead to. This means that the security landscape of mobile platforms is therefore, both dynamic and highly critical. Thus, it requires solutions and approaches that continuously adapt to such evolving threats while ensuring practicality.
 
@@ -15,13 +13,18 @@ In today's connected world, mobile devices have evolved from simple communicatio
 \section{Problem Statement}
 Most of enterprise network systems belong to a pool of PCs (Personal computers) and servers. Therefore, the majority of traditional cybersecurity measures often focus on such systems. However, the integration and usage of mobile devices in enterprise networks introduce unique challenges that require a different approach. The diversity of mobile devices' operating systems, varying security and privacy policies, constant updates and patches, and openness of certain app-ecosystems complicate protecting mobile devices. Among mobile operating systems, Android has gained the most popularity and market share due to its open-source nature and flexibility to be implemented in various environments. However, Android's open-source architecture, alongside its fragmented ecosystem and, in a lot of cases, its inconsistent update policies make it in particular considerably susceptible to attacks. These lead malicious actors to utilize various application-level and network-based attacks and also abuse hardware and software vulnerabilities to compromise user's privacy and the organization's security.
 
-It is worth mentioning that the traditional endpoint security solutions such as anti-malware software, often lead to inadequate results for mobile devices including android phones. Many are based on signature recognition, and operate reactively meaning they typically identify malware signatures after the infection completely took place. Moreover, they are incapable of monitoring the full scope of the device's network and its behaviour. Furthermore, android system suffers from an invisibility gap. Even though android has a sandboxing mechanism which provides isolation between running applications, it also limits the visibility of network activities associated with each app. This simply means that users and more importantly administrators cannot easily determine which of the running applications is connecting to external servers, nor they can evaluate the legitimacy of the established connections.
+It is worth mentioning that the traditional endpoint security solutions such as anti-malware software, often lead to inadequate results for mobile devices including android phones. Many are based on signature recognition, and operate reactively, meaning they typically identify malware signatures after the infection completely took place. Moreover, they are incapable of monitoring the full scope of the device's network and its behaviour. Furthermore, android system suffers from an invisibility gap. Even though android has a sandboxing mechanism which provides isolation between running applications, it also limits the visibility of network activities associated with each app. This simply means that users and more importantly administrators cannot easily determine which of the running applications is connecting to external servers, nor they can evaluate the legitimacy of the established connections.
 
-Consequently, there is a significant need for a real-time, lightweight monitoring solution that not only captures the traffic, but also identifies suspicious patterns stacked with the capability to map each of those activities to specific applications. This gives the users and administrators the visibility, without which, organizations might remain at risk of covert data leakage and eventually exposure to malicious infrastructure.
+\subsection{Data Exfiltration Risk}
+As the usage of mobile applications increases in business constellations and the centralization of information is more intensified, more internet connections and data transfer take place which broaden the attack surfaces on mobile devices. This would potentially open some doors for the adversaries to abuse these connections for their own benefit while user privacy is completely neglected. This mainly is because of the gaps that current security solution approaches cannot cover. A huge threat that connection of mobile applications with internet brings along, is data exfiltration. Data exfiltration is an underlying concept for most of the applications to function correctly since their logic relies on connection to a back-end server via internet. This however, can theoretically endanger user privacy if user's consent is not taken into consideration. This could take place by utilizing internet packets' outbound connections. The mobile threat detection application developed in this thesis addresses this very data transfer specifically.
+These challenges are addressed by combining real-time internet traffic monitoring, UID-to-application mapping, and finally threat intelligence integration.
+
+As a conclusion, there is a significant need for a real-time, lightweight monitoring solution that not only captures the traffic, but also identifies suspicious patterns stacked with the capability to map each of those activities to specific applications. This gives the users and administrators the visibility, without which, organizations might remain at risk of covert data leakage and eventually exposure to malicious infrastructure.
 
 
 \section{Existing Solutions and Their Limits}
-This paper is not the first to introduce defensive and preventive solutions to offensive security attempts made by malicious actors. However, it acts as a complementary extension for previously designed solutions such as \href{https://github.com/emanuele-f/PCAPdroid}{PCAPdroid} and \href{https://github.com/UCI-Networking-Group/AntMonitor}{Ant-Monitor} that function on unrooted devices based on android's VpnService mechanism. Such tools represent vital insights into how applications interact with local and external servers, letting the user perform forensic analysis of network traffic and point out potential anomaly-indicating behaviours. While current solutions for mobile threat detection and network monitoring are well established and offer the foundation for capabilities such as network traffic analysis, application activity monitoring, and anomaly detection, they often 
+This paper is not the first to introduce defensive and preventive solutions to offensive security attempts made by malicious actors. However, it acts as a complementary extension for previously designed solutions such as \href{https://github.com/emanuele-f/PCAPdroid}{\emph{PCAPdroid}} and \href{https://github.com/UCI-Networking-Group/AntMonitor}{\emph{Ant-Monitor}} that function on unrooted devices based on android's VpnService mechanism. Such tools represent vital insights into how applications interact with local and external servers, letting the user perform forensic analysis of network traffic and point out potential anomaly-indicating behaviours. While current solutions for mobile threat detection and network monitoring are well established and offer the foundation for capabilities such as network traffic analysis, application activity monitoring, and anomaly detection, they often 
+
 \begin{itemize}
 	\item \textbf{Lack real-time threat detection and automated integration of threat intelligence:} Neither of the mentioned monitoring tools implement automated checks against malicious IP databases or incorporate a reputation assessment service. As a result, threat identification relies heavily on the expertise the user possesses and the manual processing of analysing each and every IP address.
 	\item \textbf{Have limited real-time protection:} While they are really effective in packet capture, they do not provide the user with any sort of alerts regarding suspicious activities.
@@ -36,7 +39,19 @@ The complexity of mobile threats that are on continues growth and the aforementi
 \section{Research Objectives}
 This thesis aims to design and evaluate a threat detection application for android devices that addresses some of the above-mentioned limitations.
 
-From the applications mentioned above, PCAPdroid has been chosen as the underlying solution that provides not only the capabilities to passively sniff app-specific network traffic but also presents application metadata. According to its \href{https://emanuele-f.github.io/PCAPdroid/quick_start.html}{official website} PCAPdroid is an open source network capture and monitoring tool for android devices which works without root privileges. 
+This project aims specifically to bridge some of the gaps using the following implementations:
+
+\begin{itemize}
+	\item \textbf{Real-time traffic monitoring} using android' VpnService API provided by a parent application (PCAPdroid).
+	\item \textbf{Mapping of UIDs to applications} that allows network traffic flow to be associated with a corresponding application which utilizes local/external network communication channels to assist user with enhanced transparency to identify which applications are communicating with malicious external sources.
+	\item \textbf{Integration of the intelligence and reputation-checking databases such as AbuseIPDB}, enabling the application to automatically enquiry the destination IP addresses.
+	\item \textbf{User alerts} to notify users and administrators of potentially suspicious network behaviour.
+	\item \textbf{Lightweight and efficient design and usability} that ensures the application runs smoothly and efficiently on the consumer's device without leaving any drastic performance impact.
+\end{itemize}
+
+By reaching these objectives, this project seeks to shorten the gap between raw packet monitoring and comprehensively integrated mobile security solutions.
+
+From the network monitoring applications mentioned previously, PCAPdroid has been chosen as the underlying solution that provides not only the capabilities to passively sniff app-specific network traffic but also presents application metadata. According to its \href{https://emanuele-f.github.io/PCAPdroid/quick_start.html}{\emph{official website}} PCAPdroid is an open source network capture and monitoring tool for android devices which works without root privileges. 
 
 The common use cases of PCAPdroid include:
 
@@ -47,29 +62,47 @@ The common use cases of PCAPdroid include:
 	PCAPdroid leverages the android VpnService to receive all the traffic generated by the android apps. No external VPN is actually created, the traffic is processed locally by the app.
 \end{itemize}
 
-This application alongside the real-time threat detection provided by the project presented in this paper will expand the possibilities and ease the user interaction and notification in case of malicious activities.
+These objectives will be achieved by leveraging the android's VpnService API to inspect the application-specific packets, and to correlate them with app-generated traffic and as the last step, to cross-reference the suspicious IP (Internet Protocol) addresses with external thread detection databases such as AbuseIPDB. Using this approach the visibility of potential malicious activities is enhanced and also some actionable insights are provided that eventually can assist users and organizations to mitigate risks and potential vulnerabilities before the escalate into various security incidents.
 
-As the usage of mobile applications increases in business constellations and the centralization of information is more intensified, more internet connections and data transfer take place. This would potentially open some doors for the adversaries to abuse these connections for their own benefit while user privacy is completely neglected. A huge threat that connection of mobile applications with internet brings along, is data exfiltration. Data exfiltration is an underlying concept for most of the applications to function correctly since their logic relies on connection to a back-end server via internet. This however, can theoretically endanger user privacy if user's consent is not taken into consideration. This could take place by utilizing internet packets' outbound connections. The mobile threat detection application developed in this thesis addresses data transfer specifically.
-These challenges are addressed by combining real-time internet traffic monitoring, UID-to-application mapping, and finally threat intelligence integration.
+This application alongside the real-time threat detection provided by the project presented in this paper will expand the possibilities and ease the user interaction and while providing notifications in case of malicious activities.
 
-By leveraging the android's VpnService API the application-specific packets are inspected, their correlation with app-generated traffic is established and as the last step, the suspicious IP (Internet Protocol) addresses are cross-referenced with external thread detection databases such as AbuseIPDB. Using this approach the visibility of potential malicious activities is enhanced and also some actionable insights are provided that eventually can assist users and organizations to mitigate risks and potential vulnerabilities before the escalate into various security incidents.
 
+\section{Limitations of this Project}
+This project is an extension of previously well-established monitoring solutions such as PCAPdroid. This means that this application will only be functional if installed and run alongside PCAPdroid as an underlying foundation for this project. Installation and utilization of PCAPdroid is essential since it simplifies the passive packet capture via android's VpnService API and implements the VPN behaviour without disturbing the internet communication channels. Furthermore, it uses kernel-level APIs written in C++ that removes the need to root the device to be able to access the resources that are not defined in the normal user context such as accessing the virtual folder in the android subsystem directory “/proc/net/tcp” which is vital to retrieve UIDs of application packages to show which app is using a suspicious connection. This not only guarantees the efficiency of the application but also ensures a vast target audience reluctant to root their android devices.
+
+Another area, in which this project still lacks is the blocking capabilities of potentially malicious connections. This capability is provided by the android VpnService API which is being utilized only on PCAPdroid as a paid feature. Since this project only receives the required information via a JSON message and does not have direct access to the aforementioned API, lack of blocking capabilities still persists as an inhibiting limitation.
+
+
+\section{Method Overview}
+This application as mentioned before utilizes PCAPdroid as a parent application providing the necessary data for further functionalities. PCAPdroid makes use of android VpnService package and its corresponding APIs to passively sniff the network traffic while leaving their connections untouched. It also provides an extension to transmit the captured data in PCAP/PCAPNG format to a local/remote location for further monitoring and inspection. This feature of PCAPdroid is used in this thesis project as the main communication channel between Thread Detector and PCAPdroid. However, for this message transfer to take place, a communication channel must be established. The options provided by PCAPdroid to fullfil this need, are \href{https://emanuele-f.github.io/PCAPdroid/dump_modes#25-tcp-exporter-pcap-over-ip}{\emph{HTTP Server, UDP and TCP exporters}}. As a result, it is made possible to receive the PCAP/PCAPNG file in the JSON format via a local TCP/UDP servers. 
+
+This project makes use of TCP exporter feature of PCAPdroid and implements a local TCP server that receives and interprets the incoming packets in real-time. Subsequently, the information is parsed to a JSON interpreter and the required data including \emph{destination IP address, associated application UID, etc.} are extracted that go through a preparation sequence for an inquiry from AbuseIPDB.
+
+Finally, untill the exhaustion of the free API calls provided by AbuseIPDB, Threat Detector inquires the maliciousness of the destination IP address for each outbound connection.
+
+
+\section{Structure of this Paper}
+This paper illustrates the process of design, implementation, working, and evaluation of Threat Detector as follows:
+
+\begin{itemize}
+	\item test
+\end{itemize}
+
+
+
+\section{Contributions of this Thesis}
 This thesis contributes to the field of mobile and android cybersecurity by illustrating an effective methodology for an app-level threat detection and intelligence, real-time monitoring, and also proactive risk management solution. The results and findings of this project, emphasizes both the potential and the limitations mobile threat detection systems and also represents a foundation for future work, research and actions in securing android devices in our increasingly complex and hyperconnected environments.
 
 
 
 
 
-
-In order to start using this template, change the values inside \texttt{thesis.tex} to your liking. \emph{It is strongly advised to only change what is necessary (language, names etc.).} Please also remember to remove the "REMOVE ME LATER" part when you are done. Below you can find some examples of important \LaTeX-commands.
-
-This is a cited text~\cite{taubmann2016CloudPhylactor}.
-
-\todo{Add more content}
-
-This is a reference to \Cref{chapter:conclusions,sec:some-section}.
-
-We can also add code such as in \Cref{lst:log}.
+%This is a cited text~\cite{taubmann2016CloudPhylactor}.
+%
+%
+%This is a reference to \Cref{chapter:conclusions,sec:some-section}.
+%
+%We can also add code such as in \Cref{lst:log}.
 
 %\begin{code}
 %    \captionof{listing}{Captions for listings are usually placed above. Java code calculating the logarithm of a given number with respect to a given base.}
@@ -81,40 +114,40 @@ We can also add code such as in \Cref{lst:log}.
 %    \end{minted}
 %\end{code}
 
-You can also include and reference figures and tables such as \Cref{fig:test} and \Cref{tab:test}. Notice how the table cannot be placed using the "h" specifier and thus uses the "t" specifier instead?
-
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{img/logouni.png}
-    \caption{Captions for figures are usually placed below. The German logo of the University of Passau.}
-    \label{fig:test}
-\end{figure}
-
-URLs can be added for example like this: \url{https://www.fim.uni-passau.de/technische-informatik/}.
-
-\begin{table}[ht!]
-    \centering
-    \caption{Captions for tables are usually placed above. $\phi$ denotes the Euler totient function, by the way.}
-    \label{tab:test}
-    \begin{tabular}{c|c}
-        $x$ & $\phi(x)$ \\
-        \hhline{=|=}
-        $1$ & $1$ \\
-        \hline
-        $2$ & $1$ \\
-        \hline
-        $3$ & $2$ \\
-        \hline
-        $4$ & $2$ \\
-        \hline
-        $5$ & $4$ \\
-        \hline
-        $6$ & $2$
-    \end{tabular}
-\end{table}
+%You can also include and reference figures and tables such as \Cref{fig:test} and \Cref{tab:test}. Notice how the table cannot be placed using the "h" specifier and thus uses the "t" specifier instead?
+%
+%\begin{figure}[ht!]
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{img/logouni.png}
+%    \caption{Captions for figures are usually placed below. The German logo of the University of Passau.}
+%    \label{fig:test}
+%\end{figure}
+%
+%URLs can be added for example like this: \url{https://www.fim.uni-passau.de/technische-informatik/}.
+%
+%\begin{table}[ht!]
+%    \centering
+%    \caption{Captions for tables are usually placed above. $\phi$ denotes the Euler totient function, by the way.}
+%    \label{tab:test}
+%    \begin{tabular}{c|c}
+%        $x$ & $\phi(x)$ \\
+%        \hhline{=|=}
+%        $1$ & $1$ \\
+%        \hline
+%        $2$ & $1$ \\
+%        \hline
+%        $3$ & $2$ \\
+%        \hline
+%        $4$ & $2$ \\
+%        \hline
+%        $5$ & $4$ \\
+%        \hline
+%        $6$ & $2$
+%    \end{tabular}
+%\end{table}
 	
-\section{Some section...}
-\label{sec:some-section}
+%\section{Some section...}
+%\label{sec:some-section}
 
 %\lipsum
 %\lipsum[3-56]
