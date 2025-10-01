@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  30 SEP 2025 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  1 OCT 2025 10:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1625,9 +1625,11 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 
 [3]
 
-[4]) (chapters/2_background.tex
+[4]
 
-[5]
+[5]) (chapters/2_background.tex
+
+[6]
 chapter 2.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1649,7 +1651,7 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 7.
 ) (chapters/3_related.tex
 
-[6
+[7
 
 
 ]
@@ -1672,7 +1674,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/4_design.tex
 
-[7
+[8
 
 
 ]
@@ -1695,7 +1697,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/5_implementation.tex
 
-[8
+[9
 
 
 ]
@@ -1718,7 +1720,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/6_evaluation.tex
 
-[9
+[10
 
 
 ]
@@ -1741,7 +1743,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/7_conclusions.tex
 
-[10
+[11
 
 
 ]
@@ -1764,7 +1766,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/A_appendix.tex
 
-[11
+[12
 
 
 ]
@@ -1787,7 +1789,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 )
 
-[12
+[13
 
 
 ] (thesis.lof)
@@ -1796,7 +1798,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[13
+[14
 
 
 
@@ -1807,14 +1809,14 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[14
+[15
 
 
 
 
 ] (thesis.bbl)
 
-[15
+[16
 
 
 
@@ -1826,11 +1828,11 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 44109 strings out of 468133
- 1006989 string characters out of 5430712
+ 44113 strings out of 468133
+ 1007024 string characters out of 5430712
  1670568 words of memory out of 5000000
- 71918 multiletter control sequences out of 15000+600000
- 663243 words of font info for 118 fonts, out of 8000000 for 9000
+ 71919 multiletter control sequences out of 15000+600000
+ 664839 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,10n,121p,11211b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
@@ -1839,13 +1841,14 @@ Here is how much of TeX's memory you used:
 /dpi600\ecsx1440.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ectt0900.pk><C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/urw/palatino/uplb8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKTeX/font
-s/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKTe
-X/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Local/Programs/M
-iKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (20 pages, 208099 bytes).
+s/type1/urw/palatino/uplbi8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKTeX/
+fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKT
+eX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/M
+iKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on thesis.pdf (21 pages, 225403 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
