@@ -55,25 +55,49 @@ Using this VPN the user will be able to:
 
 In simpler terms, it acts as a virtual network adapter that android routes all the traffic through. This enables interception, monitoring, and packet modification before forwarding to its original destination.
 
+\todo{add screenshots of VpnService code}
+
 
 \subsection{Application Name and Icon Extraction}
+As depicted in screenshots of the initial idea, the application name and possibly the its icon should be illustrated for a more user-friendly exhibition of outbound network connections and their originating applications.
 
+Intercepted packets using android's VpnService API only provide source/destination IP address, ports, protocols, and payload data (normally encrypted via SSL/TLS). Thus, retrieving which application is responsible for the out-going transmission of a specific packet is not feasible.
 
+In order to extract the application's name, the packet's UID (Linux user identifier) should be extracted. Subsequently, it should be mapped to the installed application package. For android is a Linux-based system, to access the UID required to extract the app-generated traffic, retrieving the content of tcp/udp virtual folder is necessary. The files are located in \emph{/proc/net/tcp or /proc/net/udp}. These files map network sockets to UIDs. Once the UID is extracted, it can be resolved to retrieve the application name via android's PackageManager API.
+
+Simplified illustration:
+
+Packet --> IP/Port --> /proc/net/* --> UID --> Package name --> App name
 
 
 \subsection{Limitations and Problems}
-
-
+The above-mentioned employment of VpnService alongside extraction of packet UIDs fullfils the requirements of the initial concept. However, implementing of a VPN through VpnService API and extracting packets' UIDs introduce several challenges which necessitates some modifications to the original idea.
 
 \subsubsection{Routing Problem}
-The above-mentioned employment of VpnService functions correctly for any attempts in establishment of out or in-going connection from a local or an external source. However, this implementation has a drawback which demands manual integration of packet handling that stems from inherent restrictions of VpnService API.
+The way that a VPN service functions is to create a connection point between multiple networks and enables the transmission and reception of packets among systems within them. However, android's VpnService does not provide an automatic mechanism to redirect the incoming and outgoing packets.
 
-\subsubsection{Application UID Extraction}
+The referenced implementation of VpnService from the official developer website also lacks the APIs that comply with guidelines vital for correct functionality of a VPN. As a result, additional modifications are needed to handle the packet redirection in a VPN system, designed on top of VpnService.
+
+In the most VPN protocols including IPsec, network traffic is transmitted using encapsulated IP packets. This means an IP packet is placed inside another one which results in two distinct headers. Inner and outer headers. Inner header contains the original IP header and the payload, while the outer header is added for transport across the network and is removed once the packet reaches its destination.
+
+A fully functional VPN that meets all the requirements of this approach needs determining a default gateway, routing all the traffic through it, transmitting packets across network using IP packet encapsulation, using other android APIs such as streams to correctly handle the incoming and outgoing TCP/UDP streams while ensuring efficient buffering. 
+
+Unfortunately, since android does not provide the APIs for complete header management and packet redirection across network, its implementation requires all of the these steps to be carefully handled at the application level. Consequently, the utilization of android VpnService API for building a fully functional VPN is deemed impractical in this project, as its implementation deviates drastically from the original scope and objectives of this thesis.
 
 
+\subsubsection{Application UID Extraction Problem}
+As stated before, to determine the application name, from which the outbound internet packet originates, extracting the UID of the packet is necessary, which is only accessible via \emph{/proc} filesystem. 
+
+Accessing \emph{/proc} filesystem is possible via the following approaches:
+
+\begin{itemize}
+	\item Having root access.
+	\item Utilizing system-level permissions.
+	\item Using native C programming to interface directly with the Linux kernel of the android device.
+\end{itemize}
 
 
-
+with root access and requires the device to be rooted. Another approach would be using some system-level permissions to access the virtual file. Unfortunately, this permission is only viable on android 10 and below.
 
 
 
@@ -89,5 +113,5 @@ The above-mentioned employment of VpnService functions correctly for any attempt
 
 
 \section{Integration with PCAPDroid}
-
+However, based on the lack of native kotlin/java support and the inevitable need for manual implementation of packet redirection (out of thesis context), 
 
