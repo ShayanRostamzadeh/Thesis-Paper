@@ -4,5 +4,90 @@
 
 \chapter{Background}
 \label{chapter:background}
+
+This Chapter provides a background and the motivation for development of Threat Detector. It outlines some of the fundamental gaps in the current mobile network monitoring and packet inspection systems and the unique challenges they faced which led to the creation on this novel approach. This chapter explains the initial idea of Threat Detector as a covering solution for the areas that other mobile monitoring systems are not presenting or strongly lacking in. Existing solutions, while useful in some certain cases, often struggle or completely fail to address key vital aspects such as packet-to-application mapping, real-time threat detection and reputation checking and user-friendly implementation of threat intelligence. Moreover, this chapter elaborates on the inherent difficulties in the implementation of the initial idea that make such an attempt using typical approaches close to impossible. Many of these restrictions stem from the android operating system, limitations of the available APIs, and complexities of handling network traffic without degrading performance or user experience. Additionally, selected code snippets and API usage are presented to illustrate the workings of such systems and to highlight the motivating reasons behind certain deviations that become necessary during the course of design and development of Threat Detector.
+
+\section{Initial Idea}
+Development of Threat Detector commenced as a stand-alone idea that integrates packet interception and monitoring,  cross-referencing packets and corresponding applications, along with real-time reputation check capabilities.
+
+To achieve the aforementioned goals, Threat Detector should implement a VPN functionality to intercept network traffic while being able to route the packets back and forth between the source and destination IP addresses. Moreover, it should inspect the network traffic to find IP packet associations with each application based on their UID, and finally send a crafted inquiry to a reputation-check database such as AbuseIPDB to explore the maliciousness of device's outbound traffic while providing the user with real-time updates and notifications about any suspicious application activity.
+
+After the full development of the application based on the initial idea, Threat Detector's abstract user interface should have supposedly look like the following figures.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{App - Monitor Page.png}
+		\caption{Monitor Page}
+		\label{fig:Monitor Page initial idea}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{App - Logs Page.png}
+		\caption{Logs Page}
+		\label{fig:Logs Page initial idea}
+	\end{subfigure}
+	\caption{Threat Detector UI based on initial idea}
+	\label{fig:Threat Detector UI based on initial idea}
+\end{figure}
+
+
+\subsection{VpnService API - Android's VPN Functionality}
+The APIs provided by android as an OS (Operating System) include a wide range that includes functions to handle network traffic based on the user context (e.g. normal or root). According to the android's  \href{https://developer.android.com/reference/android/net/VpnService}{\emph{official API documentation}}, the preferred approach towards network traffic interception is utilization of VpnService API. This API provides an active interception of network and internet traffic by routing the packets through a gateway (normally the default gateway of the device's NIC (Network Interface Card)). This implementation ensures that the commute of network packets takes place only through one communication path. As a result, inspection of network traffic can be carried out only on that gateway simplifying packet handling. 
+
+As shown in the following code snippet provided on android \href{https://developer.android.com/develop/connectivity/vpn}{\emph{developer wrbsite}}, android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them though the localhost address.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{VpnService Builder Code Snippet.png}
+	\caption{VpnService Builder Implementation}
+	\label{fig:VpnService Builder Code Snippet.png}
+\end{figure}
+
+Using this VPN the user will be able to:
+\begin{itemize}
+	\item Read raw packets going through the established Virtual Private Network.
+	\item Analyse or filter them.
+	\item Apply inbound and outbound rules.
+	\item Inject data into the commuting traffic.
+\end{itemize}
+
+In simpler terms, it acts as a virtual network adapter that android routes all the traffic through. This enables interception, monitoring, and packet modification before forwarding to its original destination.
+
+
+\subsection{Application Name and Icon Extraction}
+
+
+
+
+\subsection{Limitations and Problems}
+
+
+
+\subsubsection{Routing Problem}
+The above-mentioned employment of VpnService functions correctly for any attempts in establishment of out or in-going connection from a local or an external source. However, this implementation has a drawback which demands manual integration of packet handling that stems from inherent restrictions of VpnService API.
+
+\subsubsection{Application UID Extraction}
+
+
+
+
+
+
+
+
+
+
+\section{How PCAPdroid already does it all}
 \todo{Show the PCAPdroid app and info about it from its website in the background section or similar}
-\todo{add the trial to make the VPN myself and the attempt to use android VpnService and the difficulties it has brought}
+
+
+
+
+
+
+
+\section{Integration with PCAPDroid}
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  1 OCT 2025 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  2 OCT 2025 15:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -587,7 +587,7 @@ Class scrbook Warning: Usage of package `parskip' together
 (scrbook)              I'd suggest to use option
 (scrbook)              `parskip' with one of it's several values.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `parskip' on input line 94.
+(scrbook)              package `parskip' on input line 93.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
@@ -886,7 +886,7 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \c@LT@chunks=\count346
 \LT@p@ftn=\toks57
 )
-Class scrbook Info: longtable captions redefined on input line 112.
+Class scrbook Info: longtable captions redefined on input line 111.
 
 (pgf-pie.sty
 Package: pgf-pie 2011/10/02 v0.2 Some LaTeX macros for pie chart by using PGF/T
@@ -1334,7 +1334,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 201.
+(scrbook)           before \begin{document} on input line 200.
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -1346,41 +1346,41 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 20
-1.
+0.
  (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-Package scrbase Info: activating english \partname on input line 201.
-Package scrbase Info: activating english \chaptername on input line 201.
-Package scrbase Info: activating english \appendixname on input line 201.
-Package scrbase Info: activating english \figurename on input line 201.
-Package scrbase Info: activating english \tablename on input line 201.
-Package scrbase Info: activating english \contentsname on input line 201.
-Package scrbase Info: activating english \listfigurename on input line 201.
-Package scrbase Info: activating english \listtablename on input line 201.
-Package scrbase Info: activating english \bibname on input line 201.
-Package scrbase Info: activating english \indexname on input line 201.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+Package scrbase Info: activating english \partname on input line 200.
+Package scrbase Info: activating english \chaptername on input line 200.
+Package scrbase Info: activating english \appendixname on input line 200.
+Package scrbase Info: activating english \figurename on input line 200.
+Package scrbase Info: activating english \tablename on input line 200.
+Package scrbase Info: activating english \contentsname on input line 200.
+Package scrbase Info: activating english \listfigurename on input line 200.
+Package scrbase Info: activating english \listtablename on input line 200.
+Package scrbase Info: activating english \bibname on input line 200.
+Package scrbase Info: activating english \indexname on input line 200.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1468,70 +1468,70 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 201.
+Package hyperref Info: Link coloring OFF on input line 200.
 
 isodate: babel.sty has been loaded
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package csquotes Info: Making character " active on input line 201.
+Package csquotes Info: Making character " active on input line 200.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
-09.
+08.
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-209.
+208.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-209.
+208.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-209.
+208.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-209.
+208.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 209.
+(Font)              scaled to size 10.42007pt on input line 208.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 209.
+(Font)              scaled to size 7.91925pt on input line 208.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 209.
+(Font)              scaled to size 6.25204pt on input line 208.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 209.
+(Font)              scaled to size 10.42007pt on input line 208.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 209.
+(Font)              scaled to size 7.91925pt on input line 208.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 209.
+(Font)              scaled to size 6.25204pt on input line 208.
 <img/logouni_en.png, id=6, 369.7815pt x 113.7048pt>
 File: img/logouni_en.png Graphic file (type png)
 <use img/logouni_en.png>
-Package pdftex.def Info: img/logouni_en.png  used on input line 210.
+Package pdftex.def Info: img/logouni_en.png  used on input line 209.
 (pdftex.def)             Requested size: 184.9429pt x 56.8696pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 252.
+(Font)              scaled to size 12.50409pt on input line 251.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 252.
+(Font)              scaled to size 9.37807pt on input line 251.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 252.
+(Font)              scaled to size 7.29405pt on input line 251.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 252.
+(Font)              scaled to size 12.50409pt on input line 251.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 252.
+(Font)              scaled to size 9.37807pt on input line 251.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 252.
+(Font)              scaled to size 7.29405pt on input line 251.
 
 
 [1
@@ -1608,6 +1608,8 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 6--6
 [][][][][][][][][]  
  []
 
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 9.
 
 
 [1
@@ -1615,8 +1617,8 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 6--6
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 3
+1.
  (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
@@ -1647,14 +1649,34 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 [][][][][][][][][]  
  []
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 7.
-) (chapters/3_related.tex
+<App - Monitor Page.png, id=128, 522.45187pt x 872.50969pt>
+File: App - Monitor Page.png Graphic file (type png)
+<use App - Monitor Page.png>
+Package pdftex.def Info: App - Monitor Page.png  used on input line 21.
+(pdftex.def)             Requested size: 195.18813pt x 325.9655pt.
+<App - Logs Page.png, id=129, 522.45187pt x 871.75688pt>
+File: App - Logs Page.png Graphic file (type png)
+<use App - Logs Page.png>
+Package pdftex.def Info: App - Logs Page.png  used on input line 27.
+(pdftex.def)             Requested size: 195.18813pt x 325.68425pt.
+
 
 [7
 
 
 ]
+<VpnService Builder Code Snippet.png, id=136, 915.42pt x 316.18124pt>
+File: VpnService Builder Code Snippet.png Graphic file (type png)
+<use VpnService Builder Code Snippet.png>
+Package pdftex.def Info: VpnService Builder Code Snippet.png  used on input lin
+e 43.
+(pdftex.def)             Requested size: 398.33865pt x 137.58115pt.
+
+
+[8 <./App - Monitor Page.png> <./App - Logs Page.png>]) (chapters/3_related.tex
+
+
+[9 <./VpnService Builder Code Snippet.png>]
 chapter 3.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1674,7 +1696,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/4_design.tex
 
-[8
+[10
 
 
 ]
@@ -1697,7 +1719,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/5_implementation.tex
 
-[9
+[11
 
 
 ]
@@ -1720,7 +1742,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/6_evaluation.tex
 
-[10
+[12
 
 
 ]
@@ -1743,7 +1765,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/7_conclusions.tex
 
-[11
+[13
 
 
 ]
@@ -1766,7 +1788,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/A_appendix.tex
 
-[12
+[14
 
 
 ]
@@ -1789,7 +1811,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 )
 
-[13
+[15
 
 
 ] (thesis.lof)
@@ -1798,7 +1820,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[14
+[16
 
 
 
@@ -1809,14 +1831,14 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[15
+[17
 
 
 
 
 ] (thesis.bbl)
 
-[16
+[18
 
 
 
@@ -1828,11 +1850,11 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 44113 strings out of 468133
- 1007024 string characters out of 5430712
+ 44195 strings out of 468133
+ 1009213 string characters out of 5430712
  1670568 words of memory out of 5000000
- 71919 multiletter control sequences out of 15000+600000
- 664839 words of font info for 120 fonts, out of 8000000 for 9000
+ 71988 multiletter control sequences out of 15000+600000
+ 665514 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,10n,121p,11211b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
@@ -1846,9 +1868,9 @@ fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (21 pages, 225403 bytes).
+Output written on thesis.pdf (23 pages, 347105 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
