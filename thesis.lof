@@ -5,6 +5,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Threat Detector UI based on initial idea}}{8}{figure.caption.3}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces VpnService Builder Implementation}}{9}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Usage of VpnService API}}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Extracting Destination IP Address from Raw Packets}}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Usage of VpnService API}}{12}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

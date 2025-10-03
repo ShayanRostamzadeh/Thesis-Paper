@@ -55,8 +55,36 @@ Using this VPN the user will be able to:
 
 In simpler terms, it acts as a virtual network adapter that android routes all the traffic through. This enables interception, monitoring, and packet modification before forwarding to its original destination.
 
-\todo{add screenshots of VpnService code}
+Here is a partial depiction of VpnService implementation in the initial idea:
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Initial idea VpnService API - 1.png}
+		\caption{Defining Default Gateway}
+		\label{fig:Defining Default Gateway}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Initial idea VpnService API - 2.png}
+		\caption{Reading Incoming/Outgoing Data}
+		\label{fig:Reading Incoming/Outgoing Data}
+	\end{subfigure}
+	\caption{Usage of VpnService API}
+	\label{fig:Usage of VpnService API}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{Initial idea VpnService API - 3.png}
+	\caption{Extracting Destination IP Address from Raw Packets}
+	\label{fig:Extracting Destination IP Address from Raw Packets}
+\end{figure}
+
+In the screenshots provided in Figure 2.3, you can see the VpnService builder implementation that is responsible to route all the traffic to the default gateway alongside a ParcelFileDescriptor. This is an android class that acts as a wrapper around a Linux file descriptor. A file descriptor is a handle used by the operating system to access files, sockets, pipes, and I/O resources. However, luckily android provides a high-level, safe, kotlin/java friendly version of that through ParcelFileDescriptor API. In this implementation, the ParcelFileDescriptor instance represents a virtual network interface created by VpnService to handle the transfer of packets through tunnelling.
+
+Figure 2.4 depicts the extraction of destination IPv4 address from a raw IP packet header. This IP address will be parsed to a threat intelligence database for an inquiry regarding the maliciousness of the address.
 
 \subsection{Application Name and Icon Extraction}
 As depicted in screenshots of the initial idea, the application name and possibly the its icon should be illustrated for a more user-friendly exhibition of outbound network connections and their originating applications.
@@ -96,22 +124,45 @@ Accessing \emph{/proc} filesystem is possible via the following approaches:
 	\item Using native C programming to interface directly with the Linux kernel of the android device.
 \end{itemize}
 
+From the above-mentioned options, none of them is feasible to use. Rooting the android device for a normal user brings along a lot of drawbacks including weakened security and extended susceptibility to various attack surfaces. Moreover, as of android version 11 and above, the system-level permissions are not viable. As a result, this approach works only on Android Q and below. 
 
-with root access and requires the device to be rooted. Another approach would be using some system-level permissions to access the virtual file. Unfortunately, this permission is only viable on android 10 and below.
-
-
-
+Interfacing the Linux kernel using C language remains the only reliable and feasible option that network monitoring solutions such as PCAPdroid and Ant-Monitor employ. Implementing this however, is not feasible for this thesis. 
 
 
 \section{How PCAPdroid already does it all}
-\todo{Show the PCAPdroid app and info about it from its website in the background section or similar}
+
+Developing a network monitoring solution similar to \href{https://www.wireshark.org/}{\emph{Wireshark}} for mobile platforms has already been a topic of importance among enterprise personal by the emergence of Bring Your Own Device policy. As a result, applications such as PCAPdroid, Mobeye, and Ant-Monitor came to existence as a solution to give administrators some leverage examining the network activities.
+
+Among the aforementioned solutions PCAPdroid is an open-source solution that has implemented a fully functional VPN along with an extensive interface with android's Linux kernel to thoroughly handle \emph{/proc} filesystem. Thus, PCAPdroid can be a suitable candidate to provide the underlying foundation for the correct functionality of Threat Detector. It has settings that can be adjusted for communication between the android device and the administration endpoint. It captures network traffic and stacks the information in a widely-known PCAP/PCAPNG formats that can be fed into other network inspection tools such as Wireshark though various communication methods. These methods include HTTP servers and TCP/UDP streams.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[height=0.48\textheight, keepaspectratio]{PCAPdroid Traffic Dump Options.jpg}
+		\caption{PCAPdroid Traffic Dump Options}
+		\label{fig:PCAPdroid Traffic Dump Options}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[height=0.48\textheight, keepaspectratio]{PCAPdroid Capture Settings.jpg}
+		\caption{PCAPdroid Packet Capture Settings}
+		\label{fig:PCAPdroid Packet Capture Settings}
+	\end{subfigure}
+	\caption{Usage of VpnService API}
+	\label{fig:PCAPdroid Traffic Dump and Packet Capture Settings}
+\end{figure}
 
 
-
-
-
-
+As shown in the screenshots above with employment of TCP exporter functionality and activation of PCAPdroid extensions majority of the limitations and inherent restrictions that stem from android's ecosystem and architecture can be overcome. The TCP exporter enables information transfer using TCP protocol and PCAPdroid extensions provides the application package name that can be easily utilized to extract the application name and icon necessary to meet the original idea of this thesis project.
 
 \section{Integration with PCAPDroid}
-However, based on the lack of native kotlin/java support and the inevitable need for manual implementation of packet redirection (out of thesis context), 
+As explained, for Threat Detector to function properly and for the requirements of this thesis to be met, integration/implementation of an approach to route and intercept network traffic and access to /proc filesystem are of utmost importance. However, since a thorough execution of them is unfeasible for this project, integration of those functionalities through a communication medium can potentially be a proper solution. 
+
+The following chapters provide a detailed discussion of the coordination between PCAPdroid and Threat Detector. In this setup, data is exchanged in the form of PCAP files via a local TCP server, thereby enabling Threat Detector to address functionalities that would otherwise be impractical to implement on its own.
+
+
+
+
+
 
