@@ -11,14 +11,53 @@ Network monitoring and inspection solutions are essential to detect suspicious c
 
 Among a large number of prominent solutions developed in this area, \emph{\textbf{PCAPdroid, Mobeye}}, and \emph{\textbf{AntMonitor}} have illustrated notable progress towards enhancing transparency along with control over mobile network traffic. PCAPdroid provides a non-root approach towards packet capture and employs android's VpnService API to intercept and record traffic in PCAP/PCAPNG format allowing comprehensive network inspection without the need for elevated privileges. On the other hand, Mobeye aims its focus towards large-scale network measurements and data aggregation for further research and monitoring purposes. It contributes valuably in mobile network performance and security. AntMonitor however, takes a privacy-oriented approach by enabling real-time analysis of application traffic, providing thorough visibility into how user data is transmitted over a network.
 
-These existing tools have constructively contributed to the advancement of mobile traffic analysis. However, each of them also presents limitations in terms of integration, flexibility, and real-time threat intelligence and detection. The following sections provide an overview in details, highlighting their architectures, capabilities along with their constraints, which consequently became the motivating factors Threat Detector development.
+These existing tools have constructively contributed to the advancement of mobile traffic analysis. However, each of them also presents limitations in terms of integration, flexibility, and real-time threat intelligence and detection. The following sections provide an overview in details, highlighting their architectures, capabilities along with their constraints, which consequently became the motivating factors for Threat Detector development.
 
 
 \section{PCAPdroid} 
 As one of the most recognized open-source android applications for capturing and analysing network traffic, PCAPdroid operates entirely without root privileges be leveraging android's VpnService API. This results in the redirection of all network packets through a local virtual interface, allowing PCAPdroid to passively sniff and monitor network traffic. Moreover, it can log and export captured network traffic in the form of PCAP/PCAPNG files; consequently, making it compatible with standard packet analysis tools such as Wireshark or tshark. 
 
+When it comes to PCAPdroid's architecture, it establishes a user-space VPN that intercepts both TCP and UDP packets. Once these packets are captured they are parsed locally or can be transferred to a remote system for further analysis as data streams in real-time. This is the very characteristic of PCAPdroid that makes it an efficient bridge between on-device data collection and remote analysis systems. This design enables PCAPdroid to include support for packet filtering, payload decoding, and also per-application traffic mapping. This, as mentioned before, takes place by correlating sockets with applications' UIDs.
+
+PCAPdroid's primary advantage lies within its non-root nature, making it an attractive option for users, enterprises, and researches who cannot or do not wish for a drastic modification in their device operating system. Worth to mention that mission of such applications it to assist securing mobile devices and rooting or jail-breaking removes the security measures implemented on those devices, making them susceptible and in significant risk of attacks. While providing a functional application without rooting the device, PCAPdroid also maintains the balance between technical depth by visualizing live traffic statistics and sustaining the compatibility with standard PCAP/PCAPNG workflow. These can be observed in the screenshot of PCAPdroid's settings in the previous chapter and also in the following Figure.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.44\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{PCAPdroid_Connections_Screenshot.jpg}
+		\caption{PCAPdroid Connections Page}
+		\label{fig:PCAPdroid_Connections_Page}
+	\end{subfigure}
+	\begin{subfigure}{0.44\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{PCAPdroid_Connection_Details_Screenshot.jpg}
+		\caption{PCAPdroid Connection Details Page}
+		\label{fig:PCAPdroid_Connection_Details}
+	\end{subfigure}
+	\caption{Screenshots from PCAPdroid}
+	\label{fig:PCAPdroid_Scressnshots}
+\end{figure}
+
+\todo{add citation and reference for the images}
+
+While providing considerable advantages and the foundation for other network analysis tools to build upon, PCAPdroid was not originally designed for threat detection and intrusion analysis. Even though it captures traffic effectively, it does not incorporate mechanism to identify malicious patterns, command-and-control connection attempts, and data exfiltration. Moreover, the VPN-based model implemented in PCAPdroid introduces a minor performance overhead that stems from its interception model. This may cause it to interfere with some network applications that follow strict network policies and use encrypted VPN tunnelling techniques.
+
+
+Despite the limitations, PCAPdroid remains a solid cornerstone tool for android network traffic analysis. Its modular design that adheres to PCAP/PCAPNG formatting alongside being an ideal foundation for other solutions to implement it open-source core, make it a reliable underlying base for other applications such as Thread Detector to extend its functionality.
+
+
+\section{AntMonitor}
+While introduces as an alternative for PCAPdroid on its \href{https://github.com/UCI-Networking-Group/AntMonitor}{\emph{GitHub page}}, AntMonitor represents a slightly different approach towards mobile traffic monitoring and analysis. Its focus lies mainly on privacy protection and transparency for end users. Developed by researchers at the University of California, AntMonitor was developed both as a research platform and privacy-enhancing tool. The goal it aims to achieve is to assist users understanding the workings behind how an application sends personal data across networks, in particular to third-party domains and analytic services.
 
 \section{Mobeye}
 
 
-\section{AntMonitor}
+\section{Comparison}
+
+
+\section{Summary}
+
+
+
+
