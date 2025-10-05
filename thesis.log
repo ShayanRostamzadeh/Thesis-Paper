@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  5 OCT 2025 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  5 OCT 2025 21:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1758,9 +1758,11 @@ nput line 34.
 
 
 [15 <./PCAPdroid_Connections_Screenshot.jpg> <./PCAPdroid_Connection_Details_Sc
-reenshot.jpg>]) (chapters/4_design.tex
+reenshot.jpg>]
 
-[16]
+[16]) (chapters/4_design.tex
+
+[17]
 chapter 4.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1780,7 +1782,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/5_implementation.tex
 
-[17
+[18
 
 
 ]
@@ -1803,7 +1805,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/6_evaluation.tex
 
-[18
+[19
 
 
 ]
@@ -1826,7 +1828,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/7_conclusions.tex
 
-[19
+[20
 
 
 ]
@@ -1849,7 +1851,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/A_appendix.tex
 
-[20
+[21
 
 
 ]
@@ -1872,7 +1874,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 )
 
-[21
+[22
 
 
 ] (thesis.lof)
@@ -1881,7 +1883,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[22
+[23
 
 
 
@@ -1892,14 +1894,14 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[23
+[24
 
 
 
 
 ] (thesis.bbl)
 
-[24
+[25
 
 
 
@@ -1911,10 +1913,10 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 44297 strings out of 468133
- 1012781 string characters out of 5430712
+ 44301 strings out of 468133
+ 1012840 string characters out of 5430712
  1671568 words of memory out of 5000000
- 72074 multiletter control sequences out of 15000+600000
+ 72076 multiletter control sequences out of 15000+600000
  665514 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,10n,121p,11211b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1929,9 +1931,9 @@ fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (30 pages, 1128417 bytes).
+Output written on thesis.pdf (31 pages, 1130898 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -48,7 +48,17 @@ Despite the limitations, PCAPdroid remains a solid cornerstone tool for android 
 
 
 \section{AntMonitor}
-While introduces as an alternative for PCAPdroid on its \href{https://github.com/UCI-Networking-Group/AntMonitor}{\emph{GitHub page}}, AntMonitor represents a slightly different approach towards mobile traffic monitoring and analysis. Its focus lies mainly on privacy protection and transparency for end users. Developed by researchers at the University of California, AntMonitor was developed both as a research platform and privacy-enhancing tool. The goal it aims to achieve is to assist users understanding the workings behind how an application sends personal data across networks, in particular to third-party domains and analytic services.
+While introduced as an alternative for PCAPdroid on its \href{https://github.com/UCI-Networking-Group/AntMonitor}{\emph{GitHub page}}, AntMonitor represents a slightly different approach towards mobile traffic monitoring and analysis. Its focus lies mainly on privacy protection and transparency for end users. Developed by researchers at the University of California, AntMonitor was developed both as a research platform and privacy-enhancing tool. The goal it aims to achieve is to assist users understanding the workings behind how an application sends personal data across networks, in particular to third-party domains and analytic services.
+
+Similar to PCAPdroid, AntMonitor heavily relies on android's VpnService API to capture network packets without the need for the device to be rooted. Moreover, it represents a more privacy-aware architecture, implementing modules covering real-time packet analysis. These modules classify network flows, detect leakage of sensible information such as Personally-Identifiable-Information (PII), and also visualize the communication between a device and a remote server.
+
+AntMonitor also features a framework for server-side traffic analysis. It accumulates anonymized data from multiple devices to build global statistics about mobile data leakages and application behaviours. This can be considered as a hybrid approach to combine local inspection with cloud-based aggregation, allowing scalable studies of modern mobile privacy issues.
+
+One of AntMonitor's key strengths is its focus on privacy awareness of end users. It provides the user with detailed insights about what sorts of information an application is transmitting and subsequently assists the user to make informed decisions about permissions and trustworthiness of that application. This privacy-centric approach however, introduces some notable trade-offs. In this design, data protection and user consent are prioritized, which limits AntMonitor's applicability for low-level packet inspection and complicates security research that require intense packet analysis. Additionally, AntMonitor's architecture is not designed with real-time threat detection and IP blocking capabilities in mind. This makes it less suitable for use cases involving direct intrusion detection.
+
+\todo{add some pics}
+
+As a brief summary, AntMonitor depicts a significant advancement in privacy-preserving traffic analysis but suffers from the lack of mechanisms, preventing active threats. None the less, the principles employed in its design such as on-device analysis for mobile platforms and user transparency, have subsequently inspired the development of Threat Detector, which combines security analytics along with privacy awareness.
 
 \section{Mobeye}
 
