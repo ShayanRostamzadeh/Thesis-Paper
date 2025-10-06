@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  5 OCT 2025 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  6 OCT 2025 10:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1759,10 +1759,72 @@ nput line 34.
 
 [15 <./PCAPdroid_Connections_Screenshot.jpg> <./PCAPdroid_Connection_Details_Sc
 reenshot.jpg>]
+<AntMonitor_Privacy_Exposure_History.png, id=208, 578.16pt x 1027.84pt>
+File: AntMonitor_Privacy_Exposure_History.png Graphic file (type png)
+<use AntMonitor_Privacy_Exposure_History.png>
+Package pdftex.def Info: AntMonitor_Privacy_Exposure_History.png  used on input
+ line 61.
+(pdftex.def)             Requested size: 107.55313pt x 191.19821pt.
+<AntMonitor_Privacy_Exposure_Report.png, id=209, 1445.4pt x 2569.6pt>
+File: AntMonitor_Privacy_Exposure_Report.png Graphic file (type png)
+<use AntMonitor_Privacy_Exposure_Report.png>
+Package pdftex.def Info: AntMonitor_Privacy_Exposure_Report.png  used on input 
+line 67.
+(pdftex.def)             Requested size: 107.55313pt x 191.18254pt.
 
-[16]) (chapters/4_design.tex
+Underfull \hbox (badness 3579) in paragraph at lines 68--68
+[][][]|\T1/ppl/m/n/9 Pri-vacy Ex-po-sure Re-
+ []
 
-[17]
+<AntMonitor_Privacy_Exposure_Info.png, id=210, 578.16pt x 1027.84pt>
+File: AntMonitor_Privacy_Exposure_Info.png Graphic file (type png)
+<use AntMonitor_Privacy_Exposure_Info.png>
+Package pdftex.def Info: AntMonitor_Privacy_Exposure_Info.png  used on input li
+ne 74.
+(pdftex.def)             Requested size: 107.55313pt x 191.19821pt.
+
+
+[16 <./AntMonitor_Privacy_Exposure_History.png> <./AntMonitor_Privacy_Exposure_
+Report.png> <./AntMonitor_Privacy_Exposure_Info.png>]
+<AntMonitor_Log_Contribution_Settings.png, id=218, 578.16pt x 1027.84pt>
+File: AntMonitor_Log_Contribution_Settings.png Graphic file (type png)
+<use AntMonitor_Log_Contribution_Settings.png>
+Package pdftex.def Info: AntMonitor_Log_Contribution_Settings.png  used on inpu
+t line 90.
+(pdftex.def)             Requested size: 195.18813pt x 346.99866pt.
+<AntMonitor_Logs_Applications.png, id=219, 578.16pt x 1027.84pt>
+File: AntMonitor_Logs_Applications.png Graphic file (type png)
+<use AntMonitor_Logs_Applications.png>
+Package pdftex.def Info: AntMonitor_Logs_Applications.png  used on input line 9
+6.
+(pdftex.def)             Requested size: 195.18813pt x 346.99866pt.
+
+
+[17 <./AntMonitor_Log_Contribution_Settings.png> <./AntMonitor_Logs_Application
+s.png>]
+
+Package natbib Warning: Citation `https://arxiv.org/abs/1610.01282' on page 18 
+undefined on input line 111.
+
+
+Package natbib Warning: Citation `https://www4.comp.polyu.edu.hk/\normal@char~ 
+csrchang/MopEye.pdf' on page 18 undefined on input line 112.
+
+<MopEye_1.png, id=227, 1084.05pt x 1303.87125pt>
+File: MopEye_1.png Graphic file (type png)
+<use MopEye_1.png>
+Package pdftex.def Info: MopEye_1.png  used on input line 123.
+(pdftex.def)             Requested size: 195.18813pt x 234.76628pt.
+<MopEye_2.png, id=228, 1084.05pt x 1304.875pt>
+File: MopEye_2.png Graphic file (type png)
+<use MopEye_2.png>
+Package pdftex.def Info: MopEye_2.png  used on input line 129.
+(pdftex.def)             Requested size: 195.18813pt x 234.947pt.
+
+
+[18 <./MopEye_1.png> <./MopEye_2.png>]) (chapters/4_design.tex
+
+[19]
 chapter 4.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1782,7 +1844,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/5_implementation.tex
 
-[18
+[20
 
 
 ]
@@ -1805,7 +1867,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/6_evaluation.tex
 
-[19
+[21
 
 
 ]
@@ -1828,7 +1890,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/7_conclusions.tex
 
-[20
+[22
 
 
 ]
@@ -1851,7 +1913,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 ) (chapters/A_appendix.tex
 
-[21
+[23
 
 
 ]
@@ -1874,7 +1936,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 )
 
-[22
+[24
 
 
 ] (thesis.lof)
@@ -1883,7 +1945,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[23
+[25
 
 
 
@@ -1894,14 +1956,18 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[24
+[26
 
 
 
 
 ] (thesis.bbl)
 
-[25
+Package natbib Warning: There were undefined citations.
+
+
+
+[27
 
 
 
@@ -1913,10 +1979,10 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 44301 strings out of 468133
- 1012840 string characters out of 5430712
+ 44384 strings out of 468133
+ 1016082 string characters out of 5430712
  1671568 words of memory out of 5000000
- 72076 multiletter control sequences out of 15000+600000
+ 72156 multiletter control sequences out of 15000+600000
  665514 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,10n,121p,11211b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1931,9 +1997,9 @@ fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (31 pages, 1130898 bytes).
+Output written on thesis.pdf (33 pages, 1866297 bytes).
 PDF statistics:
- 571 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
