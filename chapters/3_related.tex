@@ -136,15 +136,40 @@ The following figure illustrates the Mopeye's functionality.
 
 From a technical viewpoint, Mobeye implements a client-server architecture, in which mobile clients perform network measurements, followed by a report that is sent to centralized servers. It provides APIs for task scheduling, result collection and its visualization. Moreover, Mobeye is designed in a way that makes it suitable for crowdsourced network monitoring and therefore, has been used in various studies concerning mobile security and performance anomaly detection.
 
-However, as a solution primarily focused on macroscopic network traffic analysis, it does not provide packet-level inspection. It neither captures/inspects individual packet flows, nor does it identify suspicious or privacy-violating communication flows. In spite of the fact that it offers valuable insights about the overall network health, its capabilities are undoubtedly limited when it comes to device-level security and malware detection. However, despite aforementioned constraints, Mopeye provides a strong underlying foundation in understanding the broader mobile network context, in which they operate. Mopeye complements other monitoring tools such as PCAPdroid and AntMonitor that inspect network traffic on a microscopic level.
+However, as a solution primarily focused on macroscopic network traffic analysis, it does not provide packet-level inspection. It neither captures/inspects individual packet flows, nor does it identify suspicious or privacy-violating communication flows. In spite of the fact that it offers valuable insights about the overall network health, its capabilities are undoubtedly limited when it comes to device-level security and malware detection. However, despite aforementioned constraints, Mopeye provides a strong underlying foundation in understanding the broader mobile network context, in which they operate. Mopeye complements other monitoring tools such as PCAPdroid and AntMonitor that inspect network traffic on a microscopic level. Insights and network metadata provided by Mopeye, can inform threat detection models by supplying background data about normal network performance and connectivity patterns.
 
 
 \section{Comparison}
+Even though PCAPdroid, AntMonitor, and Mopeye share common goals to achieve, increasing visibility of mobile network traffic, their objectives and design philosophies are substantially different.
+
+In the following table you can observe their functionalities and subsequent differences.
+
+\begin{table}[H]
+	\centering
+	\caption{Comparison of Existing Mobile Network Monitoring Tools}
+	\label{tab:comparison_tools}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{@{}p{2cm}p{3cm}p{2cm}p{3cm}p{2.5cm}p{2.5cm}p{2cm}@{}}
+			\toprule
+			\textbf{Tool} & \textbf{Main Purpose} & \textbf{Requires Root} & \textbf{Focus} & \textbf{Real-Time Detection} & \textbf{Privacy Protection} & \textbf{Data Format} \\ \midrule
+			\textbf{PCAPdroid} & Packet capture and export & No & Network analysis & No & Moderate & PCAP \\
+			\textbf{AntMonitor} & Privacy-aware traffic inspection & No & Data leakage and app transparency & Partial & Strong & Internal database \\
+			\textbf{Mobeye} & Network measurement and performance & No & Large-scale monitoring & No & Limited & Aggregated metrics \\ \bottomrule
+		\end{tabular}
+	}
+\end{table}
 
 
+As illustrated in table 3.1, PCAPdroid excels in network visibility on packet-level, making it a suitable option for forensic or research-centric traffic analysis. On the other hand however, it lacks intelligence for automatic threat detection and classification. AntMonitor brings along useful user privacy insights but does not incorporate extensive traffic inspection, neither does it support automatic response mechanisms. As a contributor to macroscopic network analytics, Mopeye provides complementary information about the overall network condition but does not highlight application-specific data.
+
+In contrast however, Threat Detector developed in this thesis aims to accomplish what the above-mentioned solutions lack in their implementation. It seeks to bridge the gap between passive network traffic monitoring and active threat detection. By integrating the packet-capture capabilities provided by PCAPdroid with additional intelligence modules to query external threat intelligence sources (e.g. AbuseIPDB), Threat Detector improves security awareness on the device. The integration of PCAPdroid and Threat Detector enables real-time detection if suspicious IPs, provides mapping functionality to associate network packets with their originating application, addressing some of the limitations observed in existing tools.
 
 \section{Summary}
+This chapter represented an overview of research efforts and their subsequent results in regard to mobile traffic monitoring and network packet analysis. PCAPdroid supplies a robust, open-source approach towards network packet and application level analysis while eliminating the need for rooting the device. AntMonitor highlights the user privacy as its primary mission, while Mopeye contributes to large-scale network performance analysis.
 
+While each of the mentioned tools has advanced the field of mobile security in particular ways, their combined limitations including lack of real-time threat detection, absence of application/IP blocking, and restricted integration capabilities underline the need for a more comprehensive solution. Threat Detector is built upon their foundation and aims to provide a hybrid model, integrating real-time threat detection, application-to-IP mapping, alongside flexibility to be interoperable with existing tools such as PCAPdroid.
+
+The following chapters in this paper elaborate on the implementation of Threat Detector, explaining how its architectrual design overcomes the identified gaps in the existing tools.
 
 
 
