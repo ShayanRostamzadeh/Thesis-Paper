@@ -27,11 +27,15 @@
 \contentsline {section}{\numberline {3.4}Comparison}{19}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Summary}{19}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Architecture/System Design}{21}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Implementation}{22}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{24}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.1.A}%
-\contentsline {chapter}{List of Figures}{26}{section*.15}%
-\contentsline {chapter}{List of Tables}{27}{section*.16}%
-\contentsline {chapter}{Bibliography}{28}{section*.17}%
+\contentsline {section}{\numberline {4.1}Overview}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}System Components}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}VPN-based packet Capture Module}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}UID Resolver and Application Mapper}{22}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Implementation}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{24}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Appendix}{26}{appendix.1.A}%
+\contentsline {chapter}{List of Figures}{27}{section*.16}%
+\contentsline {chapter}{List of Tables}{28}{section*.17}%
+\contentsline {chapter}{Bibliography}{29}{section*.18}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

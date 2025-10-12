@@ -5,4 +5,90 @@
 \chapter{Architecture/System Design}
 \label{chapter:design}
 
-\todo{make a picture to illustrate the workings of threat detector and its integration with PCAPdroid}
+\section{Overview}
+This chapter represents the design architecture of the proposed mobile network monitoring system, Threat Detector. This application aims to detect the potentially malicious network traffic on android devices with a passive packet sniffing approach. It is developed as an enhancement and an extension for the open-source applicaion PCAPdroid, integrating additional modules for IP reputation checking and application-to-ip mapping.
+
+Application's architecture is designed based on three main objectives:
+
+\begin{itemize}
+	\item \textbf{Transparency:} Intercepting and logging of network traffic without altering or blocking the normal traffic flow.
+	\item \textbf{Attribution:} Accurately associating each network connection with the responsible application establishing it.
+	\item \textbf{Threat Detection:} Assessing the reputation of the destination IP address with the assistance of external IP intelligence sources such as AbuseIPDB.
+\end{itemize}
+
+
+The overall structure follows a modular design which ensures separation between packet capture, user interface, and data processing.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		node distance=1.2cm,
+		every node/.style={rectangle, rounded corners, draw=black!70, thick, align=center, font=\footnotesize, minimum width=8cm, minimum height=1cm, fill=gray!5},
+		arrow/.style={->, thick}
+		]
+		
+		% Layers
+		\node (apps) [minimum width=5cm, fill=orange!20] {Android Applications\\(WhatsApp, Google Chrome, Instagram, etc.)};
+		
+		\node (vpn) [minimum width=5cm, above=of apps, fill=blue!5] {Packet Capture Layer\\\textit{VPNService-based tunneling Virtual Interface}\\Packet Sniffer/Forwarder (PCAPdroid Core)};
+		
+		\node (assembly) [minimum width=5cm, above=of vpn, fill=green!5] {Data Assembly Layer \\PCAPdroid PCAP/PCAPNG Assembly \\UID Resolver};
+		
+		\node (threat) [right=4cm of assembly, fill=red!5, minimum width=5cm] {Threat Detector App \\Data Processing Layer \& App Mapper \\PCAP Receiver \& Analysis \\AbuseIPDB Reputation Checker\\Local Information Storage};
+		
+		\node (ui) [above=of threat, fill=yellow!10, minimum width=5cm] {User Interface Layer\\Maliciousness Notification \\IP Reputation Score \\Report Details};
+		
+		
+		\node (tcpnode) [right=1cm of assembly, draw, align=center, font=\scriptsize, minimum width=1.8cm, minimum height=0.8cm] {Local TCP Server};
+		
+		% Connections
+		\draw[arrow] (apps) -- (vpn);
+		\draw[arrow] (vpn) -- (assembly);
+		\draw[arrow] (threat) -- (ui);
+		
+		
+		\draw[<->, dashed, thick] (assembly.east) -- (tcpnode.west);
+		\draw[<->, dashed, thick] (tcpnode.east) -- (threat.west);
+	
+			
+	\end{tikzpicture}
+	\caption{Modular System Architecture of Threat Detector}
+	\label{fig:system_architecture_overview}
+\end{figure}
+
+
+
+\section{System Components}
+Threat Detector as a systems is composed of several independent stand-alone components responsible for a seamless functionality. Each of these components are referred to as a module in this chapter that represent the idea behind a particular implementation.
+
+
+\subsection{VPN-based packet Capture Module}
+This module establishes a virtual private network interface (through utilization of PCAPdroid) that captures the incoming and outgoing packets from user's applications without requiring root access on the android device. Raw captured packets are them immediately forwarded to the next module for further analysis while keeping the communications between endpoints alive.
+
+The functions of this module are as followed:
+\begin{itemize}
+	\item Initialization and maintenance of a virtual interface (tunnel interface).
+	\item Capturing raw packets from the device's network traffic while preventing the modification of the packets.
+	\item Forwarding the packets to the local processing engine of PCAPdroid.
+\end{itemize}
+
+
+\subsection{UID Resolver and Application Mapper}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
