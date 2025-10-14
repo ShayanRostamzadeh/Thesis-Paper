@@ -5,13 +5,11 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Taubmann et~al.(2025)Taubmann, Rakotondravony, and
-  Reiser]{taubmann2016CloudPhylactor}
-Benjamin Taubmann, Noelle Rakotondravony, and Hans~P. Reiser.
-\newblock {CloudPhylactor:} harnessing mandatory access control for virtual
-  machine introspection in cloud data centers.
-\newblock In \emph{2016 IEEE Trustcom/BigDataSE/ISPA}, pages 957--964, Aug
-  2025.
-\newblock \doi{10.1109/TrustCom.2016.0162}.
+\bibitem[Wu et~al.(2016)Wu, Li, Chang, and
+  Gao]{wu2016mopeyemonitoringperappnetwork}
+Daoyuan Wu, Weichao Li, Rocky K.~C. Chang, and Debin Gao.
+\newblock Mopeye: Monitoring per-app network performance with zero measurement
+  traffic, 2016.
+\newblock URL \url{https://arxiv.org/abs/1610.01282}.
 
 \end{thebibliography}

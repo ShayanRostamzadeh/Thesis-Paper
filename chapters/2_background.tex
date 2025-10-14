@@ -36,7 +36,7 @@ After the full development of the application based on the initial idea, Threat 
 \subsection{VpnService API - Android's VPN Functionality}
 The APIs provided by android as an OS (Operating System) include a wide range that includes functions to handle network traffic based on the user context (e.g. normal or root). According to the android's  \href{https://developer.android.com/reference/android/net/VpnService}{\emph{official API documentation}}, the preferred approach towards network traffic interception is utilization of VpnService API. This API provides an active interception of network and internet traffic by routing the packets through a gateway (normally the default gateway of the device's NIC (Network Interface Card)). This implementation ensures that the commute of network packets takes place only through one communication path. As a result, inspection of network traffic can be carried out only on that gateway simplifying packet handling. 
 
-As shown in the following code snippet provided on android \href{https://developer.android.com/develop/connectivity/vpn}{\emph{developer wrbsite}}, android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them though the localhost address.
+As shown in the following code snippet provided on android \href{https://developer.android.com/develop/connectivity/vpn}{\emph{developer website}}, android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them though the localhost address.
 
 \begin{figure}[H]
 	\centering
@@ -52,6 +52,8 @@ Using this VPN the user will be able to:
 	\item Apply inbound and outbound rules.
 	\item Inject data into the commuting traffic.
 \end{itemize}
+
+
 
 In simpler terms, it acts as a virtual network adapter that android routes all the traffic through. This enables interception, monitoring, and packet modification before forwarding to its original destination.
 
