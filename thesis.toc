@@ -35,13 +35,13 @@
 \contentsline {subsection}{\numberline {4.2.4}Inter-Application Communication}{23}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Data Storage Agent and User Interface Layer}{23}{subsection.4.2.5}%
 \contentsline {section}{\numberline {4.3}Data Flow and Module Interaction}{24}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Design Justifications}{24}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Summary}{24}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Implementation}{25}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{26}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{27}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{28}{appendix.1.A}%
-\contentsline {chapter}{List of Figures}{29}{section*.20}%
-\contentsline {chapter}{List of Tables}{30}{section*.21}%
-\contentsline {chapter}{Bibliography}{31}{section*.22}%
+\contentsline {section}{\numberline {4.4}Design Decisions}{25}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Summary}{26}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Implementation}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Appendix}{30}{appendix.1.A}%
+\contentsline {chapter}{List of Figures}{31}{section*.20}%
+\contentsline {chapter}{List of Tables}{32}{section*.21}%
+\contentsline {chapter}{Bibliography}{33}{section*.22}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
