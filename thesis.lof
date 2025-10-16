@@ -5,17 +5,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Threat Detector UI based on initial idea}}{8}{figure.caption.3}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces VpnService Builder Implementation}}{9}{figure.caption.4}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Usage of VpnService API}}{9}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Extracting Destination IP Address from Raw Packets}}{10}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Usage of VpnService API}}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Defining Default Gateway}}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Reading Incoming/Outgoing Data}}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Extracting Destination IP Address from Raw Packets}}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Usage of VpnService API}}{13}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Screenshots from PCAPdroid}}{15}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Screenshots from AntMonitor Privacy-aware Architecture}}{16}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Screenshots from AntMonitor Logging Capabilities}}{17}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Screenshots from Mopeye}}{18}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Screenshots from PCAPdroid}}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Screenshots from AntMonitor Privacy-aware Architecture}}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Screenshots from AntMonitor Logging Capabilities}}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Screenshots from Mopeye}}{18}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Modular System Architecture of Threat Detector}}{22}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Threat Detector Flow Diagram}}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Modular System Architecture of Threat Detector}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Threat Detector Flow Diagram}}{24}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -6,15 +6,15 @@
 \label{chapter:design}
 
 \section{Overview}
-This chapter represents the design architecture of the proposed mobile network monitoring system, Threat Detector. This application aims to detect the potentially malicious network traffic on android devices with a passive packet sniffing approach. It is developed as an enhancement and an extension for the open-source applicaion PCAPdroid, integrating additional modules for IP reputation checking and application-to-ip mapping, while using the state-of-the-art user interface and user experience implementations to meet the design expectations of a modern application.
+This chapter represents the design architecture of the proposed mobile network monitoring system, Threat Detector. This application aims to detect the potentially malicious network traffic on android devices with a passive packet sniffing approach. It is developed as an enhancement and an extension for the open-source applicaion PCAPdroid, integrating additional modules for IP reputation checking and application-to-ip mapping, while using the state-of-the-art user interface and user experience implementations to meet the design expectations of a modern android application.
 
-As covered further in this chapter, overview elaborates on system components, depicting a modular approach that is employed to develop Threat Detector. It is then followed by some illustrations, explaining the application's function though the user of a flow diagram. Finally, the reasons behind those decisions are summarized.
+As covered further in this chapter, Overview elaborates on system components, depicting a modular approach that is employed to develop Threat Detector. It is then followed by some illustrations, explaining the application's function though the use of a flow diagram. Finally, the reasons behind those decisions are summarized.
 
 Application's architecture is designed based on three main objectives:
 
 \begin{itemize}
 	\item \textbf{Transparency:} Intercepting and logging of network traffic without altering or blocking the normal traffic flow.
-	\item \textbf{Association:} Accurately associating each network connection with the responsible application establishing it.
+	\item \textbf{Association:} Accurately associating each network connection with its originating application.
 	\item \textbf{Threat Detection:} Assessing the reputation of the destination IP address with the assistance of external IP intelligence sources such as AbuseIPDB.
 \end{itemize}
 
@@ -63,13 +63,13 @@ As shown in figure 4.1, the first layer is handled by the android operating syst
 
 
 \section{System Components}
-Threat Detector as a systems is composed of several independent stand-alone components responsible for a seamless functionality. 
+Threat Detector as a systems is composed of several independent stand-alone components responsible for a seamless functionality that follow the "Separation of Concerns" model for ease of debugging and further development. 
 
 
 \subsection{VPN-based packet Capture Module}
-This module establishes a virtual private network interface (through utilization of PCAPdroid) that captures the incoming and outgoing packets from user's applications without requiring root access on the android device. Raw captured packets are them immediately forwarded to the next module for further analysis while keeping the communications between endpoints alive.
+This module establishes a virtual private network interface (through utilization of PCAPdroid) that captures the incoming and outgoing packets from user's applications without requiring root access on the android device. Raw captured packets are then immediately forwarded to the next module for further analysis while keeping the communications between endpoints alive.
 
-The functions of this module are as followed.
+The functions of this module are as follows:
 \begin{itemize}
 	\item Initialization and maintenance of a virtual interface (tunnel interface).
 	\item Capturing raw packets from the device's network traffic while preventing the modification of the packets.
@@ -79,13 +79,13 @@ The functions of this module are as followed.
 %\clearpage
 
 \subsection{UID Resolver and Application Mapper}
-This module takes the responsibility of correlating raw captured packets with the originating android applications. Each packet commuting through the network has a retrievable UID that can be extracted using system calls. As the last step, this module employs android's PackageManager to map the UIDs to human-readable application package names.
+This module takes the responsibility of correlating raw captured packets with the originating android applications. Each packet commuting through the network has a retrievable UID that can be extracted using system calls. As the last step, this module employs android's \emph{PackageManager}\footnote{\url{https://developer.android.com/reference/android/content/pm/PackageManager}} to map the UIDs to human-readable application package names.
 
 
 \subsection{AbuseIPDB Reputation Checker}
-This component integrates the use of external threat intelligence sources such as AbuseIPDB by communicating to it via its provided API. For each of the unique IP addresses detected, it queries a reputation check determining whether the IP address has been reported as malicious/suspicious.
+This component integrates the use of external threat intelligence sources such as AbuseIPDB. For each of the unique IP addresses detected, it queries a reputation check determining whether the IP address has been reported as malicious/suspicious.
 
-Functions of this module are as followed.
+Functions of this module are as follows:
 \begin{itemize}
 	\item Sending HTTP requests to AbuseIPDB using its API querying IP's maliciousness.
 	\item Parsing the JSON response which contains IP's confidence score and report details.
@@ -93,7 +93,7 @@ Functions of this module are as followed.
 	\item Communicating reputation data with the UI layer for user depiction.
 \end{itemize}
 
-This module comes with some particular design considerations to match the effectiveness of the partner application PCAPdroid. The design considerations are as followed.
+This module comes with some the following design considerations:
 \begin{itemize}
 	\item Efficient querying avoiding redundant API calls.
 	\item Asynchronous execution of reputation checks to prevent UI blocking using an additional thread.
@@ -104,7 +104,7 @@ This module comes with some particular design considerations to match the effect
 \subsection{Inter-Application Communication}
 This module enables an enhanced architecture to include a local TCP servers for the communication between PCAPdroid and Threat Detector to take place. The captured data is then transferred between the two in a form of PCAP/PCAPNG file.
 
-Functions of this module are as followed.
+Functions of this module are as follows:
 \begin{itemize}
 	\item Creation and establishment of a TCP socket server within Threat Detector.
 	\item Transmission of captured packets from PCAPdroid to Threat Detector.
@@ -115,7 +115,7 @@ The aforementioned design ensure modularity and scalability. It allows Threat De
 
 
 \subsection{Data Storage Agent and User Interface Layer}
-This module is not only responsible to cache the most queried IP addresses in the application's RAM, but also stores the API key and user's data in \href{https://developer.android.com/training/data-storage/shared-preferences}{\emph{SharedPreferences}} for minimum reputation score.
+This module is not only responsible to cache the most queried IP addresses in the application's RAM, but also stores the API key and user's data in \emph{SharedPreferences}\footnote{\url{https://developer.android.com/training/data-storage/shared-preferences}}.
 
 
 \subsection*{User Interface}
@@ -131,7 +131,7 @@ Threat Detector's user interface presents network and threat information in an o
 
 
 \section{Data Flow and Module Interaction}
-The data flow follows a clear, linear path from packet capture in PCAPdroid to threat assessment in Threat Detector as depicted below.
+The data flow follows a clear path from packet capture in PCAPdroid to threat assessment in Threat Detector as depicted below.
 
 \begin{figure}[H]
 	\centering
@@ -148,7 +148,7 @@ The implementation this project follows to fulfill threat assessment, can be exp
 	\item \textbf{Packet Capture and Forwarding:} Packets are handed over to PCAPdroid processor for UID and destination IP address extraction, followed by mapping to the originating application.
 	\item \textbf{Reputation Check:} Destination IP addresses are queried against AbuseIPDB.
 	\item \textbf{Score Caching:} Destination IP address and its associated confidence score are stored in a map for faster future access and minimization of API calls.
-	\item \textbf{User Notification and Info Depiction:} The confidence score, IP report, and its originating application are depicted to the user. Afterwards, the score is checked against a minimum user-set value that consequently notifies the user if it is higher.
+	\item \textbf{User Notification and Info Depiction:} The confidence score, IP report, and its originating application are depicted to the user. Afterwards, the score is checked against a minimum user-set value that consequently notifies the user if it is higher than the set value.
 \end{itemize} 
 
 
