@@ -9,15 +9,15 @@
 \contentsline {section}{\numberline {1.4}Research Objectives}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Limitations of this Project}{4}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Method Overview}{5}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Structure of this Paper}{5}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Structure of this Article}{5}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Contributions of this Thesis}{6}{section.1.8}%
 \contentsline {chapter}{\numberline {2}Background}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Initial Idea}{7}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}VpnService API - Android's VPN Functionality}{8}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Application Name and Icon Extraction}{11}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Limitations and Problems}{11}{subsection.2.1.3}%
-\contentsline {subsubsection}{\nonumberline Routing Problem}{11}{section*.8}%
-\contentsline {subsubsection}{\nonumberline Application UID Extraction Problem}{12}{section*.9}%
+\contentsline {subsubsection}{\nonumberline Routing Problem}{11}{section*.7}%
+\contentsline {subsubsection}{\nonumberline Application UID Extraction Problem}{12}{section*.8}%
 \contentsline {section}{\numberline {2.2}How PCAPdroid already does it all}{12}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Integration with PCAPDroid}{13}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Related Work}{14}{chapter.3}%
@@ -38,10 +38,31 @@
 \contentsline {section}{\numberline {4.4}Design Decisions}{25}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Summary}{26}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Implementation}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{28}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{29}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{30}{appendix.1.A}%
-\contentsline {chapter}{List of Figures}{31}{section*.21}%
-\contentsline {chapter}{List of Tables}{32}{section*.22}%
-\contentsline {chapter}{Bibliography}{33}{section*.23}%
+\contentsline {section}{\numberline {5.1}Overview}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}System Architecture}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}VPN Capture Module}{29}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}VpnService Initialization}{29}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Packet Interception}{29}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Packet Processing Engine}{29}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Packet Parsing}{29}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Caching}{29}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}UID-to-Application Mapping}{29}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Retrieving Application UID}{29}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Resolving UID to Package Name}{29}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}AbuseIPDB Integration}{29}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}API Overview}{29}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Query Execution}{29}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Data Handling}{29}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Visualization}{29}{subsection.5.6.4}%
+\contentsline {section}{\numberline {5.7}User Interface Design}{29}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Performance Considerations}{29}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Efficiency of Packet Handling}{29}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Battery and Resource Management}{29}{subsection.5.8.2}%
+\contentsline {subsection}{\numberline {5.8.3}Security and Privacy}{29}{subsection.5.8.3}%
+\contentsline {section}{\numberline {5.9}Recap}{29}{section.5.9}%
+\contentsline {chapter}{\numberline {6}Evaluation and Discussion}{30}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{31}{chapter.7}%
+\contentsline {chapter}{List of Figures}{32}{section*.22}%
+\contentsline {chapter}{List of Tables}{33}{section*.23}%
+\contentsline {chapter}{Bibliography}{34}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

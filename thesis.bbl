@@ -1,9 +1,27 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Website(2025{\natexlab{a}})]{androidVpnBuilder}
+Android~Developer Website.
+\newblock Vpnservice vpn, 2025{\natexlab{a}}.
+\newblock URL \url{https://developer.Android.com/develop/connectivity/vpn}.
+\newblock Accessed: 25 October 2025.
+
+\bibitem[Website(2025{\natexlab{b}})]{PCAPdroidUserGuide}
+PCAPdroid Website.
+\newblock Pcapdroid user guide, 2025{\natexlab{b}}.
+\newblock URL \url{https://emanuele-f.github.io/PCAPdroid/quick_start.html}.
+\newblock Accessed: 25 October 2025.
+
+\bibitem[AthinaGroup(2025)]{AntmonitorWebsite}
+AthinaGroup.
+\newblock Antmonitor website, 2025.
+\newblock URL \url{https://athinagroup.eng.uci.edu/projects/antmonitor/}.
+\newblock Accessed: 25 October 2025.
 
 \bibitem[Wu et~al.(2016)Wu, Li, Chang, and
   Gao]{wu2016mopeyemonitoringperappnetwork}
@@ -11,5 +29,15 @@ Daoyuan Wu, Weichao Li, Rocky K.~C. Chang, and Debin Gao.
 \newblock Mopeye: Monitoring per-app network performance with zero measurement
   traffic, 2016.
 \newblock URL \url{https://arxiv.org/abs/1610.01282}.
+
+\bibitem[Wu et~al.(2017)Wu, Chang, Li, Cheng, and Gao]{203263}
+Daoyuan Wu, Rocky K.~C. Chang, Weichao Li, Eric K.~T. Cheng, and Debin Gao.
+\newblock {MopEye}: Opportunistic monitoring of per-app mobile network
+  performance.
+\newblock In \emph{2017 USENIX Annual Technical Conference (USENIX ATC 17)},
+  pages 445--457, Santa Clara, CA, July 2017. USENIX Association.
+\newblock ISBN 978-1-931971-38-6.
+\newblock URL
+  \url{https://www.usenix.org/conference/atc17/technical-sessions/presentation/wu}.
 
 \end{thebibliography}

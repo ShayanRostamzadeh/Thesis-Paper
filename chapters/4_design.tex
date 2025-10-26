@@ -6,7 +6,7 @@
 \label{chapter:design}
 
 \section{Overview}
-This chapter represents the design architecture of the proposed mobile network monitoring system, Threat Detector. This application aims to detect the potentially malicious network traffic on android devices with a passive packet sniffing approach. It is developed as an enhancement and an extension for the open-source applicaion PCAPdroid, integrating additional modules for IP reputation checking and application-to-ip mapping, while using the state-of-the-art user interface and user experience implementations to meet the design expectations of a modern android application.
+This chapter represents the design architecture of the proposed mobile network monitoring system, Threat Detector. This application aims to detect the potentially malicious network traffic on Android devices with a passive packet sniffing approach. It is developed as an enhancement and an extension for the open-source applicaion PCAPdroid, integrating additional modules for IP reputation checking and application-to-ip mapping, while using the state-of-the-art user interface and user experience implementations to meet the design expectations of a modern Android application.
 
 As covered further in this chapter, Overview elaborates on system components, depicting a modular approach that is employed to develop Threat Detector. It is then followed by some illustrations, explaining the application's function though the use of a flow diagram. Finally, the reasons behind those decisions are summarized.
 
@@ -20,7 +20,7 @@ Application's architecture is designed based on three main objectives:
 
 The overall structure of Threat Detector follows a modular design which ensures separation between packet capture, user interface, and data processing.
 
-As shown in figure 4.1, the first layer is handled by the android operating system which provides access to the applications' network traffic. Second layer is implemented by PCAPdroid that forwards all of the sniffed packets to a local gateway for centralized analysis. As the final layer that PCAPdroid is responsible for, data assembly layer builds the PCAP/PCAPNG files and transmits them to a local server using TCP. Subsequently, Threat Detector analyses the received data, queries AbuseIPDB for IP reputation, and notifies the user.
+As shown in \cref{fig:system_architecture_overview}, the first layer is handled by the Android operating system which provides access to the applications' network traffic. Second layer is implemented by PCAPdroid that forwards all of the sniffed packets to a local gateway for centralized analysis. As the final layer that PCAPdroid is responsible for, data assembly layer builds the PCAP/PCAPNG files and transmits them to a local server using TCP. Subsequently, Threat Detector analyses the received data, queries AbuseIPDB for IP reputation, and notifies the user.
 
 
 \begin{figure}[H]
@@ -56,7 +56,7 @@ As shown in figure 4.1, the first layer is handled by the android operating syst
 	
 			
 	\end{tikzpicture}
-	\caption{Modular System Architecture of Threat Detector}
+	\caption{Modular System Architecture of Threat Detector, Own Creation}
 	\label{fig:system_architecture_overview}
 \end{figure}
 
@@ -67,7 +67,7 @@ Threat Detector as a systems is composed of several independent stand-alone comp
 
 
 \subsection{VPN-based packet Capture Module}
-This module establishes a virtual private network interface (through utilization of PCAPdroid) that captures the incoming and outgoing packets from user's applications without requiring root access on the android device. Raw captured packets are then immediately forwarded to the next module for further analysis while keeping the communications between endpoints alive.
+This module establishes a virtual private network interface (through utilization of PCAPdroid) that captures the incoming and outgoing packets from user's applications without requiring root access on the Android device. Raw captured packets are then immediately forwarded to the next module for further analysis while keeping the communications between endpoints alive.
 
 The functions of this module are as follows:
 \begin{itemize}
@@ -79,7 +79,7 @@ The functions of this module are as follows:
 %\clearpage
 
 \subsection{UID Resolver and Application Mapper}
-This module takes the responsibility of correlating raw captured packets with the originating android applications. Each packet commuting through the network has a retrievable UID that can be extracted using system calls. As the last step, this module employs android's \emph{PackageManager}\footnote{\url{https://developer.android.com/reference/android/content/pm/PackageManager}} to map the UIDs to human-readable application package names.
+This module takes the responsibility of correlating raw captured packets with the originating Android applications. Each packet commuting through the network has a retrievable UID that can be extracted using system calls. As the last step, this module employs Android's \emph{PackageManager}\footnote{\url{https://developer.Android.com/reference/Android/content/pm/PackageManager}} to map the UIDs to human-readable application package names.
 
 
 \subsection{AbuseIPDB Reputation Checker}
@@ -115,7 +115,7 @@ The aforementioned design ensure modularity and scalability. It allows Threat De
 
 
 \subsection{Data Storage Agent and User Interface Layer}
-This module is not only responsible to cache the most queried IP addresses in the application's RAM, but also stores the API key and user's data in \emph{SharedPreferences}\footnote{\url{https://developer.android.com/training/data-storage/shared-preferences}}.
+This module is not only responsible to cache the most queried IP addresses in the application's RAM, but also stores the API key and user's data in \emph{SharedPreferences}\footnote{\url{https://developer.Android.com/training/data-storage/shared-preferences}}.
 
 
 \subsection*{User Interface}
@@ -125,18 +125,18 @@ Threat Detector's user interface presents network and threat information in an o
 %\begin{itemize}
 %	\item Simple, responsive, and modern layout.
 %	\item Clear visualization and notification off malicious indicators.
-%	\item Use of newly introduced approaches of UI implementation such as \href{https://developer.android.com/compose}{\emph{Jetpack Compose}} and \href{https://developer.android.com/develop/ui/compose/lists}{Lazy Column} for a performance.
+%	\item Use of newly introduced approaches of UI implementation such as \href{https://developer.Android.com/compose}{\emph{Jetpack Compose}} and \href{https://developer.Android.com/develop/ui/compose/lists}{Lazy Column} for a performance.
 %\end{itemize}
 
 
 
 \section{Data Flow and Module Interaction}
-The data flow follows a clear path from packet capture in PCAPdroid to threat assessment in Threat Detector as depicted below.
+The data flow (\cref{fig:Threat_Detector_Flow_Diagram}) follows a clear path from packet capture in PCAPdroid to threat assessment in Threat Detector as depicted below.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.55\textwidth]{Flow_Diagram.png}
-	\caption{Threat Detector Flow Diagram}
+	\caption{Threat Detector Flow Diagram, Own Creation}
 	\label{fig:Threat_Detector_Flow_Diagram}
 \end{figure}
 
@@ -157,7 +157,7 @@ Various design choices were made throughout this project to achieve performance 
 
 \begin{table}[H]
 	\centering
-	\caption{Design Decisions and Their Justifications}
+	\caption{Design Decisions and Their Justifications, Own Creation}
 	\label{tab:design_decisions}
 	\begin{tabular}{p{4cm} p{10cm}}
 		\toprule
@@ -203,9 +203,9 @@ Various design choices were made throughout this project to achieve performance 
 
 
 \section{Summary}
-The design architecture presented in this chapter provides a reliable foundation for packet capture, application network monitoring, and threat detection on android devices. 
+The design architecture presented in this chapter provides a reliable foundation for packet capture, application network monitoring, and threat detection on Android devices. 
 
-Threat Detector's modular design facilitates easy updates and further development to implement additional APIs and features. Moreover, the use of VpnService ensures compatibility with various android versions while preventing the need for root access when it comes to packet interception and application UID extraction.
+Threat Detector's modular design facilitates easy updates and further development to implement additional APIs and features. Moreover, the use of VpnService ensures compatibility with various Android versions while preventing the need for root access when it comes to packet interception and application UID extraction.
 
 
 

@@ -98,7 +98,51 @@ Web:~{\small
 % Include Graphic-files:
 \usepackage{graphicx}
 % Include PDF links
-%\usepackage{listings}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+
+\lstset{
+	basicstyle=\ttfamily\footnotesize,
+	breaklines=true,
+	breakatwhitespace=true,
+	columns=flexible,
+	xleftmargin=0pt,
+	xrightmargin=0pt,
+	frame=none,       % remove box
+	numbers=left,     % optional: line numbers
+	numberstyle=\tiny\color{gray},
+	captionpos=b,
+	keywordstyle=\color{blue}\bfseries,
+	commentstyle=\color{gray!70}\ttfamily,
+	stringstyle=\color{orange}\ttfamily,
+	texcl=false,
+	literate={ }{{ }}1,
+	upquote=true
+}
+
+
+\lstdefinelanguage{Kotlin}{
+	morekeywords={
+		as,break,class,continue,do,else,false,for,fun,if,in,is,null,object,
+		package,return,super,this,throw,true,try,typealias,val,var,when,while
+	},
+	keywordstyle=\color{blue}\bfseries,
+	sensitive=true,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{gray}\ttfamily,
+	stringstyle=\color{orange}\ttfamily,
+	morestring=[b]",
+	basicstyle=\ttfamily\small,
+	backgroundcolor=\color{gray!5},
+	frame=single,
+	breaklines=true,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	captionpos=b
+}
+
+
 \usepackage{float}
 \usepackage{pgfplots}
 \usepackage{multirow}
@@ -285,9 +329,9 @@ Advisor: & \advisor \\ % German: Betreuer:
 \input{chapters/6_evaluation}
 \input{chapters/7_conclusions}
 
-\begin{appendices}
-\input{chapters/A_appendix}
-\end{appendices}
+%\begin{appendices}
+%%\input{chapters/A_appendix}
+%\end{appendices}
 
 
 

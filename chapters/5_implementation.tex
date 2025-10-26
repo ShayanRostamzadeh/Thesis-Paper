@@ -4,3 +4,74 @@
 
 \chapter{Implementation}
 \label{chapter:implementation}
+
+\section{Overview}
+This chapter explains the practical implementation of Threat Detector, which is a functionality extension of the open-source application PCAPdroid. The main objective of this implementation was to design a passive network monitoring solution that is capable of identifying the source application and the destination IP address of outbound internet packets, followed by an assessment of the potential risks those connections might bring along using AbuseIPDB as a threat intelligence platform.
+
+The practical implementation of Threat Detector follows a modular architecture that separates the responsibilities of packet capture and processing, data retrieval, and visualization. Unlike PCAPdroid and similar solutions that focus on low-level packet capture and forwarding, Threat Detector does not implement its own VPN-based interception. Instead of doing so, it operates as a server application for PCAPdroid as its client through a local TCP server, which receives real-time information in JSON format. This design and the subsequent implementation ensures Threat Detector remains lightweight and modular while keeping the focusness on data retrieval and presentation of network intelligence rather than traffic interception and manipulation.
+
+The following sections describe the Threat Detector's system architecture, its internal components, and the integration with AbuseIPDB alongside the communication interface with PCAPdroid.
+
+\section{System Architecture}
+\todo{fix this section}
+The functional architecture of Threat Detector is based on a client-server model that entirely runs locally on the android device. In this constellation, PCAPdroid acts as data provider that captures and exports network data while Threat Detector functions as a data consumer which receives, processes and queries the information. This communication and query takes place using JSON transfer and the provided AbuseIPDB API.
+
+\cref{fig:Threat_Detector_Sys_Arch_Pseudo_code} shows a superficial illustration of data transfer between PCAPdroid and Threat Detector in Pseudo-code format.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 1\textwidth]{TCP Data Transfer Pseudo Code.png}
+	\caption{Threat Detector TCP Data Transfer Pseudo Code, Own Creation}
+	\label{fig:Threat_Detector_Sys_Arch_Pseudo_code}
+\end{figure}
+
+
+\subsection*{High Level Design}
+The architecture is divided into five logical and subsequent modules:
+\begin{itemize}
+	\item \textbf{TCP communication module} which takes the responsibility of establishment and maintenance of socket connection to PCAPdroid.
+	\item \textbf{JSON parsing engine} which converts packet data into well-structured objects to read from.
+	\item \textbf{UID-to-Application resolver} that associates the generated traffic with the originating application.
+	\item \textbf{AbuseIPDB integration module} that carries out remote IP reputation lookups and caches the results.
+	\item \textbf{User interface module} presenting the analysed data and highlighting potentially malicious connections.
+\end{itemize}
+
+
+
+
+\section{VPN Capture Module}
+\subsection{VpnService Initialization}
+\subsection{Packet Interception}
+
+
+\section{Packet Processing Engine}
+\subsection{Packet Parsing}
+\subsection{Caching}
+
+
+\section{UID-to-Application Mapping}
+\subsection{Retrieving Application UID}
+\subsection{Resolving UID to Package Name}
+
+
+\section{AbuseIPDB Integration}
+\subsection{API Overview}
+\subsection{Query Execution}
+\subsection{Data Handling}
+\subsection{Visualization}
+
+
+\section{User Interface Design}
+
+
+
+\section{Performance Considerations}
+\subsection{Efficiency of Packet Handling}
+\subsection{Battery and Resource Management}
+\subsection{Security and Privacy}
+
+
+
+\section{Recap}
+
+
