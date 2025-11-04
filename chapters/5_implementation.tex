@@ -13,65 +13,174 @@ The practical implementation of Threat Detector follows a modular architecture t
 The following sections describe the Threat Detector's system architecture, its internal components, and the integration with AbuseIPDB alongside the communication interface with PCAPdroid.
 
 \section{System Architecture}
-\todo{fix this section}
-The functional architecture of Threat Detector is based on a client-server model that entirely runs locally on the android device. In this constellation, PCAPdroid acts as data provider that captures and exports network data while Threat Detector functions as a data consumer which receives, processes and queries the information. This communication and query takes place using JSON transfer and the provided AbuseIPDB API.
+Threat Detector's system architecture consists of four main layers:
 
-\cref{fig:Threat_Detector_Sys_Arch_Pseudo_code} shows a superficial illustration of data transfer between PCAPdroid and Threat Detector in Pseudo-code format.
+\begin{enumerate}
+	\item \textbf{Traffic capture layer} which is handled by PCAPdroid using Android's VpnService API to capture network traffic and subsequently build a PCAP file based upon the captured information. 
+	\item \textbf{Data transport layer}, handled by Threat Detector which is responsible for transmission of the captured data from PCAPdroid to Threat Detector using a local TCP socket.
+	\item \textbf{Threat analysis layer}, implemented in Threat Detector which parses the data, queries AbuseIPDB, and assesses the reputation score.
+	\item \textbf{Presentation layer} that is the graphical user interface responsible for depiction of the results and configuration options to the user/administrator.
+\end{enumerate}
+
+In this constellation, PCAPdroid acts as a data aggregator, while Threat Detector functions as a data processing and visualization unit.
+
+figure \cref{fig:architecture} shows this flow:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 1\textwidth]{TCP Data Transfer Pseudo Code.png}
-	\caption{Threat Detector TCP Data Transfer Pseudo Code, Own Creation}
-	\label{fig:Threat_Detector_Sys_Arch_Pseudo_code}
+	\begin{tikzpicture}[
+		node distance=1.5cm,
+		every node/.style={align=center, font=\sffamily},
+		process/.style={rectangle, rounded corners, draw=black, thick, minimum width=3.5cm, minimum height=1cm, fill=blue!10},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw=black, thick, fill=green!10, minimum height=1cm, minimum width=3.5cm},
+		external/.style={rectangle, draw=black, thick, dashed, fill=gray!10, minimum width=3.5cm, minimum height=1cm},
+		arrow/.style={thick, ->, >=stealth}
+		]
+		
+		% Nodes
+		\node[external] (network) {Device Network Stack};
+		\node[process, below=of network] (pcapdroid) {PCAPdroid\\(VpnService + Packet Capture)};
+		\node[process, below=of pcapdroid] (tcp) {TCP Exporter\\(PCAP/PCAPNG Stream)};
+		\node[process, below=of tcp] (threatdetector) {Threat Detector App\\(TCP Server + Parser)};
+		\node[process, below=of threatdetector] (abuseipdb) {AbuseIPDB API Query};
+		\node[io, below=of abuseipdb] (ui) {User Interface\\(Results Display)};
+		
+		% Arrows
+		\draw[arrow] (network) -- (pcapdroid);
+		\draw[arrow] (pcapdroid) -- (tcp);
+		\draw[arrow] (tcp) -- (threatdetector);
+		\draw[arrow] (threatdetector) -- (abuseipdb);
+		\draw[arrow] (abuseipdb) -- (ui);
+		
+		% Side label
+		\node[align=left, right=1cm of tcp] (note) {
+			\small \textbf{Local Communication:}\\
+			TCP connection on 127.0.0.1:1234\\
+			PCAPdroid → Threat Detector
+		};
+		
+	\end{tikzpicture}
+	\caption{Overall system architecture showing the data flow from packet capture by PCAPdroid to IP reputation analysis by Threat Detector.}
+	\label{fig:architecture}
 \end{figure}
 
 
-\subsection*{High Level Design}
-The architecture is divided into five logical and subsequent modules:
+\section{Development Environment and Setup}
+The implementation and the development of Threat Detector was carried out using Android Studio(Narwhal 3 Feature Drop | 2025.1.3) with target SDK (Software Development Kit) version 34 in mind. This project is programmed primarily in Kotlin providing modern language features and improved coroutine support for better asynchronous network operations. Moreover, this implementation also utilises Android's \emph{Jetpack Compose}\footnote{\url{https://developer.android.com/compose}} which is the state-of-the-art Android's recommended toolkit for building native UI. It centralizes the back-end and frond-end code simplifying the management of UI updates based on changes that take place on the back-end side.
+
+Development of Threat Detector follows \emph{MVVM (Model-View-Viewmodel)}\footnote{\url{https://en.wikipedia.org/wiki/Model\%E2\%80\%93view\%E2\%80\%93viewmodel}} which is a modern architectural pattern in computer software that separates the development of a graphical user interface (view) and the business or back-end login (model). According to \emph{Android's developer website}\footnote{\url{https://developer.android.com/topic/libraries/architecture/viewmodel}}, by using instance state mechanism provided by view model, the data is not destroyed upon configuration changes such as navigation between various activities. This ensures data persistent and addresses the configuration change issues that utilizing plain-class-approach introduces.
+
+Testing was performed on a physical device (Samsung Galaxy S22 - Android 15) using the standard APIs available through Android Studio and the following external/third-party APIs:
+
 \begin{itemize}
-	\item \textbf{TCP communication module} which takes the responsibility of establishment and maintenance of socket connection to PCAPdroid.
-	\item \textbf{JSON parsing engine} which converts packet data into well-structured objects to read from.
-	\item \textbf{UID-to-Application resolver} that associates the generated traffic with the originating application.
-	\item \textbf{AbuseIPDB integration module} that carries out remote IP reputation lookups and caches the results.
-	\item \textbf{User interface module} presenting the analysed data and highlighting potentially malicious connections.
+	\item \textbf{OKhttp\footnote{\url{https://github.com/square/okhttp}} \& Retrofit\footnote{\url{https://github.com/square/retrofit}}} for HTTP communication with AbuseIPDB.
+	\item \textbf{GSON\footnote{\url{https://github.com/google/gson}}} for JSON parsing.
+	\item \textbf{Material-Component\footnote{\url{https://m3.material.io/components}}} for user interface design.
 \end{itemize}
 
+Threat Detector targets Android 12 (API 31) and above to ensure compatibility with the majority of Android devices in use and alignment with new Android's permission and network models.
 
 
+\section{PCAPdroid Configuration and Data Export}
+In this setup PCAPdroid is configured to capture all the network traffic using its internal Android's VpnService implementation. This application supports multiple data export options including file-based (e.g. PCAP/PCAPNG)and network-based exports. For this approach, the TCP exporter and PCAP file format were selected.
 
-\section{VPN Capture Module}
-\subsection{VpnService Initialization}
-\subsection{Packet Interception}
+The TCP exporter feature provided by PCAPdroid continuously streams packets in real time over a TCP connection socket. 
+
+To activate the above-mentioned features, the user should specify:
+\begin{itemize}
+	\item \textbf{Export protocol}: TCP
+	\item \textbf{Host}: 127.0.0.1 (local TCP Server)
+	\item \textbf{Port}: 1234 (default port used in PCAPdroid's setting)
+	\item \textbf{Format}: PCAP (PCAPdroid extensions should be activated in the captures section)
+	\item \textbf{Interval}: None (Continues reception)
+\end{itemize} 
+
+After implementing the adjustments mentioned above, when PCAPdroid is launched and activated, it automatically connects to the TCP server established by Threat Detector and continuously transmits captured data as soon as a session begins.
+
+\clearpage
+
+\section{TCP Server Implementation in Threat Detector}
+One of the core functionalities of Threat Detector is its TCP server running locally on the Android device. It listens on the incoming connections on a specified port (default set to 1234) and handles each connection request in a separate thread and an associated coroutine ensuring reliable responsiveness and performance.
+
+Simplified version of the server implementation can be viewed in figure \cref{fig:Threat_Detector_Server_Pseudo_code} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 1\textwidth]{TCP Server Psuducode.png}
+	\caption{Threat Detector TCP Server Pseudo Code, Own Creation}
+	\label{fig:Threat_Detector_Server_Pseudo_code}
+\end{figure}
+
+As shown in the figure above, when a connection is established, a coroutine (\texttt{GlobalScope} in this example) starts the continues reception of data in PCAP file format. This is implemented using the \texttt{handleClient()} method to extract the low-level information such as destination IP address, timestamps, ports, protocols, and UIDs.
+
+%Here a coroutine is used instead of a thread for a better performance and less overhead. Coroutines are lightweight and ensure a substantially improved performance when it comes to handling asynchronous tasks on Android.
 
 
-\section{Packet Processing Engine}
-\subsection{Packet Parsing}
-\subsection{Caching}
+\section{Parsing of Packet Data}
+Even thought the packets arrive in PCAP format, when the PCAP extensions is activated, the received data should be reconstructed. This can be carried out with the help of a custom parser developed based on the  \emph{documentations}\footnote{\url{https://emanuele-f.github.io/PCAPdroid/advanced_features\#45-pcapdroid-extensions}} provided for third-party usage by locating the trailer magic number. After the reception of a packet, the parser reconstructs PCAP packet information into a readable format for ease of data extraction.
+
+\cref{fig:Full_Packet_Dump} shows extracted information including destination IP address alongside HEX-encoded values such as destination port number, source IP address, and the IP payload being the application UID.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{Full_Packet_Dump.png}
+	\caption{PCAP File Packet Dump, Own Creation}
+	\label{fig:Full_Packet_Dump}
+\end{figure}
 
 
-\section{UID-to-Application Mapping}
-\subsection{Retrieving Application UID}
-\subsection{Resolving UID to Package Name}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{FAANG_IP_Addresses.png}
+	\caption{Method To Check IPs Against FAANG Addresses, Own Creation}
+	\label{fig:FAANG_IP_Addresses}
+\end{figure}
+
+In \cref{fig:Full_Packet_Dump} the extracted information including the destination IP addresses are added to a queue for further analysis and queries from AbuseIPDB.
+
+Worth to mention that the IP addresses are cached to prevent redundant API calls and they are filtered against FAANG (Facebook-Meta, Apple, Amazon, Netflix, Google) IP addresses that are frequently utilised by third-party applications to save API calls. This is illustrated in \cref{fig:FAANG_IP_Addresses}.
 
 
-\section{AbuseIPDB Integration}
-\subsection{API Overview}
-\subsection{Query Execution}
-\subsection{Data Handling}
-\subsection{Visualization}
+\section{Integration With AbuseIPDB API}
+\emph{AbuseIPDB}\footnote{\url{https://www.abuseipdb.com/}} service provides a RESTful API to check the maliciousness of the IP addresses based on their public reports. Threat Detector uses this API to determine whether an IP address is potentially malicious.
+
+The way Threat Detector queries the IP addresses is as follows:
+
+\vspace{0.5cm}
+
+\begin{lstlisting}[language=bash]
+GET https://api.abuseipdb.com/api/v2/check?ipAddress={IP}&maxAgeInDays=90
+
+Headers: "Key"
+Key: <API key>
+Accept: application/json
+\end{lstlisting}
+
+\vspace{0.5cm}
+
+\cref{fig:OKHTTP_Builder} shows how the HTTP query is built in Threat Detector.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 1\textwidth]{OKHTTP_Builder.png}
+	\caption{Querying IP Address using HTTP GET Method, Own Creation}
+	\label{fig:OKHTTP_Builder}
+\end{figure}
 
 
-\section{User Interface Design}
+AbuseIPDB responses vary based on the type of request sent to the server. Different types of requests can be found in the official \emph{AbuseIPDB documentation}\footnote{\url{https://docs.abuseipdb.com/?shell\#introduction}}. 
 
+The request used by Threat Detector is "CHECK endpoint" which yields the following JSON response as shown in \cref{fig:AbuseIPDB_Check_endpoint_response.png}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 1\textwidth]{AbuseIPDB_Check_endpoint_response.png}
+	\caption{An Example of AbuseIPDB JSON Response \cite{AbuseIPDBDocumentation}}
+	\label{fig:AbuseIPDB_Check_endpoint_response.png}
+\end{figure}
 
-\section{Performance Considerations}
-\subsection{Efficiency of Packet Handling}
-\subsection{Battery and Resource Management}
-\subsection{Security and Privacy}
+The reputation score, marked as \texttt{abuseConfidenceScore}, is then compared with a user-defined threshold stored in \texttt{SharedPreferences}. If the score exceeds the defined threshold, it is flagged as potentially malicious and is then followed by a notification process to inform the user.
 
-
-
-\section{Recap}
+\section{Data Storage and Application Configuration}
 
 
