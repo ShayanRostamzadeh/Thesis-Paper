@@ -1,0 +1,73 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_GB
+% !TeX root = ../thesis.tex
+
+\chapter{Setup with PCAPdroid}
+\label{chapter:setup}
+
+This chapter demonstrates the setup and the adjustments required for the correct functionality and data transmission that takes place between Threat Detector and PCAPdroid. These adjustments are vital for the correct integration between the two applications for capturing the device's network traffic and forwarding it to Threat Detector for further analysis including the IP reputation checks.
+
+The steps are as follows:
+\begin{enumerate}
+	\item Open PCAPdroid and select TCP exporter from the Traffic Dump drop-down menu located in the status page as shown in \cref{fig:Traffic_dump_TCP_exporter}. This option enables PCAPdroid to transmit the captured data using a TCP connection that will be later used by Threat Detector.
+	\item Go to the settings page by clicking on the gear icon located on top right of the application main page and make sure the collector IP address is set to 127.0.0.1 and the collector port is 1234 as shown in \cref{fig:PCAPdroid_Collector_Setting}. These parameters define the communication endpoint for the traffic data stream sent from PCAPdroid to Threat Detector. The port number can be changed based on the user’s preference or network configuration if needed.
+	\item In the settings page, scroll down to the capture section and activate \emph{PCAPdroid extensions} radio button as shown in \cref{fig:PCAPdroid_Capture_Settings}. Enabling this feature ensures the PCAP file include additional data such as packet UID.
+	\item Open Threat Detector and go to the settings page by clicking the gear button located on top right part of Monitor page and Enter the corresponding AbuseIPDB API key and modify the other settings if needed and click save settings as shown in \cref{fig:Settings_Page}.
+	\item Go back to the Monitor page and start the server by clicking the corresponding button located in the middle of the page as shown in \cref{fig:Monitor_Page}. The server then becomes active and starts listening on the specified port in the user preferences.
+	\item Once the server is active, a list of the applications that contribute to the device's network traffic will appear in the Logs page as shown in \cref{fig:Log_Page}.
+\end{enumerate}
+
+These instructions can be implemented by the screenshots from PCAPdroid and Threat Detector as shown below:
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{PCAPdroid Traffic Dump Options.jpg}
+		\caption{Traffic Dump Options}
+		\label{fig:Traffic_dump_TCP_exporter}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{PCAPdroid_Collector_Settings.jpg}
+		\caption{Collector Settings}
+		\label{fig:PCAPdroid_Collector_Setting}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{PCAPdroid Capture Settings.jpg}
+		\caption{Capture Settings}
+		\label{fig:PCAPdroid_Capture_Settings}
+	\end{subfigure}
+	\caption{Adjusting PCAPdroid's Settings, Self Taken} 
+	\label{fig:PCAPdroid Traffic Dump and Exporter Settings}
+%	\cite{PCAPdroidUserGuide}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Settings_Page.jpg}
+		\caption{Settings Page}
+		\label{fig:Settings_Page}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Monitor_Page.jpg}
+		\caption{Monitor Page}
+		\label{fig:Monitor_Page}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Logs_Page.jpg}
+		\caption{Logs Page}
+		\label{fig:Log_Page}
+	\end{subfigure}
+	\caption{Setting up Threat Detector, Own Creation} 
+	\label{fig:Setting_up_Threat_Detector}
+\end{figure}
+
