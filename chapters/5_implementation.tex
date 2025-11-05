@@ -182,5 +182,135 @@ The request used by Threat Detector is "CHECK endpoint" which yields the followi
 The reputation score, marked as \texttt{abuseConfidenceScore}, is then compared with a user-defined threshold stored in \texttt{SharedPreferences}. If the score exceeds the defined threshold, it is flagged as potentially malicious and is then followed by a notification process to inform the user.
 
 \section{Data Storage and Application Configuration}
+Threat Detector uses Android's \texttt{SharedPreferences}\footnote{\url{https://developer.android.com/training/data-storage/shared-preferences}} to store user's preferences on the device. 
+
+These Preferences are as follows:
+\begin{itemize}
+	\item TCP server port
+	\item Minimum Confidence Score that user considers to be malicious
+	\item AbuseIPDB API key 
+\end{itemize}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{Threat_Detector_Settings_Page.jpg}
+	\caption{Threat Detector Saved Preferences, Own Creation}
+	\label{fig:Threat_Detector_Settings_Page}
+\end{figure}
+
+Android's \texttt{SharedPreferences} utilises a dictionary approach to store reusable and modifiable data onto the Android device. It requires a \emph{Key} and an associated \emph{Value} that will be stored in the application data folder. The use of \texttt{SharePreeferences} is feasible when there is a small collection of information that does not justify the employment of a local database such as \emph{Room}\footnote{\url{https://developer.android.com/training/data-storage/room/}} which simplifies the implementation of an SQL database to store application-related information.
+
+\cref{fig:SharedPreferences_Code} shows the use of \texttt{SharedPreferences} in Threat Detector.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 1\textwidth]{SharedPreferences_Code.png}
+	\caption{Threat Detector SharedPreferences Kotlin Code, Own Creation}
+	\label{fig:SharedPreferences_Code}
+\end{figure}
+
+This approach of storing settings and preferences avoids the complexity of establishment and management of a local database, for the application is designed to be lightweight.
+
+
+\section{User Interface Implementation}
+Threat Detector's user interface was designed based on \emph{Material Design 3}\footnote{\url{https://m3.material.io/}}. It is Google's open-source design system for building UI components with vibrant colours, contrasting shapes, flexible typography, and intuitive motion.
+
+\clearpage
+
+Threat Detector's interface consists of the following sections:
+\begin{itemize}
+	\item \textbf{Monitor Page - \cref{fig:Monitor_Page.jpg}:} provides the functionality to start/stop the local TCP server alongside depicting the server activation status and user-defined IP confidence score.
+	\item \textbf{Logs Page - \cref{fig:Logs_Page}:} provides user with a scrollable list of the applications that attempted to communicate with external IP addresses. Each list Entry shows the application name and icon along with the IP address and its confidence score.
+	\item \textbf{IP Details Page - \cref{fig:IP_Details_Page}:} depicts additional information regarding the queried IP address including the countries that the IP address has been reported in, categories of attack, source port, etc. 
+	\item \textbf{API Exhaustion Page - \cref{fig:IP_Exhaustion_Page}:} it appears as a notification page when the user has exhausted the free daily API calls from AbuseIPDB.
+	\item \textbf{Settings Page - \cref{fig:SharedPreferences_Code}:} it is used to save user's preferences such as TCP server port, API key, and minimum IP confidence score.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Monitor_Page.jpg}
+		\caption{Monitor Page}
+		\label{fig:Monitor_Page.jpg}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Logs_Page.jpg}
+		\caption{Logs Page}
+		\label{fig:Logs_Page}
+	\end{subfigure}
+	\centering
+	\caption{Screenshots from Threat Detector, Own Creation}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{IP_Details_Page.jpg}
+		\caption{IP Details Page}
+		\label{fig:IP_Details_Page}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{IP_Exhaustion_Page.jpg}
+		\caption{IP Exhaustion Page}
+		\label{fig:IP_Exhaustion_Page}
+	\end{subfigure}
+	\centering
+	\caption{Screenshots from Threat Detector, Own Creation}
+\end{figure}
+
+The user interface components update dynamically as new incoming data is registered by the TCP server. This includes the real time automatic updates to modify the items shown in Logs page, the colour change indicating the listening status in Monitor page, and the illustration of IP Exhaustion Page as a pop-up when the user runs out of free API calls.
+
+\section{Communication Flow and Synchronization}
+The communication between Threat Detector and its companion application, PCAPdroid, takes place in a purely local context. The TCP connection socket is established through a loopback interface provided by Android's basic APIs, which ensures that no external component is involved. The server runs in a background thread, so that managing its lifecycle and configuration changes do not block the main UI thread leading to performance flaws.
+
+In the case that PCAPdroid disconnects, stops capturing, or even stops data transmission, the server automatically cleans up the socket and its associated stream buffers and waits for new connection requests. Moreover, error handling routines are also taken into consideration for detection of malformed packets and connection timeouts.
+
+\section{Security and Privacy Consideration}
+Threat Detector is designed with conservation of user's privacy in mind. All the captured network data is processed locally and nothing is uploaded to an external server, except AbuseIPDB which is strictly IP-based and does not contain any personal identifiers/information.
+
+Some additional precautions include:
+\begin{itemize}
+	\item Secure storage of the API key in private application folder.
+	\item Local communication is restricted to local host (127.0.0.1). 
+	\item Use of HTTPS for external queries from AbuseIPDB.
+	\item No conservation of raw PCAP data than real-time analysis.
+\end{itemize}
+
+
+\section{Performance Optimization}
+Since Threat Detector operates in real time, efficiency of the operations were of concern.
+
+To ensure an optimized functionality, the following strategies were adopted:
+
+\begin{itemize}
+	\item Asynchronous querying of AbuseIPDB utilising background threads to prevent UI blockage.
+	\item Caching of the recent IP lookups to avoid redundant requests.
+	\item Custom lightweight parsing of PCAP metadata instead of a full reconstruction of the packets.
+	\item Use of \texttt{InputStream} and buffers to implement thread-safe queues for data reception.
+\end{itemize}
+
+\section{Limitations}
+In spite of the successful implementation of Threat Detector, this application introduces some fundamental limitations that can be of importance for further development of such monitoring and reputation-checking solution.
+
+The limitations are as follows:
+\begin{itemize}
+	\item Threat Detector is an extension for PCAPdroid meaning that it is totally dependent on PCAPdroid for packet capture and PCAP file construction; Threat Detector cannot operate independently and requires the installation of PCAPdroid on the same device.
+	\item AbuseIPDB free subscription enforces query rate limits (1000 queries per day), which restricts large-scale monitoring. However, this limitation can be solved by subscribing to paid plans.
+	\item Payload content inspection is not carried out since most of the applications use encryption (e.g. TLS/SSL) between endpoints.
+	\item Use of \texttt{SharedPreferences} rather than a dedicated database restricts historical tracking of the modifications carried out on stored preferences.
+\end{itemize}
+
+\section{Summary}
+The implementation of Threat Detector and its integration with PCAPdroid provide a practical solution for monitoring and assessing the network traffic on Android devices. Its modular design allows further development and integration with other security tools that make use of TCP connections for data transmission. It successfully leverages AbuseIPDB's reputation intelligence and effectively bridges the gap between low-level packet capture and real-time threat awareness and user notification.
+
+While Threat Detector is a lightweight and privacy-preserving solution that implements threat intelligence, it lays the foundation for several enhancements such as IP blocking, application-specific payload visualization, and AI-based anomaly detection. 
+
+Overall, this project illustrates the feasibility of real-time mobile traffic analysis in the form of a hybrid approach using open-source tools and external reputation-checking databases.
+
 
 
