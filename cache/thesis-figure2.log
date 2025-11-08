@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  8 NOV 2025 20:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  8 NOV 2025 19:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**./thesis.tex
+**\def\tikzexternalrealjob{thesis}\input{thesis}
 (thesis.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbook.cls
 Document Class: scrbook 2025/08/28 v3.47 KOMA-Script document class (book)
 
@@ -153,13 +150,10 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count284
 Class scrbook Info: Redefining `\numberline' on input line 7533.
 \bibindent=\dimen148
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
@@ -175,18 +169,14 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -194,8 +184,8 @@ Package xcolor Info: Driver file: pdftex.def on input line 274.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.lt
+x)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -207,12 +197,10 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xargs\xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (
+C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
 )
@@ -230,8 +218,8 @@ Package: todonotes 2024/01/05
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.
 sty
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
 y
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
@@ -245,20 +233,18 @@ y
 \pgfutil@abb=\box55
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+code.tex (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revi
+sion.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+sty (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.s
+ty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
@@ -497,8 +483,8 @@ y
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
 ty
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+.code.tex)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pg
+fmath.sty
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex))
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
@@ -552,8 +538,7 @@ File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count311
 \calc@Bcount=\count312
@@ -567,15 +552,13 @@ LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Cskip=\skip68
 )
 \c@@todonotes@numberoftodonotes=\count314
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count315
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count316
 \c@@ppsavesec=\count317
@@ -599,8 +582,8 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
+y
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count319
 )
@@ -609,15 +592,12 @@ Couldn't patch \@startsection
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks35
 \inpenc@posthook=\toks36
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count320
 \lst@gtempboxa=\box66
 \lst@token=\toks37
@@ -630,17 +610,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \lst@newlines=\count324
 \lst@lineno=\count325
 \lst@maxwidth=\dimen270
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 \c@lstnumber=\count326
 \lst@skipnumbers=\count327
 \lst@framebox=\box67
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
@@ -648,19 +625,17 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 11
 6.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count328
 \float@exts=\toks38
 \float@box=\box68
 \@float@everytoks=\toks39
 \@floatcapt=\box69
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.rev
 ision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -786,32 +761,27 @@ File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+))) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.s
+ty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip71
 \multirow@cntb=\count336
 \multirow@dima=\skip72
 \bigstrutjot=\dimen285
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip73
-
 For additional information on amsmath, use the `?' option.
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks47
 \ex@=\dimen286
-))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen287
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count337
@@ -861,19 +831,16 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks51
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks52
 \thm@bodyfont=\toks53
@@ -884,9 +851,8 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip77
 \thm@headsep=\skip78
 \dth@everypar=\toks57
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty (C:
+\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2025-08-13 L3 programming layer (loader) 
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
@@ -901,7 +867,6 @@ e.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
 ))
 Class scrbook Info: amsthm's \deferred@thm@head patched.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTleft=\skip79
@@ -922,11 +887,9 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LT@p@ftn=\toks58
 )
 Class scrbook Info: longtable captions redefined on input line 155.
-
 (pgf-pie.sty
 Package: pgf-pie 2011/10/02 v0.2 Some LaTeX macros for pie chart by using PGF/T
 ikz package.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
 \pgfpie@angleEnd=\skip83
 \c@pgfpie@explodeLength=\count355
@@ -936,19 +899,16 @@ ikz package.
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
 
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.st
+y
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen296
@@ -957,7 +917,6 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \AM@pagewidth=\dimen298
 \AM@pageheight=\dimen299
 \AM@fboxrule=\dimen300
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
@@ -1039,8 +998,7 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \colbreak@box=\box125
 \mc@col@check@num=\count370
 \g__mc_curr_col_int=\count371
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
@@ -1064,8 +1022,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 Package: extarrows 2020/03/12 v1.2.0 Some extensible arrows
 ) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/tools\hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip87
 \enit@outerparindent=\dimen318
@@ -1075,7 +1032,6 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitdp@description=\count374
 )
 \c@mtpage=\count375
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen319
@@ -1101,8 +1057,8 @@ Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.st
+y
 Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
@@ -1148,8 +1104,7 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \extratabsurround=\skip88
 \backup@length=\skip89
 \ar@cellbox=\box131
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
@@ -1172,13 +1127,10 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
@@ -1196,7 +1148,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \@linkdim=\dimen348
 \Hy@linkcounter=\count383
 \Hy@pagecounter=\count384
- (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
@@ -1204,7 +1156,7 @@ Now handling font encoding PD1 ...
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count385
- (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -1220,7 +1172,6 @@ Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count386
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen349
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -1244,7 +1195,6 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count390
 )
 Package hyperref Info: Driver: hpdftex.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count391
@@ -1262,8 +1212,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip90
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -1304,11 +1253,9 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?)
 on input line 2078.
 \U@D=\dimen352
 \l@unhyphenated=\language79
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count394
-
 *************************************
 * Local config file bblopts.cfg used
 *
@@ -1331,18 +1278,14 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-))
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/isodate\isodate.sty
+)) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/isodate\isodate.sty
 Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count395
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/isodate\english.idf
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/isodate\english.idf
 File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
 )
-
 Define commands for English date format
 )
 \c@iso@tmpmonth=\count396
@@ -1353,8 +1296,7 @@ Define commands for English date format
 \c@iso@@slash=\count401
 \c@iso@@minus=\count402
 \c@iso@@dot=\count403
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip91
 \mylen=\skip92
@@ -1365,8 +1307,8 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pxx=\skip97
 )
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer/libra
-ries\tikzlibraryexternal.code.tex
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+ries\tikzlibraryexternal.code.tex (C:\Users\shaya\AppData\Local\Programs\MiKTeX
+\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -1450,12 +1392,14 @@ aryarrows.code.tex
 File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \arrowsize=\dimen353
 ))
-\openout3 = `thesis.auxlock'.
+No auxiliary output files.
 
+\w@pgfexternal@auxout=\write4
+Package TikZ externalization: calling \geometry{driver=none} during externaliza
+tion.
 
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen354
@@ -1507,7 +1451,6 @@ File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 )
@@ -1532,9 +1475,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (thesis.aux)
-\openout1 = `thesis.aux'.
-
+No file cache/thesis-figure2.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 250.
 LaTeX Font Info:    ... okay on input line 250.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 250.
@@ -1563,11 +1504,9 @@ Package scrbase Info: activating english \listfigurename on input line 250.
 Package scrbase Info: activating english \listtablename on input line 250.
 Package scrbase Info: activating english \bibname on input line 250.
 Package scrbase Info: activating english \indexname on input line 250.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: \Gm@driver 
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1617,7 +1556,6 @@ ii
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
@@ -1647,18 +1585,18 @@ Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 etadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
 F (HO)
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
+\providecommand\hyper@newdestlabel[2]{}
 Package hyperref Info: Link coloring OFF on input line 250.
-
 isodate: babel.sty has been loaded
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package csquotes Info: Making character " active on input line 250.
+\providecommand\BKM@entry[2]{}
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
 58.
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
@@ -1666,25 +1604,21 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
 258.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
 258.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
 258.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
 258.
-
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1700,11 +1634,13 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 258.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 258.
-<img/logouni_en.png, id=6, 369.7815pt x 113.7048pt>
-File: img/logouni_en.png Graphic file (type png)
-<use img/logouni_en.png>
-Package pdftex.def Info: img/logouni_en.png  used on input line 259.
-(pdftex.def)             Requested size: 184.9429pt x 56.8696pt.
+The command '\includegraphics [width=6.5cm]{img/logouni_en.png}' has been optim
+ized away. Use '/tikz/external/optimize=false' to disable this.
+
+Overfull \hbox (44.68631pt too wide) in paragraph at lines 258--262
+ [] 
+ []
+
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 301.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1719,17 +1655,8 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 301.
 
 
-[1
+(legals.tex
 
-
-{C:/Users/shaya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/shay
-a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./img/logouni_en.
-png>] (legals.tex
-
-[2
-
-
-]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 52.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
@@ -1751,26 +1678,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--54
 
 
 
-[3
+) (chapters/0_abstract.tex)
+
+No file cache/thesis-figure2.toc.
 
 
-]) (chapters/0_abstract.tex)
-
-[4
-
-
-] (thesis.toc
-
-[5
-
-
-])
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
-
-
-
-[6] (chapters/1_introduction.tex
+(chapters/1_introduction.tex
 chapter 1.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1797,35 +1710,24 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 6--6
 
 
 
-[1
-
-
-
-]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 27.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 27.
 
 
-[2]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 3
 4.
- (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 
-[3
 
-]
 
-[4]
 
-[5
 
-]) (chapters/2_background.tex
+) (chapters/2_background.tex
 
-[6]
 chapter 2.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1843,78 +1745,64 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 [][][][][][][][][]  
  []
 
-<App - Monitor Page.png, id=203, 522.45187pt x 872.50969pt>
-File: App - Monitor Page.png Graphic file (type png)
-<use App - Monitor Page.png>
-Package pdftex.def Info: App - Monitor Page.png  used on input line 23.
-(pdftex.def)             Requested size: 195.18813pt x 325.9655pt.
-<App - Logs Page.png, id=204, 522.45187pt x 871.75688pt>
-File: App - Logs Page.png Graphic file (type png)
-<use App - Logs Page.png>
-Package pdftex.def Info: App - Logs Page.png  used on input line 29.
-(pdftex.def)             Requested size: 195.18813pt x 325.68425pt.
+
+LaTeX Warning: Reference `fig:Threat Detector UI based on initial idea' on page
+ 1 undefined on input line 17.
+
+The command '\includegraphics [width = \textwidth ]{App - Monitor Page.png}' ha
+s been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{App - Logs Page.png}' has b
+een optimized away. Use '/tikz/external/optimize=false' to disable this.
 
 
-[7
+The command '\includegraphics [width = \textwidth ]{VpnService Builder Code Sni
+ppet.png}' has been optimized away. Use '/tikz/external/optimize=false' to disa
+ble this.
+
+Package natbib Warning: Citation `androidVpnBuilder' on page 8 undefined on inp
+ut line 46.
 
 
-]
-<VpnService Builder Code Snippet.png, id=215, 915.42pt x 316.18124pt>
-File: VpnService Builder Code Snippet.png Graphic file (type png)
-<use VpnService Builder Code Snippet.png>
-Package pdftex.def Info: VpnService Builder Code Snippet.png  used on input lin
-e 45.
-(pdftex.def)             Requested size: 398.33865pt x 137.58115pt.
+Package natbib Warning: Citation `androidVpnBuilder' on page 8 undefined on inp
+ut line 46.
+
+The command '\includegraphics [width = 0.8\textwidth ]{Initial idea VpnService 
+API - 1.png}' has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+The command '\includegraphics [width = 0.8\textwidth ]{Initial idea VpnService 
+API - 2.png}' has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:Defining Default Gateway' on page 1 undefined on 
+input line 96.
 
 
-[8 <./App - Monitor Page.png> <./App - Logs Page.png>]
-<Initial idea VpnService API - 1.png, id=226, 868.74562pt x 740.7675pt>
-File: Initial idea VpnService API - 1.png Graphic file (type png)
-<use Initial idea VpnService API - 1.png>
-Package pdftex.def Info: Initial idea VpnService API - 1.png  used on input lin
-e 84.
-(pdftex.def)             Requested size: 318.67213pt x 271.72862pt.
-<Initial idea VpnService API - 2.png, id=227, 720.44156pt x 624.83438pt>
-File: Initial idea VpnService API - 2.png Graphic file (type png)
-<use Initial idea VpnService API - 2.png>
-Package pdftex.def Info: Initial idea VpnService API - 2.png  used on input lin
-e 91.
-(pdftex.def)             Requested size: 318.67213pt x 276.37717pt.
+LaTeX Warning: Reference `fig:Reading Incoming/Outgoing Data' on page 1 undefin
+ed on input line 96.
 
 
-[9 <./VpnService Builder Code Snippet.png> <./Initial idea VpnService API - 1.p
-ng>]
-<Initial idea VpnService API - 3.png, id=239, 624.83438pt x 322.20375pt>
-File: Initial idea VpnService API - 3.png Graphic file (type png)
-<use Initial idea VpnService API - 3.png>
-Package pdftex.def Info: Initial idea VpnService API - 3.png  used on input lin
-e 100.
-(pdftex.def)             Requested size: 318.67213pt x 164.33156pt.
+
+The command '\includegraphics [width = 0.8\textwidth ]{Initial idea VpnService 
+API - 3.png}' has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 
-[10 <./Initial idea VpnService API - 2.png> <./Initial idea VpnService API - 3.
-png>]
 
-[11
-
-]
-<PCAPdroid Traffic Dump Options.jpg, id=257, 813.0375pt x 1702.10907pt>
-File: PCAPdroid Traffic Dump Options.jpg Graphic file (type jpg)
-<use PCAPdroid Traffic Dump Options.jpg>
-Package pdftex.def Info: PCAPdroid Traffic Dump Options.jpg  used on input line
- 162.
-(pdftex.def)             Requested size: 148.07726pt x 310.01851pt.
-<PCAPdroid Capture Settings.jpg, id=258, 813.0375pt x 1699.85063pt>
-File: PCAPdroid Capture Settings.jpg Graphic file (type jpg)
-<use PCAPdroid Capture Settings.jpg>
-Package pdftex.def Info: PCAPdroid Capture Settings.jpg  used on input line 168
-.
-(pdftex.def)             Requested size: 148.27576pt x 310.01851pt.
+LaTeX Warning: Reference `fig:Extracting Destination IP Address from Raw Packet
+s' on page 1 undefined on input line 107.
 
 
-[12]) (chapters/3_related.tex
 
-[13 <./PCAPdroid Traffic Dump Options.jpg> <./PCAPdroid Capture Settings.jpg>]
+The command '\includegraphics [height=0.48\textheight , keepaspectratio]{PCAPdr
+oid Traffic Dump Options.jpg}' has been optimized away. Use '/tikz/external/opt
+imize=false' to disable this.
+The command '\includegraphics [height=0.48\textheight , keepaspectratio]{PCAPdr
+oid Capture Settings.jpg}' has been optimized away. Use '/tikz/external/optimiz
+e=false' to disable this.
+
+
+) (chapters/3_related.tex
+
 chapter 3.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1934,82 +1822,95 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[14
+
+LaTeX Warning: Reference `fig:PCAPdroid_Scressnshots' on page 1 undefined on in
+put line 22.
+
+The command '\includegraphics [width = \textwidth ]{PCAPdroid_Connections_Scree
+nshot.jpg}' has been optimized away. Use '/tikz/external/optimize=false' to dis
+able this.
+The command '\includegraphics [width = \textwidth ]{PCAPdroid_Connection_Detail
+s_Screenshot.jpg}' has been optimized away. Use '/tikz/external/optimize=false'
+ to disable this.
+
+Package natbib Warning: Citation `PCAPdroidUserGuide' on page 14 undefined on i
+nput line 38.
 
 
-]
-<PCAPdroid_Connections_Screenshot.jpg, id=278, 502.74783pt x 1005.49565pt>
-File: PCAPdroid_Connections_Screenshot.jpg Graphic file (type jpg)
-<use PCAPdroid_Connections_Screenshot.jpg>
-Package pdftex.def Info: PCAPdroid_Connections_Screenshot.jpg  used on input li
-ne 28.
-(pdftex.def)             Requested size: 159.33302pt x 318.66597pt.
-<PCAPdroid_Connection_Details_Screenshot.jpg, id=279, 154.176pt x 308.352pt>
-File: PCAPdroid_Connection_Details_Screenshot.jpg Graphic file (type jpg)
-<use PCAPdroid_Connection_Details_Screenshot.jpg>
-Package pdftex.def Info: PCAPdroid_Connection_Details_Screenshot.jpg  used on i
-nput line 34.
-(pdftex.def)             Requested size: 159.33302pt x 318.66945pt.
+Package natbib Warning: Citation `PCAPdroidUserGuide' on page 14 undefined on i
+nput line 38.
 
 
-[15 <./PCAPdroid_Connections_Screenshot.jpg> <./PCAPdroid_Connection_Details_Sc
-reenshot.jpg>]
-<AntMonitor_Privacy_Exposure_History.png, id=292, 578.16pt x 1027.84pt>
-File: AntMonitor_Privacy_Exposure_History.png Graphic file (type png)
-<use AntMonitor_Privacy_Exposure_History.png>
-Package pdftex.def Info: AntMonitor_Privacy_Exposure_History.png  used on input
- line 61.
-(pdftex.def)             Requested size: 107.55313pt x 191.19821pt.
-<AntMonitor_Privacy_Exposure_Report.png, id=293, 1445.4pt x 2569.6pt>
-File: AntMonitor_Privacy_Exposure_Report.png Graphic file (type png)
-<use AntMonitor_Privacy_Exposure_Report.png>
-Package pdftex.def Info: AntMonitor_Privacy_Exposure_Report.png  used on input 
-line 67.
-(pdftex.def)             Requested size: 107.55313pt x 191.18254pt.
+
+
+LaTeX Warning: Reference `fig:AntMonitor Privacy-aware Architecture' on page 1 
+undefined on input line 55.
+
+The command '\includegraphics [width = \textwidth ]{AntMonitor_Privacy_Exposure
+_History.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
+disable this.
+The command '\includegraphics [width = \textwidth ]{AntMonitor_Privacy_Exposure
+_Report.png}' has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 3579) in paragraph at lines 68--68
 [][][]|\T1/ppl/m/n/9 Pri-vacy Ex-po-sure Re-
  []
 
-<AntMonitor_Privacy_Exposure_Info.png, id=294, 578.16pt x 1027.84pt>
-File: AntMonitor_Privacy_Exposure_Info.png Graphic file (type png)
-<use AntMonitor_Privacy_Exposure_Info.png>
-Package pdftex.def Info: AntMonitor_Privacy_Exposure_Info.png  used on input li
-ne 74.
-(pdftex.def)             Requested size: 107.55313pt x 191.19821pt.
+The command '\includegraphics [width = \textwidth ]{AntMonitor_Privacy_Exposure
+_Info.png}' has been optimized away. Use '/tikz/external/optimize=false' to dis
+able this.
+
+Package natbib Warning: Citation `AntmonitorWebsite' on page 15 undefined on in
+put line 78.
 
 
-[16 <./AntMonitor_Privacy_Exposure_History.png> <./AntMonitor_Privacy_Exposure_
-Report.png> <./AntMonitor_Privacy_Exposure_Info.png>]
-<AntMonitor_Log_Contribution_Settings.png, id=307, 578.16pt x 1027.84pt>
-File: AntMonitor_Log_Contribution_Settings.png Graphic file (type png)
-<use AntMonitor_Log_Contribution_Settings.png>
-Package pdftex.def Info: AntMonitor_Log_Contribution_Settings.png  used on inpu
-t line 90.
-(pdftex.def)             Requested size: 195.18813pt x 346.99866pt.
-<AntMonitor_Logs_Applications.png, id=308, 578.16pt x 1027.84pt>
-File: AntMonitor_Logs_Applications.png Graphic file (type png)
-<use AntMonitor_Logs_Applications.png>
-Package pdftex.def Info: AntMonitor_Logs_Applications.png  used on input line 9
-6.
-(pdftex.def)             Requested size: 195.18813pt x 346.99866pt.
+Package natbib Warning: Citation `AntmonitorWebsite' on page 15 undefined on in
+put line 78.
 
 
-[17 <./AntMonitor_Log_Contribution_Settings.png> <./AntMonitor_Logs_Application
-s.png>]
-<MopEye_1.png, id=322, 1084.05pt x 1303.87125pt>
-File: MopEye_1.png Graphic file (type png)
-<use MopEye_1.png>
-Package pdftex.def Info: MopEye_1.png  used on input line 121.
-(pdftex.def)             Requested size: 195.18813pt x 234.76628pt.
-<MopEye_2.png, id=323, 1084.05pt x 1304.875pt>
-File: MopEye_2.png Graphic file (type png)
-<use MopEye_2.png>
-Package pdftex.def Info: MopEye_2.png  used on input line 127.
-(pdftex.def)             Requested size: 195.18813pt x 234.947pt.
+LaTeX Warning: Reference `fig:AntMonitor Logging Features' on page 1 undefined 
+on input line 84.
+
+The command '\includegraphics [width = \textwidth ]{AntMonitor_Log_Contribution
+_Settings.png}' has been optimized away. Use '/tikz/external/optimize=false' to
+ disable this.
+The command '\includegraphics [width = \textwidth ]{AntMonitor_Logs_Application
+s.png}' has been optimized away. Use '/tikz/external/optimize=false' to disable
+ this.
+
+Package natbib Warning: Citation `AntmonitorWebsite' on page 15 undefined on in
+put line 100.
 
 
-[18 <./MopEye_1.png> <./MopEye_2.png>]
+Package natbib Warning: Citation `AntmonitorWebsite' on page 15 undefined on in
+put line 100.
+
+
+Package natbib Warning: Citation `wu2016mopeyemonitoringperappnetwork' on page 
+15 undefined on input line 111.
+
+
+
+
+LaTeX Warning: Reference `fig:Screenshots_from_Mopeye' on page 1 undefined on i
+nput line 115.
+
+The command '\includegraphics [width = \textwidth ]{MopEye_1.png}' has been opt
+imized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{MopEye_2.png}' has been opt
+imized away. Use '/tikz/external/optimize=false' to disable this.
+
+Package natbib Warning: Citation `203263' on page 16 undefined on input line 13
+1.
+
+
+Package natbib Warning: Citation `203263' on page 16 undefined on input line 13
+1.
+
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 165--165
 []|\T1/ppl/b/n/10 Requires
  []
@@ -2046,11 +1947,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--165
 
 
 
-[19
+) (chapters/4_design.tex
 
-]) (chapters/4_design.tex
-
-[20]
 chapter 4.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -2068,30 +1966,25 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 [][][][][][][][][]  
  []
 
-===== Image 'cache/thesis-figure0' is up-to-date. ======
 
-Overfull \hbox (16.38477pt too wide) in paragraph at lines 28--59
- [][] 
- []
+LaTeX Warning: Reference `fig:system_architecture_overview' on page 1 undefined
+ on input line 23.
 
-
-
-[21
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 
-]
-
-[22 <./cache/thesis-figure0.pdf>]
-<Flow_Diagram.png, id=375, 432.61626pt x 1044.90375pt>
-File: Flow_Diagram.png Graphic file (type png)
-<use Flow_Diagram.png>
-Package pdftex.def Info: Flow_Diagram.png  used on input line 138.
-(pdftex.def)             Requested size: 219.08746pt x 529.16298pt.
 
 
-[23]
 
-[24 <./Flow_Diagram.png>]
+LaTeX Warning: Reference `fig:Threat_Detector_Flow_Diagram' on page 1 undefined
+ on input line 134.
+
+The command '\includegraphics [width = 0.55\textwidth ]{Flow_Diagram.png}' has 
+been optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+
+
 Underfull \hbox (badness 4621) in paragraph at lines 166--166
 []|\T1/ppl/m/n/10 Use of \T1/cmtt/m/n/10 VPNService \T1/ppl/m/n/10 in-
  []
@@ -2108,13 +2001,8 @@ Overfull \hbox (23.99992pt too wide) in paragraph at lines 162--200
 
 
 
-[25
+) (chapters/5_implementation.tex
 
-]) (chapters/5_implementation.tex
-
-[26
-
-]
 chapter 5.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -2134,107 +2022,114 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 
-[27
+
+LaTeX Warning: Reference `fig:architecture' on page 1 undefined on input line 2
+7.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 
-]
-===== Image 'cache/thesis-figure1' is up-to-date. ======
 
 
-[28 <./cache/thesis-figure1.pdf>]
 
-[29]
-<TCP Server Psuducode.png, id=515, 757.32938pt x 665.48625pt>
-File: TCP Server Psuducode.png Graphic file (type png)
-<use TCP Server Psuducode.png>
-Package pdftex.def Info: TCP Server Psuducode.png  used on input line 109.
-(pdftex.def)             Requested size: 398.33865pt x 350.0354pt.
+LaTeX Warning: Reference `fig:Threat_Detector_Server_Pseudo_code' on page 1 und
+efined on input line 105.
 
+The command '\includegraphics [width = 1\textwidth ]{TCP Server Psuducode.png}'
+ has been optimized away. Use '/tikz/external/optimize=false' to disable this.
 
-[30
+LaTeX Warning: Reference `fig:Full_Packet_Dump' on page 1 undefined on input li
+ne 122.
 
- <./TCP Server Psuducode.png>]
-<Full_Packet_Dump.png, id=526, 958.3303pt x 517.18219pt>
-File: Full_Packet_Dump.png Graphic file (type png)
-<use Full_Packet_Dump.png>
-Package pdftex.def Info: Full_Packet_Dump.png  used on input line 126.
-(pdftex.def)             Requested size: 318.67213pt x 171.97275pt.
-<FAANG_IP_Addresses.png, id=527, 838.63312pt x 838.63312pt>
-File: FAANG_IP_Addresses.png Graphic file (type png)
-<use FAANG_IP_Addresses.png>
-Package pdftex.def Info: FAANG_IP_Addresses.png  used on input line 134.
-(pdftex.def)             Requested size: 318.67213pt x 318.6711pt.
+The command '\includegraphics [width = 0.8\textwidth ]{Full_Packet_Dump.png}' h
+as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = 0.8\textwidth ]{FAANG_IP_Addresses.png}'
+ has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:Full_Packet_Dump' on page 1 undefined on input li
+ne 139.
 
 
-[31 <./Full_Packet_Dump.png> <./FAANG_IP_Addresses.png>]
+LaTeX Warning: Reference `fig:FAANG_IP_Addresses' on page 1 undefined on input 
+line 141.
+
+
+
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-(C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+) (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-<OKHTTP_Builder.png, id=542, 722.7pt x 260.47313pt>
-File: OKHTTP_Builder.png Graphic file (type png)
-<use OKHTTP_Builder.png>
-Package pdftex.def Info: OKHTTP_Builder.png  used on input line 165.
-(pdftex.def)             Requested size: 398.33865pt x 143.5667pt.
-<AbuseIPDB_Check_endpoint_response.png, id=546, 752.0597pt x 688.07062pt>
-File: AbuseIPDB_Check_endpoint_response.png Graphic file (type png)
-<use AbuseIPDB_Check_endpoint_response.png>
-Package pdftex.def Info: AbuseIPDB_Check_endpoint_response.png  used on input l
-ine 177.
-(pdftex.def)             Requested size: 398.33865pt x 364.45522pt.
+
+LaTeX Warning: Reference `fig:OKHTTP_Builder' on page 1 undefined on input line
+ 161.
+
+The command '\includegraphics [width = 1\textwidth ]{OKHTTP_Builder.png}' has b
+een optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:AbuseIPDB_Check_endpoint_response.png' on page 1 
+undefined on input line 173.
+
+The command '\includegraphics [width = 1\textwidth ]{AbuseIPDB_Check_endpoint_r
+esponse.png}' has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Package natbib Warning: Citation `AbuseIPDBDocumentation' on page 28 undefined 
+on input line 178.
 
 
-[32 <./OKHTTP_Builder.png>]
-<Threat_Detector_Settings_Page.jpg, id=566, 1084.05pt x 1157.32375pt>
-File: Threat_Detector_Settings_Page.jpg Graphic file (type jpg)
-<use Threat_Detector_Settings_Page.jpg>
-Package pdftex.def Info: Threat_Detector_Settings_Page.jpg  used on input line 
-197.
-(pdftex.def)             Requested size: 199.16933pt x 212.61815pt.
+Package natbib Warning: Citation `AbuseIPDBDocumentation' on page 28 undefined 
+on input line 178.
+
+The command '\includegraphics [width = 0.5\textwidth ]{Threat_Detector_Settings
+_Page.jpg}' has been optimized away. Use '/tikz/external/optimize=false' to dis
+able this.
 
 
-[33 <./AbuseIPDB_Check_endpoint_response.png>]
-<SharedPreferences_Code.png, id=577, 1043.39813pt x 207.02344pt>
-File: SharedPreferences_Code.png Graphic file (type png)
-<use SharedPreferences_Code.png>
-Package pdftex.def Info: SharedPreferences_Code.png  used on input line 208.
-(pdftex.def)             Requested size: 398.33865pt x 79.03615pt.
+
+LaTeX Warning: Reference `fig:SharedPreferences_Code' on page 1 undefined on in
+put line 204.
+
+The command '\includegraphics [width = 1\textwidth ]{SharedPreferences_Code.png
+}' has been optimized away. Use '/tikz/external/optimize=false' to disable this
+.
 
 
-[34 <./Threat_Detector_Settings_Page.jpg> <./SharedPreferences_Code.png>]
-<Monitor_Page.jpg, id=594, 1084.05pt x 2348.775pt>
-File: Monitor_Page.jpg Graphic file (type jpg)
-<use Monitor_Page.jpg>
-Package pdftex.def Info: Monitor_Page.jpg  used on input line 234.
-(pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
-<Logs_Page.jpg, id=595, 1084.05pt x 2348.775pt>
-File: Logs_Page.jpg Graphic file (type jpg)
-<use Logs_Page.jpg>
-Package pdftex.def Info: Logs_Page.jpg  used on input line 240.
-(pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
-<IP_Details_Page.jpg, id=596, 1084.05pt x 2348.775pt>
-File: IP_Details_Page.jpg Graphic file (type jpg)
-<use IP_Details_Page.jpg>
-Package pdftex.def Info: IP_Details_Page.jpg  used on input line 252.
-(pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
-<IP_Exhaustion_Page.jpg, id=597, 1084.05pt x 2348.775pt>
-File: IP_Exhaustion_Page.jpg Graphic file (type jpg)
-<use IP_Exhaustion_Page.jpg>
-Package pdftex.def Info: IP_Exhaustion_Page.jpg  used on input line 258.
-(pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
+
+LaTeX Warning: Reference `fig:Monitor_Page.jpg' on page 1 undefined on input li
+ne 223.
 
 
-[35
+LaTeX Warning: Reference `fig:Logs_Page' on page 1 undefined on input line 224.
 
- <./Monitor_Page.jpg> <./Logs_Page.jpg>]
 
-[36 <./IP_Details_Page.jpg> <./IP_Exhaustion_Page.jpg>]
 
-[37]) (chapters/6_setup.tex
+LaTeX Warning: Reference `fig:IP_Details_Page' on page 1 undefined on input lin
+e 225.
 
-[38]
+
+LaTeX Warning: Reference `fig:IP_Exhaustion_Page' on page 1 undefined on input 
+line 226.
+
+
+LaTeX Warning: Reference `fig:SharedPreferences_Code' on page 1 undefined on in
+put line 227.
+
+The command '\includegraphics [width = \textwidth ]{Monitor_Page.jpg}' has been
+ optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{Logs_Page.jpg}' has been op
+timized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{IP_Details_Page.jpg}' has b
+een optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{IP_Exhaustion_Page.jpg}' ha
+s been optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+
+
+
+) (chapters/6_setup.tex
+
 chapter 6.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -2252,44 +2147,48 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 [][][][][][][][][]  
  []
 
-File: PCAPdroid Traffic Dump Options.jpg Graphic file (type jpg)
-<use PCAPdroid Traffic Dump Options.jpg>
-Package pdftex.def Info: PCAPdroid Traffic Dump Options.jpg  used on input line
- 27.
-(pdftex.def)             Requested size: 127.47128pt x 266.86292pt.
-<PCAPdroid_Collector_Settings.jpg, id=623, 813.0375pt x 1703.61469pt>
-File: PCAPdroid_Collector_Settings.jpg Graphic file (type jpg)
-<use PCAPdroid_Collector_Settings.jpg>
-Package pdftex.def Info: PCAPdroid_Collector_Settings.jpg  used on input line 3
-3.
-(pdftex.def)             Requested size: 127.47128pt x 267.09897pt.
-File: PCAPdroid Capture Settings.jpg Graphic file (type jpg)
-<use PCAPdroid Capture Settings.jpg>
-Package pdftex.def Info: PCAPdroid Capture Settings.jpg  used on input line 40.
 
-(pdftex.def)             Requested size: 127.47128pt x 266.50882pt.
+LaTeX Warning: Reference `fig:Traffic_dump_TCP_exporter' on page 1 undefined on
+ input line 12.
 
 
-[39
+LaTeX Warning: Reference `fig:PCAPdroid_Collector_Setting' on page 1 undefined 
+on input line 13.
 
 
-]
-<Settings_Page.jpg, id=636, 593.21625pt x 1284.8pt>
-File: Settings_Page.jpg Graphic file (type jpg)
-<use Settings_Page.jpg>
-Package pdftex.def Info: Settings_Page.jpg  used on input line 53.
-(pdftex.def)             Requested size: 127.47128pt x 276.06978pt.
-File: Monitor_Page.jpg Graphic file (type jpg)
-<use Monitor_Page.jpg>
-Package pdftex.def Info: Monitor_Page.jpg  used on input line 59.
-(pdftex.def)             Requested size: 127.47128pt x 276.17822pt.
-File: Logs_Page.jpg Graphic file (type jpg)
-<use Logs_Page.jpg>
-Package pdftex.def Info: Logs_Page.jpg  used on input line 66.
-(pdftex.def)             Requested size: 127.47128pt x 276.17822pt.
+LaTeX Warning: Reference `fig:PCAPdroid_Capture_Settings' on page 1 undefined o
+n input line 14.
+
+
+LaTeX Warning: Reference `fig:Settings_Page' on page 1 undefined on input line 
+15.
+
+
+LaTeX Warning: Reference `fig:Monitor_Page' on page 1 undefined on input line 1
+6.
+
+
+LaTeX Warning: Reference `fig:Log_Page' on page 1 undefined on input line 17.
+
+The command '\includegraphics [width = \textwidth ]{PCAPdroid Traffic Dump Opti
+ons.jpg}' has been optimized away. Use '/tikz/external/optimize=false' to disab
+le this.
+The command '\includegraphics [width = \textwidth ]{PCAPdroid_Collector_Setting
+s.jpg}' has been optimized away. Use '/tikz/external/optimize=false' to disable
+ this.
+The command '\includegraphics [width = \textwidth ]{PCAPdroid Capture Settings.
+jpg}' has been optimized away. Use '/tikz/external/optimize=false' to disable t
+his.
+
+
+The command '\includegraphics [width = \textwidth ]{Settings_Page.jpg}' has bee
+n optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{Monitor_Page.jpg}' has been
+ optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width = \textwidth ]{Logs_Page.jpg}' has been op
+timized away. Use '/tikz/external/optimize=false' to disable this.
 ) (chapters/7_evaluation.tex
 
-[40 <./PCAPdroid_Collector_Settings.jpg> <./Settings_Page.jpg>]
 chapter 7.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -2308,22 +2207,37 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
  []
 
 
-
-[41
-
-
-]
-===== Image 'cache/thesis-figure2' is up-to-date. ======
+LaTeX Warning: Reference `fig:PCAPdroid Traffic Dump and Exporter Settings' on 
+page 1 undefined on input line 29.
 
 
-[42 <./cache/thesis-figure2.pdf>]
-===== Image 'cache/thesis-figure3' is up-to-date. ======
-===== Image 'cache/thesis-figure4' is up-to-date. ======
+
+
+LaTeX Warning: Reference `fig:usability_ratings' on page 1 undefined on input l
+ine 33.
+
+\openout4 = `cache/thesis-figure2.dpth'.
+
+Package pgfplots info on input line 60: Using 'lua backend=false' for axis: x c
+oord trafo unsupported.
+[36
+
+\providecommand \oddpage@label [2]{}
+\babel@aux{english}{}
+{C:/Users/shaya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/shay
+a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+
+LaTeX Warning: Reference `fig:IP_Details_Page' on page 1 undefined on input lin
+e 79.
+
+
+LaTeX Warning: Reference `fig:UI_clarity' on page 1 undefined on input line 81.
+
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 ) (chapters/8_conclusions.tex
 
-[43 <./cache/thesis-figure3.pdf> <./cache/thesis-figure4.pdf>]
-
-[44]
 chapter 8.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -2343,67 +2257,43 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 )
 
-[45
+No file cache/thesis-figure2.lof.
 
 
-] (thesis.lof)
-\tf@lof=\write5
-\openout5 = `thesis.lof'.
+No file cache/thesis-figure2.lot.
 
 
+No file cache/thesis-figure2.bbl.
 
-[46
+Package natbib Warning: There were undefined citations.
 
+\@writefile{toc}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 
+\@writefile{lof}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 
+\@writefile{lot}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 
-] (thesis.lot)
-\tf@lot=\write6
-\openout6 = `thesis.lot'.
-
-
-
-[47
-
-
-
-
-] (thesis.bbl)
-
-[48
-
-
-
-
-] (thesis.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 49850 strings out of 468133
- 1134665 string characters out of 5430712
- 1912919 words of memory out of 5000000
- 77397 multiletter control sequences out of 15000+600000
- 674040 words of font info for 137 fonts, out of 8000000 for 9000
+ 49674 strings out of 468133
+ 1133061 string characters out of 5430712
+ 1901504 words of memory out of 5000000
+ 77449 multiletter control sequences out of 15000+600000
+ 667947 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,11n,121p,11211b,1346s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
-1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt0800.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecsx1200.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecsx1000.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\shaya\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ectt0900.pk><C:/Users/shaya/AppData/Local/Programs/Mi
-KTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/shaya/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (54 pages, 3843684 bytes).
+ 129i,13n,124p,11245b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a
+.pfb>
+Output written on cache/thesis-figure2.pdf (1 page, 22128 bytes).
 PDF statistics:
- 1296 PDF objects out of 1440 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 662 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 1 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
