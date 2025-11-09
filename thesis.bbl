@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -40,7 +40,16 @@ Daoyuan Wu, Rocky K.~C. Chang, Weichao Li, Eric K.~T. Cheng, and Debin Gao.
 \newblock URL
   \url{https://www.usenix.org/conference/atc17/technical-sessions/presentation/wu}.
 
-\bibitem[AbuseIPDB()]{AbuseIPDBDocumentation}
+\bibitem[AbuseIPDB(2025)]{AbuseIPDBDocumentation}
 AbuseIPDB.
+\newblock Abuseipdbdocumentation website, 2025.
+\newblock URL \url{https://docs.abuseipdb.com/?shell#check-endpoint}.
+\newblock Accessed: 25 November 2025.
+
+\bibitem[Splunk(2025)]{Splunk}
+Splunk.
+\newblock Splunk website, 2025.
+\newblock URL \url{https://www.splunk.com/}.
+\newblock Accessed: 9 November 2025.
 
 \end{thebibliography}

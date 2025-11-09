@@ -57,8 +57,11 @@
 \contentsline {section}{\numberline {7.1}Assessment Methodology}{41}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Usability Evaluation}{42}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Functional Evaluation}{43}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Conclusion}{45}{chapter.8}%
-\contentsline {chapter}{List of Figures}{46}{section*.38}%
-\contentsline {chapter}{List of Tables}{47}{section*.39}%
-\contentsline {chapter}{Bibliography}{48}{section*.40}%
+\contentsline {section}{\numberline {7.4}System Performance and Resource Utilisation}{44}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Future Work}{45}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Summary}{46}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Conclusion}{47}{chapter.8}%
+\contentsline {chapter}{List of Figures}{48}{section*.40}%
+\contentsline {chapter}{List of Tables}{49}{section*.41}%
+\contentsline {chapter}{Bibliography}{50}{section*.42}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

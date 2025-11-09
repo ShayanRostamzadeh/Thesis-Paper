@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  8 NOV 2025 19:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  8 NOV 2025 20:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2235,8 +2235,11 @@ coord trafo unsupported.
 \providecommand \oddpage@label [2]{}
 \babel@aux{english}{}
 {C:/Users/shaya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/shay
-a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]) (chapters/8_conc
-lusions.tex
+a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+) (chapters/8_conclusions.tex
 
 chapter 8.
 
@@ -2282,16 +2285,16 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 49667 strings out of 468133
- 1132805 string characters out of 5430712
+ 49668 strings out of 468133
+ 1132831 string characters out of 5430712
  1901504 words of memory out of 5000000
- 77442 multiletter control sequences out of 15000+600000
+ 77443 multiletter control sequences out of 15000+600000
  667947 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,13n,124p,11245b,2468s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,13n,124p,11245b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/shaya/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb>
-Output written on cache/thesis-figure3.pdf (1 page, 21846 bytes).
+Output written on cache/thesis-figure3.pdf (1 page, 21848 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  1 named destinations out of 1000 (max. 500000)
