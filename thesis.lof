@@ -18,7 +18,7 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Modular System Architecture of Threat Detector, Own Creation}}{22}{figure.caption.15}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Threat Detector Flow Diagram, Own Creation}}{24}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Overall system architecture showing the data flow from packet capture by PCAPdroid to IP reputation analysis by Threat Detector.}}{28}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Overall system architecture showing the data flow from packet capture by PCAPdroid to IP reputation analysis, Own Creation}}{28}{figure.caption.19}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Threat Detector TCP Server Pseudo Code, Own Creation}}{30}{figure.caption.20}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces PCAP File Packet Dump, Own Creation}}{31}{figure.caption.21}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Method To Check IPs Against FAANG Addresses, Own Creation}}{31}{figure.caption.22}%
@@ -32,7 +32,7 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Adjusting PCAPdroid's Settings, Self Taken}}{40}{figure.caption.29}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Setting up Threat Detector, Own Creation}}{40}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Average usability ratings for major tasks, Own Creation}}{42}{figure.caption.32}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Average simplicity ratings for major tasks, Own Creation}}{42}{figure.caption.32}%
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Perceived clarity of the Threat Detector user interface, Own Creation}}{43}{figure.caption.34}%
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Accuracy of IP-to-application mapping during testing, Own Creation}}{43}{figure.caption.36}%
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Android Studio Profiler Results, Own Creation}}{44}{figure.caption.39}%

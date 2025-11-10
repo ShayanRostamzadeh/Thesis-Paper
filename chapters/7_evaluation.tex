@@ -5,7 +5,7 @@
 \chapter{Evaluation and Discussion}
 \label{chapter:evaluation}
 
-This chapter presents the evaluation of Threat Detector and its integration with PCAPdroid. The focus of this chapter si to assess the applicability and feasibility of this setup in real-world scenarios. It demonstrates that the existing design effectively captures, analyses, and report malicious network activity in a user-friendly and practical manner. Moreover, it discusses the observed limitations and provides a performance assessment. Furthermore, it concludes with some suggestions for further research and improvements.
+This chapter presents the evaluation of Threat Detector and its integration with PCAPdroid. The focus of this chapter is to assess the applicability and feasibility of this setup in real-world scenarios. It demonstrates that the existing design effectively captures, analyses, and reports malicious network activities in a user-friendly and practical manner. Moreover, it discusses the observed limitations and provides a performance assessment. Finally, it concludes with some suggestions for further research and improvements.
 
 \section{Assessment Methodology}
 The evaluation of Threat Detector as a system was primarily based on a qualitative approach. In this approach the application was tested using a Samsung Galaxy S22 with Android 13 (API level 33) installed.
@@ -26,11 +26,11 @@ To simulate real-world conditions, Threat Detector went through a series of test
 \section{Usability Evaluation}
 
 \subsection*{Setup and Integration Experience}
-Setting up Threat Detector and PCAPdroid required minimal configuration and adjustments. Users were only needed to select TCP exporter option, make sure of the default values in the collector setting, and finally activate the PCAPdroid extension radio button. This process was earlier demonstrated in the previous chapter as shown in \cref{fig:PCAPdroid Traffic Dump and Exporter Settings}.
+Setting up Threat Detector and PCAPdroid required minimal configuration and adjustments. Users were only needed to select TCP exporter option, make sure of the default values in the collector settings, and finally activate the PCAPdroid extension radio button. This process was earlier demonstrated in the previous chapter as shown in \cref{fig:PCAPdroid Traffic Dump and Exporter Settings}.
 
 The usability of Threat detector was tested by four volunteers familiar with Android but without any experience or knowledge about network analysis and the associated tools. All of the participants were able to complete the setup process under 2 minutes.
 
-Participants were asked to report a usability score for the setup process and give a number representing the complexity level (5 being the easiest) of the setup process. \cref{fig:usability_ratings} illustrates the aggregated results.
+Participants were asked to report a simplicity score for the setup process and give a number representing the complexity level (5 being the easiest) of the setup process. \cref{fig:usability_ratings} illustrates the aggregated results.
 
 \begin{figure}[H]
 	\centering
@@ -67,18 +67,18 @@ Participants were asked to report a usability score for the setup process and gi
 			};
 		\end{axis}
 	\end{tikzpicture}
-	\caption{Average usability ratings for major tasks, Own Creation}
+	\caption{Average simplicity ratings for major tasks, Own Creation}
 	\label{fig:usability_ratings}
 \end{figure}
 
-As the conclusion, all the participants found the process of setting up and the integration taking place between PCAPdroid and Threat Detector to be easy to go through. Furthermore, the process was made easier when the participants understood the cooperation between PCAPdroid and Threat Detector regarding which application is responsible for packet capture and which one is handling the threat intelligence and data depiction.
+In conclusion, all the participants found the process of setting up and the integration taking place between PCAPdroid and Threat Detector to be easy to go through. Furthermore, the process was made easier when the participants understood the cooperation between PCAPdroid and Threat Detector regarding which application is responsible for packet capture and which one is handling the threat intelligence and data depiction.
 
 \subsection*{UI and UX}
 The graphical interface of Threat Detector prioritizes simplicity and clarity. It consists of Monitor and Logs pages to display server status and capture traffic metadata accompanied by the threat intelligence information queried from AbuseIPDB. Users gave positive feedback regarding the status of the server (green for active and purple for inactive) in addition to light red indicating an IP address with a confidence score above the defined threshold.
 
 However, some participants suggested that the details page shown in \cref{fig:IP_Details_Page} can be cluttered with too much information and can be shown in a more organized manner. Furthermore, in case of excessive usage, the logs list can contain too many items that might be frustrating for user to scroll through to search for a specific application. Therefore, a search functionality was suggested which can be implemented in the future revisions.
 
-\cref{fig:UI_clarity} illustrates the frequency of user-reported ease of use for interface clarity. The results shown below are based on the comparison between Threat Detector and other modern application UI, made by the participants.
+\cref{fig:UI_clarity} illustrates the user-reported ease of use for interface clarity. The results shown below are based on the comparison between Threat Detector and other modern application UI, made by the participants.
 
 \begin{figure}[H]
 	\centering
@@ -200,16 +200,14 @@ Future development of Threat Detector could focus on the following key areas:
 	\item \textbf{Improved User Interface with Filters:} Addition of sorting, searching, and filtering capabilities to improve efficiency while monitoring large traffic volumes.
 	
 	\item \textbf{Privacy and GDPR\footnote{\url{https://gdpr-info.eu/}} Considerations:} Ensuring the anonymization of the IP lookups and further features to comply with data protection standards.
+	
+	\item \textbf{Integration of Additional Intelligence Sources:} Expanding the threat intelligence sources by incorporating the API from various providers such as \emph{VirusTotal}\footnote{\url{https://blog.virustotal.com/2023/02/monitoring-infrastructure.html}}, \emph{AlienVault OTX}\footnote{\url{https://otx.alienvault.com/}}, and \emph{GreyNoise}\footnote{\url{https://www.greynoise.io/}}. This decreases the reliance on a single threat intelligence source.	
 \end{enumerate}
-
-\clearpage
 
 
 \section{Summary}
 The evaluation demonstrated in this chapter shows that Threat Detector alongside PCAPdroid provides a lightweight, and practical solution for analysing network traffic and identifying potential malicious connections.
 
 While Threat Detector is neither designed nor intended to be used as a commercially-ready detection system, its eases future research and use in industrial constellations and its design balances performance and applicability. The positive user feedback regarding the reliable IP-to-application mapping and AbuseIPDB response accuracy indicate that the system can effectively raise user awareness of threats and application behaviours. With further improvements and enhancements, Threat Detector can become even a more reliable and valuable research tool for mobile network security.
-
-
 
 
