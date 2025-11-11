@@ -28,7 +28,7 @@ To simulate real-world conditions, Threat Detector went through a series of test
 \subsection*{Setup and Integration Experience}
 Setting up Threat Detector and PCAPdroid required minimal configuration and adjustments. Users were only needed to select TCP exporter option, make sure of the default values in the collector settings, and finally activate the PCAPdroid extension radio button. This process was earlier demonstrated in the previous chapter as shown in \cref{fig:PCAPdroid Traffic Dump and Exporter Settings}.
 
-The usability of Threat detector was tested by four volunteers familiar with Android but without any experience or knowledge about network analysis and the associated tools. All of the participants were able to complete the setup process under 2 minutes.
+The usability of Threat detector was tested by four volunteers familiar with Android and little experience or knowledge about network analysis and the associated tools. All of the participants were able to complete the setup process under 2 minutes.
 
 Participants were asked to report a simplicity score for the setup process and give a number representing the complexity level (5 being the easiest) of the setup process. \cref{fig:usability_ratings} illustrates the aggregated results.
 
@@ -189,11 +189,11 @@ Although Threat Detector extends the functionality spectrum of previous Android 
 Future development of Threat Detector could focus on the following key areas:
 
 \begin{enumerate}
-	\item \textbf{Packet Blocking Functionality:} Incorporation of an optional firewall layer that could enable to block the connections to a certain IP endpoint when the outbound IP address is flagged as malicious. This could be implemented using the Android's VpnService \texttt{protect()} API to drop the packets or connections if some particular conditions are met.
+	\item \textbf{Packet Blocking Functionality:} Incorporation of an optional firewall layer that could enable blocking the connections to a certain IP endpoint when the outbound IP address is flagged as malicious. This could be implemented using the Android's VpnService \texttt{protect()} API to drop the packets or connections if some particular conditions are met.
 	
-	\item \textbf{Enhanced Performance Benchmarking:} Future assessments of Threat Detector can be done using Android's built-in benchmark library (\texttt{androidx.benchmark}\footnote{\url{https://developer.android.com/jetpack/androidx/releases/benchmark}}) to measure memory allocation, CPU time and consumption, and also battery usage more accurately. Additionally, some other profiling tools such as \emph{Systrace}\footnote{\url{https://source.android.com/docs/core/tests/debug/systrace}}, \emph{Perfetto}\footnote{\url{https://perfetto.dev/}}, and \emph{Battery Historian}\footnote{\url{https://developer.android.com/topic/performance/power/battery-historian}}.
+	\item \textbf{Enhanced Performance Benchmarking:} Future assessments of Threat Detector can be done using Android's built-in benchmark library (\texttt{androidx.benchmark}\footnote{\url{https://developer.android.com/jetpack/androidx/releases/benchmark}}) to measure memory allocation, CPU time and consumption, and also battery usage more accurately. Additionally, some other profiling tools such as \emph{Systrace}\footnote{\url{https://source.android.com/docs/core/tests/debug/systrace}}, \emph{Perfetto}\footnote{\url{https://perfetto.dev/}}, and \emph{Battery Historian}\footnote{\url{https://developer.android.com/topic/performance/power/battery-historian}} can be used for further measurements.
 	
-	\item \textbf{Historical Data and Visualization:} Implementing a persistent database (e.g. Room) to manage and store more modifiable preferences and keep track of the applications that consistently connect to potentially high-risk IP addresses.
+	\item \textbf{Historical Data Visualization:} Implementing a persistent database (e.g. Room) to manage and store more modifiable preferences and keep track of the applications that consistently connect to potentially high-risk IP addresses.
 	
 	\item \textbf{Automated Testing Frameworks:} Integration with \emph{Espresso}\footnote{\url{https://developer.android.com/training/testing/espresso/}} and \emph{JUnit}\footnote{\url{https://developer.android.com/training/testing/local-tests}} could potentially automate user flows for a more systematic and large-scale testing.
 	
