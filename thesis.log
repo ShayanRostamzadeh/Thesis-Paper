@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  11 NOV 2025 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  13 NOV 2025 13:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1718,6 +1718,16 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 301.
 
+Overfull \hbox (9.59726pt too wide) in paragraph at lines 301--309
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--309
+
+ []
+
+
 
 [1
 
@@ -1859,7 +1869,7 @@ Package pdftex.def Info: App - Logs Page.png  used on input line 29.
 
 
 ]
-<VpnService Builder Code Snippet.png, id=233, 915.42pt x 316.18124pt>
+<VpnService Builder Code Snippet.png, id=234, 915.42pt x 316.18124pt>
 File: VpnService Builder Code Snippet.png Graphic file (type png)
 <use VpnService Builder Code Snippet.png>
 Package pdftex.def Info: VpnService Builder Code Snippet.png  used on input lin
@@ -1868,13 +1878,13 @@ e 45.
 
 
 [8 <./App - Monitor Page.png> <./App - Logs Page.png>]
-<Initial idea VpnService API - 1.png, id=244, 868.74562pt x 740.7675pt>
+<Initial idea VpnService API - 1.png, id=246, 868.74562pt x 740.7675pt>
 File: Initial idea VpnService API - 1.png Graphic file (type png)
 <use Initial idea VpnService API - 1.png>
 Package pdftex.def Info: Initial idea VpnService API - 1.png  used on input lin
 e 84.
 (pdftex.def)             Requested size: 318.67213pt x 271.72862pt.
-<Initial idea VpnService API - 2.png, id=245, 720.44156pt x 624.83438pt>
+<Initial idea VpnService API - 2.png, id=247, 720.44156pt x 624.83438pt>
 File: Initial idea VpnService API - 2.png Graphic file (type png)
 <use Initial idea VpnService API - 2.png>
 Package pdftex.def Info: Initial idea VpnService API - 2.png  used on input lin
@@ -1884,7 +1894,7 @@ e 91.
 
 [9 <./VpnService Builder Code Snippet.png> <./Initial idea VpnService API - 1.p
 ng>]
-<Initial idea VpnService API - 3.png, id=257, 624.83438pt x 322.20375pt>
+<Initial idea VpnService API - 3.png, id=258, 624.83438pt x 322.20375pt>
 File: Initial idea VpnService API - 3.png Graphic file (type png)
 <use Initial idea VpnService API - 3.png>
 Package pdftex.def Info: Initial idea VpnService API - 3.png  used on input lin
@@ -1898,13 +1908,13 @@ png>]
 [11
 
 ]
-<PCAPdroid Traffic Dump Options.jpg, id=275, 813.0375pt x 1702.10907pt>
+<PCAPdroid Traffic Dump Options.jpg, id=276, 813.0375pt x 1702.10907pt>
 File: PCAPdroid Traffic Dump Options.jpg Graphic file (type jpg)
 <use PCAPdroid Traffic Dump Options.jpg>
 Package pdftex.def Info: PCAPdroid Traffic Dump Options.jpg  used on input line
  162.
 (pdftex.def)             Requested size: 148.07726pt x 310.01851pt.
-<PCAPdroid Capture Settings.jpg, id=276, 813.0375pt x 1699.85063pt>
+<PCAPdroid Capture Settings.jpg, id=277, 813.0375pt x 1699.85063pt>
 File: PCAPdroid Capture Settings.jpg Graphic file (type jpg)
 <use PCAPdroid Capture Settings.jpg>
 Package pdftex.def Info: PCAPdroid Capture Settings.jpg  used on input line 168
@@ -1938,13 +1948,13 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 ]
-<PCAPdroid_Connections_Screenshot.jpg, id=296, 502.74783pt x 1005.49565pt>
+<PCAPdroid_Connections_Screenshot.jpg, id=298, 502.74783pt x 1005.49565pt>
 File: PCAPdroid_Connections_Screenshot.jpg Graphic file (type jpg)
 <use PCAPdroid_Connections_Screenshot.jpg>
 Package pdftex.def Info: PCAPdroid_Connections_Screenshot.jpg  used on input li
 ne 28.
 (pdftex.def)             Requested size: 159.33302pt x 318.66597pt.
-<PCAPdroid_Connection_Details_Screenshot.jpg, id=297, 154.176pt x 308.352pt>
+<PCAPdroid_Connection_Details_Screenshot.jpg, id=299, 154.176pt x 308.352pt>
 File: PCAPdroid_Connection_Details_Screenshot.jpg Graphic file (type jpg)
 <use PCAPdroid_Connection_Details_Screenshot.jpg>
 Package pdftex.def Info: PCAPdroid_Connection_Details_Screenshot.jpg  used on i
@@ -1954,13 +1964,13 @@ nput line 34.
 
 [15 <./PCAPdroid_Connections_Screenshot.jpg> <./PCAPdroid_Connection_Details_Sc
 reenshot.jpg>]
-<AntMonitor_Privacy_Exposure_History.png, id=310, 578.16pt x 1027.84pt>
+<AntMonitor_Privacy_Exposure_History.png, id=312, 578.16pt x 1027.84pt>
 File: AntMonitor_Privacy_Exposure_History.png Graphic file (type png)
 <use AntMonitor_Privacy_Exposure_History.png>
 Package pdftex.def Info: AntMonitor_Privacy_Exposure_History.png  used on input
  line 61.
 (pdftex.def)             Requested size: 107.55313pt x 191.19821pt.
-<AntMonitor_Privacy_Exposure_Report.png, id=311, 1445.4pt x 2569.6pt>
+<AntMonitor_Privacy_Exposure_Report.png, id=313, 1445.4pt x 2569.6pt>
 File: AntMonitor_Privacy_Exposure_Report.png Graphic file (type png)
 <use AntMonitor_Privacy_Exposure_Report.png>
 Package pdftex.def Info: AntMonitor_Privacy_Exposure_Report.png  used on input 
@@ -1971,7 +1981,7 @@ Underfull \hbox (badness 3579) in paragraph at lines 68--68
 [][][]|\T1/ppl/m/n/9 Pri-vacy Ex-po-sure Re-
  []
 
-<AntMonitor_Privacy_Exposure_Info.png, id=312, 578.16pt x 1027.84pt>
+<AntMonitor_Privacy_Exposure_Info.png, id=314, 578.16pt x 1027.84pt>
 File: AntMonitor_Privacy_Exposure_Info.png Graphic file (type png)
 <use AntMonitor_Privacy_Exposure_Info.png>
 Package pdftex.def Info: AntMonitor_Privacy_Exposure_Info.png  used on input li
@@ -1981,13 +1991,13 @@ ne 74.
 
 [16 <./AntMonitor_Privacy_Exposure_History.png> <./AntMonitor_Privacy_Exposure_
 Report.png> <./AntMonitor_Privacy_Exposure_Info.png>]
-<AntMonitor_Log_Contribution_Settings.png, id=325, 578.16pt x 1027.84pt>
+<AntMonitor_Log_Contribution_Settings.png, id=327, 578.16pt x 1027.84pt>
 File: AntMonitor_Log_Contribution_Settings.png Graphic file (type png)
 <use AntMonitor_Log_Contribution_Settings.png>
 Package pdftex.def Info: AntMonitor_Log_Contribution_Settings.png  used on inpu
 t line 90.
 (pdftex.def)             Requested size: 195.18813pt x 346.99866pt.
-<AntMonitor_Logs_Applications.png, id=326, 578.16pt x 1027.84pt>
+<AntMonitor_Logs_Applications.png, id=328, 578.16pt x 1027.84pt>
 File: AntMonitor_Logs_Applications.png Graphic file (type png)
 <use AntMonitor_Logs_Applications.png>
 Package pdftex.def Info: AntMonitor_Logs_Applications.png  used on input line 9
@@ -1997,12 +2007,12 @@ Package pdftex.def Info: AntMonitor_Logs_Applications.png  used on input line 9
 
 [17 <./AntMonitor_Log_Contribution_Settings.png> <./AntMonitor_Logs_Application
 s.png>]
-<MopEye_1.png, id=340, 1084.05pt x 1303.87125pt>
+<MopEye_1.png, id=342, 1084.05pt x 1303.87125pt>
 File: MopEye_1.png Graphic file (type png)
 <use MopEye_1.png>
 Package pdftex.def Info: MopEye_1.png  used on input line 121.
 (pdftex.def)             Requested size: 195.18813pt x 234.76628pt.
-<MopEye_2.png, id=341, 1084.05pt x 1304.875pt>
+<MopEye_2.png, id=343, 1084.05pt x 1304.875pt>
 File: MopEye_2.png Graphic file (type png)
 <use MopEye_2.png>
 Package pdftex.def Info: MopEye_2.png  used on input line 127.
@@ -2082,7 +2092,7 @@ Overfull \hbox (16.38477pt too wide) in paragraph at lines 28--59
 ]
 
 [22 <./cache/thesis-figure0.pdf>]
-<Flow_Diagram.png, id=393, 432.61626pt x 1044.90375pt>
+<Flow_Diagram.png, id=395, 432.61626pt x 1044.90375pt>
 File: Flow_Diagram.png Graphic file (type png)
 <use Flow_Diagram.png>
 Package pdftex.def Info: Flow_Diagram.png  used on input line 138.
@@ -2144,7 +2154,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 [28 <./cache/thesis-figure1.pdf>]
 
 [29]
-<TCP Server Psuducode.png, id=533, 757.32938pt x 665.48625pt>
+<TCP Server Psuducode.png, id=535, 757.32938pt x 665.48625pt>
 File: TCP Server Psuducode.png Graphic file (type png)
 <use TCP Server Psuducode.png>
 Package pdftex.def Info: TCP Server Psuducode.png  used on input line 109.
@@ -2154,12 +2164,12 @@ Package pdftex.def Info: TCP Server Psuducode.png  used on input line 109.
 [30
 
  <./TCP Server Psuducode.png>]
-<Full_Packet_Dump.png, id=544, 958.3303pt x 517.18219pt>
+<Full_Packet_Dump.png, id=546, 958.3303pt x 517.18219pt>
 File: Full_Packet_Dump.png Graphic file (type png)
 <use Full_Packet_Dump.png>
 Package pdftex.def Info: Full_Packet_Dump.png  used on input line 126.
 (pdftex.def)             Requested size: 318.67213pt x 171.97275pt.
-<FAANG_IP_Addresses.png, id=545, 838.63312pt x 838.63312pt>
+<FAANG_IP_Addresses.png, id=547, 838.63312pt x 838.63312pt>
 File: FAANG_IP_Addresses.png Graphic file (type png)
 <use FAANG_IP_Addresses.png>
 Package pdftex.def Info: FAANG_IP_Addresses.png  used on input line 134.
@@ -2173,12 +2183,12 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 (C:\Users\shaya\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-<OKHTTP_Builder.png, id=560, 722.7pt x 260.47313pt>
+<OKHTTP_Builder.png, id=562, 722.7pt x 260.47313pt>
 File: OKHTTP_Builder.png Graphic file (type png)
 <use OKHTTP_Builder.png>
 Package pdftex.def Info: OKHTTP_Builder.png  used on input line 165.
 (pdftex.def)             Requested size: 398.33865pt x 143.5667pt.
-<AbuseIPDB_Check_endpoint_response.png, id=564, 752.0597pt x 688.07062pt>
+<AbuseIPDB_Check_endpoint_response.png, id=566, 752.0597pt x 688.07062pt>
 File: AbuseIPDB_Check_endpoint_response.png Graphic file (type png)
 <use AbuseIPDB_Check_endpoint_response.png>
 Package pdftex.def Info: AbuseIPDB_Check_endpoint_response.png  used on input l
@@ -2187,7 +2197,7 @@ ine 177.
 
 
 [32 <./OKHTTP_Builder.png>]
-<Threat_Detector_Settings_Page.jpg, id=584, 1084.05pt x 1157.32375pt>
+<Threat_Detector_Settings_Page.jpg, id=586, 1084.05pt x 1157.32375pt>
 File: Threat_Detector_Settings_Page.jpg Graphic file (type jpg)
 <use Threat_Detector_Settings_Page.jpg>
 Package pdftex.def Info: Threat_Detector_Settings_Page.jpg  used on input line 
@@ -2196,7 +2206,7 @@ Package pdftex.def Info: Threat_Detector_Settings_Page.jpg  used on input line
 
 
 [33 <./AbuseIPDB_Check_endpoint_response.png>]
-<SharedPreferences_Code.png, id=595, 1043.39813pt x 207.02344pt>
+<SharedPreferences_Code.png, id=597, 1043.39813pt x 207.02344pt>
 File: SharedPreferences_Code.png Graphic file (type png)
 <use SharedPreferences_Code.png>
 Package pdftex.def Info: SharedPreferences_Code.png  used on input line 208.
@@ -2204,22 +2214,22 @@ Package pdftex.def Info: SharedPreferences_Code.png  used on input line 208.
 
 
 [34 <./Threat_Detector_Settings_Page.jpg> <./SharedPreferences_Code.png>]
-<Monitor_Page.jpg, id=612, 1084.05pt x 2348.775pt>
+<Monitor_Page.jpg, id=614, 1084.05pt x 2348.775pt>
 File: Monitor_Page.jpg Graphic file (type jpg)
 <use Monitor_Page.jpg>
 Package pdftex.def Info: Monitor_Page.jpg  used on input line 234.
 (pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
-<Logs_Page.jpg, id=613, 1084.05pt x 2348.775pt>
+<Logs_Page.jpg, id=615, 1084.05pt x 2348.775pt>
 File: Logs_Page.jpg Graphic file (type jpg)
 <use Logs_Page.jpg>
 Package pdftex.def Info: Logs_Page.jpg  used on input line 240.
 (pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
-<IP_Details_Page.jpg, id=614, 1084.05pt x 2348.775pt>
+<IP_Details_Page.jpg, id=616, 1084.05pt x 2348.775pt>
 File: IP_Details_Page.jpg Graphic file (type jpg)
 <use IP_Details_Page.jpg>
 Package pdftex.def Info: IP_Details_Page.jpg  used on input line 252.
 (pdftex.def)             Requested size: 179.25117pt x 388.35547pt.
-<IP_Exhaustion_Page.jpg, id=615, 1084.05pt x 2348.775pt>
+<IP_Exhaustion_Page.jpg, id=617, 1084.05pt x 2348.775pt>
 File: IP_Exhaustion_Page.jpg Graphic file (type jpg)
 <use IP_Exhaustion_Page.jpg>
 Package pdftex.def Info: IP_Exhaustion_Page.jpg  used on input line 258.
@@ -2257,7 +2267,7 @@ File: PCAPdroid Traffic Dump Options.jpg Graphic file (type jpg)
 Package pdftex.def Info: PCAPdroid Traffic Dump Options.jpg  used on input line
  27.
 (pdftex.def)             Requested size: 127.47128pt x 266.86292pt.
-<PCAPdroid_Collector_Settings.jpg, id=641, 813.0375pt x 1703.61469pt>
+<PCAPdroid_Collector_Settings.jpg, id=643, 813.0375pt x 1703.61469pt>
 File: PCAPdroid_Collector_Settings.jpg Graphic file (type jpg)
 <use PCAPdroid_Collector_Settings.jpg>
 Package pdftex.def Info: PCAPdroid_Collector_Settings.jpg  used on input line 3
@@ -2274,7 +2284,7 @@ Package pdftex.def Info: PCAPdroid Capture Settings.jpg  used on input line 40.
 
 
 ]
-<Settings_Page.jpg, id=654, 593.21625pt x 1284.8pt>
+<Settings_Page.jpg, id=656, 593.21625pt x 1284.8pt>
 File: Settings_Page.jpg Graphic file (type jpg)
 <use Settings_Page.jpg>
 Package pdftex.def Info: Settings_Page.jpg  used on input line 53.
@@ -2322,7 +2332,7 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 5--5
 
 
 [43 <./cache/thesis-figure3.pdf> <./cache/thesis-figure4.pdf>]
-<Android_Studio_Profiler.png, id=702, 1824.06468pt x 974.13937pt>
+<Android_Studio_Profiler.png, id=704, 1824.06468pt x 974.13937pt>
 File: Android_Studio_Profiler.png Graphic file (type png)
 <use Android_Studio_Profiler.png>
 Package pdftex.def Info: Android_Studio_Profiler.png  used on input line 176.
@@ -2402,7 +2412,7 @@ L3 programming layer <2020/03/25>
 Here is how much of TeX's memory you used:
  49908 strings out of 468133
  1135487 string characters out of 5430712
- 1915195 words of memory out of 5000000
+ 1916217 words of memory out of 5000000
  77420 multiletter control sequences out of 15000+600000
  674040 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2419,9 +2429,9 @@ KTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/shaya/AppData/Local/Programs
 ams/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/shaya/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/shaya/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (59 pages, 4070554 bytes).
+Output written on thesis.pdf (59 pages, 4070974 bytes).
 PDF statistics:
- 1427 PDF objects out of 1440 (max. 8388607)
+ 1429 PDF objects out of 1440 (max. 8388607)
  232 named destinations out of 1000 (max. 500000)
  739 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -38,7 +38,7 @@ After the full development of the application based on the initial idea, Threat 
 \subsection{VpnService API - Android's VPN Functionality}
 The APIs provided by Android as an OS (Operating System) include a wide range that includes functions to handle network traffic based on the user context (e.g. normal or root). According to the Android's \emph{official API website}\footnote{\url{https://developer.Android.com/reference/android/net/VpnService}}, the preferred approach towards network traffic interception is utilization of VpnService API. This API provides an active interception of network and internet traffic by routing the packets through a gateway (normally the default gateway of the device's NIC (Network Interface Card)). This implementation ensures that the commute of network packets takes place only through one communication path. As a result, inspection of network traffic can be carried out only on that gateway simplifying packet handling and re-routing. 
 
-As shown in the following code snippet provided on Android \emph{developer website}\footnote{\url{https://developer.Android.com/develop/connectivity/vpn}}, Android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them though the localhost address.
+As shown in the following code snippet (\cref{fig:VpnService Builder Code Snippet.png}) provided on Android \emph{developer website}\footnote{\url{https://developer.Android.com/develop/connectivity/vpn}}, Android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them though the localhost address.
 
 \begin{figure}[H]
 	\centering
@@ -151,7 +151,7 @@ Interfacing the Linux kernel using C language remains the only reliable and feas
 
 \section{How PCAPdroid already does it all}
 
-Developing a network monitoring solution similar to \emph{Wireshark}\footnote{\url{https://www.wireshark.org/}} for mobile platforms has already been a topic of importance among enterprise personal by the emergence of Bring Your Own Device policy. As a result, applications such as PCAPdroid, Mopeye, and Ant-Monitor came to existence as a solution to give administrators some leverage examining the network activities.
+Developing a network monitoring solution similar to \emph{Wireshark}\footnote{\url{https://www.wireshark.org/}} for mobile platforms has already been a topic of importance among enterprise personal by the emergence of Bring Your Own Device policy. As a result, applications such as PCAPdroid, MopEye, and Ant-Monitor came to existence as a solution to give administrators some leverage examining the network activities.
 
 Among the aforementioned solutions PCAPdroid is an open-source solution that has implemented a fully functional VPN along with an extensive interface with Android's Linux kernel to thoroughly handle \texttt{/proc} filesystem. Thus, PCAPdroid can be a suitable candidate to provide the underlying foundation for the correct functionality of Threat Detector. It has settings that can be adjusted for communication between the Android device and the administration endpoint. It captures network traffic and stacks the information in a widely-known PCAP/PCAPNG formats that can be fed into other network inspection tools such as Wireshark though various communication methods. These methods include HTTP servers and TCP/UDP streams.
 
@@ -174,7 +174,7 @@ Among the aforementioned solutions PCAPdroid is an open-source solution that has
 \end{figure}
 
 
-As shown in the screenshots above with employment of TCP exporter functionality and activation of PCAPdroid extensions, majority of the limitations and inherent restrictions that stem from Android's ecosystem and architecture can be overcome. The TCP exporter enables information transfer using TCP protocol and PCAPdroid extensions provides the application package name that can be easily utilized to extract the application name and icon necessary to meet the original idea of this thesis project.
+As shown in the \cref{fig:PCAPdroid Traffic Dump and Packet Capture Settings} above with employment of TCP exporter functionality and activation of PCAPdroid extensions, majority of the limitations and inherent restrictions that stem from Android's ecosystem and architecture can be overcome. The TCP exporter enables information transfer using TCP protocol and PCAPdroid extensions provides the application package name that can be easily utilized to extract the application name and icon necessary to meet the original idea of this thesis project.
 
 \section{Integration with PCAPDroid}
 As explained, for Threat Detector to function properly and for the requirements of this thesis to be met, integration/implementation of an approach to route and intercept network traffic and access to \texttt{/proc} filesystem are of utmost importance. However, since a thorough execution of them is unfeasible for this project, integration of those functionalities through a communication medium can potentially be a proper solution. 
