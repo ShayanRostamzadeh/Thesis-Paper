@@ -149,18 +149,22 @@ In the following table you can observe their functionalities and subsequent diff
 	\caption{Comparison of Existing Mobile Network Monitoring Tools, Own Creation}
 	\label{tab:comparison_tools}
 	\resizebox{\textwidth}{!}{
-		\begin{tabular}{@{}p{2cm}p{3cm}p{2cm}p{3cm}p{2.5cm}p{2.5cm}p{2cm}@{}}
+		\begin{tabular}{@{}p{2cm}p{3cm}p{3cm}p{3cm}p{2.5cm}p{2.5cm}p{2cm}@{}}
 			\toprule
-			\textbf{Tool} & \textbf{Main Purpose} & \textbf{Requires Root} & \textbf{Focus} & \textbf{Real-Time Detection} & \textbf{Privacy Protection} & \textbf{Data Format} \\ \midrule
-			\textbf{PCAPdroid} & Packet capture and export & No & Network analysis & No & Moderate & PCAP \\
+			\textbf{Tool} & \textbf{Main Purpose} & \textbf{Focus} & \textbf{Real-Time Detection} & \textbf{Privacy Protection} & \textbf{Data Format} \\ \midrule
+			\textbf{PCAPdroid} & Packet capture and export & Network analysis & No & Moderate & PCAP \\
 			
 			\midrule
 			
-			\textbf{AntMonitor} & Privacy-aware traffic inspection & No & Data leakage and app transparency & Partial & Strong & Internal database \\
+			\textbf{AntMonitor} & Privacy-aware traffic inspection & Data leakage and app transparency & Partial & Strong & Internal database \\
 			
 			\midrule
 			
-			\textbf{MopEye} & Network measurement and performance & No & Large-scale monitoring & No & Limited & Aggregated metrics \\ \bottomrule
+			\textbf{MopEye} & Network measurement and performance & Large-scale monitoring & No & Limited & Aggregated metrics \\ 
+			
+			\midrule
+			
+			\textbf{Threat Detector} & Live threat detection & App-specific threat extraction & Comprehensive & Strong & JSON \\ \bottomrule
 		\end{tabular}
 	}
 \end{table}
@@ -169,6 +173,23 @@ In the following table you can observe their functionalities and subsequent diff
 As illustrated in table 3.1, PCAPdroid excels in network visibility on packet-level, making it a suitable option for forensic or research-centric traffic analysis. On the other hand however, it lacks intelligence for automatic threat detection and classification. AntMonitor brings along useful user privacy insights but does not incorporate extensive traffic inspection, neither does it support automatic response mechanisms. As a contributor to macroscopic network analytics, MopEye provides complementary information about the overall network condition but does not highlight application-specific data.
 
 In contrast however, Threat Detector developed in this thesis aims to accomplish what the above-mentioned solutions lack in their implementation. It seeks to bridge the gap between passive network traffic monitoring and active threat detection. By integrating the packet-capture capabilities provided by PCAPdroid with additional intelligence modules to query external threat intelligence sources (e.g. AbuseIPDB), Threat Detector improves security awareness on the device. The integration of PCAPdroid and Threat Detector enables real-time detection of suspicious IPs, provides mapping functionality to associate network packets with their originating application, addressing some of the limitations observed in existing tools.
+
+\section{Scientific Literature}
+This section goes through some of the scientific literatures that have taken a similar approach towards the implementation of malware and threat detection on Android devices.
+
+In addition to the static and dynamic malware detection approaches, recent literature has increasingly focused on techniques that leverage network traffic with behavioural features for a more comprehensive detection. As an instance, a hybrid-Falcon framework integrates dynamic network traffic features with static code graphs, which transforms the flows into a 2D image representation. It uses a neural network graph to achieve a malware detection accuracy of over 90\%. Additionally, it has a family categorization of the detected threat with the accuracy over 80\% \cite{xu2022hybridfalconhybridpatternmalware}. A similar work from Muzaffar et al. and Hani Ragab Hassan shows that while static features alone can achieve a high accuracy, TCP network analysis belongs to the most reliable and predictive dynamic features that can be of use to determine the potential threats \cite{muzaffar2025reassessingfeaturebasedandroidmalware}.
+
+Graph-based techniques have also shown promising results. For example, HAWK \cite{hei2021hawkrapidandroidmalware} models android applications behaviour as a heterogeneous information network (HIN) while utilising  graph attention networks to perform incremental learning for malware detection, reaching a rapid detection time (avg. 3.5 ms). Another related work to HAWK is NT-GNN \cite{Liu2023}. It constructs a traffic graph representation, enabling graph-neural-network detection of Android malware in Android and IoT environments. As another example of  graph-based implementation, Andro-Simnet \cite{Kim_2018} applies social network analysis approaches to compute similarities between malware families.
+
+Beyond graph-based and hybrid methods mentioned above, researchers have also delved into deep learning on sequential traffic data. In a paper from Fallah and Bidgoly \cite{Fallah2022} an LSTM-based model is proposed that treats network flows as sequences. This approach not only allows binary malware detection, but also family identification achieving very high AUC (Area Under Curve) metrics in the captured data. In a more recent work \cite{Naseer2025} containing the integration of Large Language Models (GPT-2) data scarcity was addressed to generate synthetic TCP malware traffic followed by malware family classification to overcome privacy and sampling limitations in real-world datasets.
+
+Another interesting approach \cite{Demmese2023} took the direction of image-based traffic visualization. In this paper, network traffic is converted into images that capture statistical patterns which are then used as input for Machine Learning classifiers. This approach has achieved over 99\% of accuracy in detecting \emph{fileless malware}\footnote{\url{https://en.wikipedia.org/wiki/Fileless_malware}}.
+
+Furthermore, researchers have also explored more typical category-based malware detection, determining not only the presence of malware but its type (e.g adware, ransomware, banking trojans). For instance, Manzil and Naik have proposed a feature-vector generation method based on Huffman encoding of system call frequencies achieving over 98\% of malware categorization \cite{Manzil2023}.
+
+Moreover on network behaviour analysis, Zhenxiang Chen. investigates the first few minutes of network behaviour analysing various features like DNS query patterns, HTTP packets lengths, and upload/download ratios. The trace analysis shows that more than 70\% of malware generate detectable traffic \cite{Chen2015}.
+
+\clearpage
 
 \section{Summary}
 This chapter represented an overview of research efforts and their subsequent results in regard to mobile traffic monitoring and network packet analysis. PCAPdroid supplies a robust, open-source approach towards network packet and application level analysis while eliminating the need for rooting the device. AntMonitor highlights the user privacy as its primary mission, while MopEye contributes to large-scale network performance analysis.

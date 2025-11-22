@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -39,6 +39,96 @@ Daoyuan Wu, Rocky K.~C. Chang, Weichao Li, Eric K.~T. Cheng, and Debin Gao.
 \newblock ISBN 978-1-931971-38-6.
 \newblock URL
   \url{https://www.usenix.org/conference/atc17/technical-sessions/presentation/wu}.
+
+\bibitem[Xu et~al.(2022)Xu, Eckert, and
+  Zarras]{xu2022hybridfalconhybridpatternmalware}
+Peng Xu, Claudia Eckert, and Apostolis Zarras.
+\newblock hybrid-falcon: Hybrid pattern malware detection and categorization
+  with network traffic and program code, 2022.
+\newblock URL \url{https://arxiv.org/abs/2112.10035}.
+
+\bibitem[Muzaffar et~al.(2025)Muzaffar, Hassen, Zantout, and
+  Lones]{muzaffar2025reassessingfeaturebasedandroidmalware}
+Ali Muzaffar, Hani~Ragab Hassen, Hind Zantout, and Michael~A Lones.
+\newblock Reassessing feature-based android malware detection in a contemporary
+  context, 2025.
+\newblock URL \url{https://arxiv.org/abs/2301.12778}.
+
+\bibitem[Hei et~al.(2021)Hei, Yang, Peng, Wang, Xu, Liu, Liu, Xu, and
+  Sun]{hei2021hawkrapidandroidmalware}
+Yiming Hei, Renyu Yang, Hao Peng, Lihong Wang, Xiaolin Xu, Jianwei Liu, Hong
+  Liu, Jie Xu, and Lichao Sun.
+\newblock Hawk: Rapid android malware detection through heterogeneous graph
+  attention networks, 2021.
+\newblock URL \url{https://arxiv.org/abs/2108.07548}.
+
+\bibitem[Liu et~al.(2023)Liu, Li, Long, and Bilal]{Liu2023}
+Tianyue Liu, Zhenwan Li, Haixia Long, and Anas Bilal.
+\newblock Nt-gnn: Network traffic graph for 5g mobile iot android malware
+  detection.
+\newblock \emph{Electronics}, 12\penalty0 (4):\penalty0 789, February 2023.
+\newblock ISSN 2079-9292.
+\newblock \doi{10.3390/electronics12040789}.
+\newblock URL \url{http://dx.doi.org/10.3390/electronics12040789}.
+
+\bibitem[Kim et~al.(2018)Kim, Song, Seo, and Kim]{Kim_2018}
+Hye~Min Kim, Hyun~Min Song, Jae~Woo Seo, and Huy~Kang Kim.
+\newblock Andro-simnet: Android malware family classification using social
+  network analysis.
+\newblock In \emph{2018 16th Annual Conference on Privacy, Security and Trust
+  (PST)}. IEEE, August 2018.
+\newblock \doi{10.1109/pst.2018.8514216}.
+\newblock URL \url{http://dx.doi.org/10.1109/PST.2018.8514216}.
+
+\bibitem[Fallah and Bidgoly(2022)]{Fallah2022}
+Somayyeh Fallah and Amir~Jalaly Bidgoly.
+\newblock Android malware detection using network traffic based on sequential
+  deep learning models.
+\newblock \emph{Software: Practice and Experience}, 52\penalty0 (9):\penalty0
+  1987–2004, June 2022.
+\newblock ISSN 1097-024X.
+\newblock \doi{10.1002/spe.3112}.
+\newblock URL \url{http://dx.doi.org/10.1002/spe.3112}.
+
+\bibitem[Naseer et~al.(2025)Naseer, Ullah, Ijaz, Naeem, Alsirhani, Alwakid, and
+  Alomari]{Naseer2025}
+Mehwish Naseer, Farhan Ullah, Samia Ijaz, Hamad Naeem, Amjad Alsirhani,
+  Ghadah~Naif Alwakid, and Abdullah Alomari.
+\newblock Obfuscated malware detection and classification in network traffic
+  leveraging hybrid large language models and synthetic data.
+\newblock \emph{Sensors}, 25\penalty0 (1):\penalty0 202, January 2025.
+\newblock ISSN 1424-8220.
+\newblock \doi{10.3390/s25010202}.
+\newblock URL \url{http://dx.doi.org/10.3390/s25010202}.
+
+\bibitem[Demmese et~al.(2023)Demmese, Neupane, Khorsandroo, Wang, Roy, and
+  Fu]{Demmese2023}
+Fikirte~Ayalke Demmese, Ajaya Neupane, Sajad Khorsandroo, May Wang, Kaushik
+  Roy, and Yu~Fu.
+\newblock Machine learning based fileless malware traffic classification using
+  image visualization.
+\newblock \emph{Cybersecurity}, 6\penalty0 (1), December 2023.
+\newblock ISSN 2523-3246.
+\newblock \doi{10.1186/s42400-023-00170-z}.
+\newblock URL \url{http://dx.doi.org/10.1186/s42400-023-00170-z}.
+
+\bibitem[Manzil and Manohar~Naik(2023)]{Manzil2023}
+Hashida Haidros~Rahima Manzil and S.~Manohar~Naik.
+\newblock Android malware category detection using a novel feature vector-based
+  machine learning model.
+\newblock \emph{Cybersecurity}, 6\penalty0 (1), March 2023.
+\newblock ISSN 2523-3246.
+\newblock \doi{10.1186/s42400-023-00139-y}.
+\newblock URL \url{http://dx.doi.org/10.1186/s42400-023-00139-y}.
+
+\bibitem[Chen et~al.(2015)Chen, Han, Yan, Yang, Peng, Zhang, and Li]{Chen2015}
+Zhenxiang Chen, Hongbo Han, Qiben Yan, Bo~Yang, Lizhi Peng, Lei Zhang, and Jin
+  Li.
+\newblock A first look at android malware traffic in first few minutes.
+\newblock In \emph{2015 IEEE Trustcom/BigDataSE/ISPA}, page 206–213. IEEE,
+  August 2015.
+\newblock \doi{10.1109/trustcom.2015.376}.
+\newblock URL \url{http://dx.doi.org/10.1109/Trustcom.2015.376}.
 
 \bibitem[AbuseIPDB(2025)]{AbuseIPDBDocumentation}
 AbuseIPDB.
