@@ -24,7 +24,7 @@ Threat Detector's system architecture consists of four main layers:
 
 In this constellation, PCAPdroid acts as a data aggregator, while Threat Detector functions as a data processing and visualization unit.
 
-figure \cref{fig:architecture} shows this flow:
+Figure \cref{fig:architecture} shows this flow:
 
 \begin{figure}[H]
 	\centering
@@ -100,7 +100,7 @@ After adjusting the settings mentioned above, when PCAPdroid is launched and act
 \clearpage
 
 \section{TCP Server Implementation in Threat Detector}
-One of the core functionalities of Threat Detector is its TCP server running locally on the Android device. It listens to the incoming connections on a specified port (default set to 1234) and handles each connection request in a separate thread and an associated coroutine ensuring reliable responsiveness and performance.
+One of the core functionalities of Threat Detector is its TCP server running locally on the Android device. It listens to the incoming connections on a specified port (default set to 1234 - an arbitrary port that does not have any conflicts with critical background services in Android systems) and handles each connection request in a separate thread.
 
 Simplified version of the server implementation can be viewed in figure \cref{fig:Threat_Detector_Server_Pseudo_code} 
 
@@ -111,15 +111,15 @@ Simplified version of the server implementation can be viewed in figure \cref{fi
 	\label{fig:Threat_Detector_Server_Pseudo_code}
 \end{figure}
 
-As shown in the figure above, when a connection is established, a coroutine (\texttt{GlobalScope} in this example) starts the continues reception of data in PCAP file format. This is implemented using the \texttt{handleClient()} method to extract the low-level information such as destination IP address, timestamps, ports, protocols, and UIDs.
+As shown in \cref{fig:Threat_Detector_Server_Pseudo_code}, when a connection is established, a coroutine (\texttt{GlobalScope}) starts the continues reception of data in PCAP file format. This is implemented using the \texttt{handleClient()} method to extract the low-level information such as destination IP address, timestamps, ports, protocols, and UIDs.
 
 %Here a coroutine is used instead of a thread for a better performance and less overhead. Coroutines are lightweight and ensure a substantially improved performance when it comes to handling asynchronous tasks on Android.
 
 
 \section{Parsing of Packet Data}
-Even thought the packets arrive in PCAP format, when the PCAP extensions is activated, the received data should be reconstructed. This can be carried out with the help of a custom parser developed based on the  \emph{documentations}\footnote{\url{https://emanuele-f.github.io/PCAPdroid/advanced_features\#45-pcapdroid-extensions}} provided for third-party usage by locating the trailer magic number. After the reception of a packet, the parser reconstructs PCAP packet information into a readable format for ease of data extraction.
+Even thought the packets arrive in PCAP format, the received data should be reconstructed. This can be carried out with the help of a custom parser developed based on the  \emph{documentations}\footnote{\url{https://emanuele-f.github.io/PCAPdroid/advanced_features\#45-pcapdroid-extensions}} provided for third-party usage by locating the trailer magic number. After the reception of a packet, the parser reconstructs PCAP packet information into a readable format for ease of data extraction.
 
-\cref{fig:Full_Packet_Dump} shows extracted information including destination IP address alongside HEX-encoded values such as destination port number, source IP address, and the IP payload being the application UID.
+\cref{fig:Full_Packet_Dump} shows extracted information including destination IP address alongside HEX-encoded values such as destination port number, source IP address, and the app UID.
 
 \begin{figure}[H]
 	\centering
@@ -191,6 +191,7 @@ These Preferences are as follows:
 	\item AbuseIPDB API key 
 \end{itemize}
 
+The application page that makes use of \texttt{SharePreferences} in Threat Detector is shown in \cref{fig:Threat_Detector_Settings_Page}.
 
 \begin{figure}[H]
 	\centering

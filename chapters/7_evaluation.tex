@@ -116,7 +116,7 @@ However, some participants suggested that the details page shown in \cref{fig:IP
 \subsection*{IP-to-Application Mapping}
 An important aspect of this project is the feature to map the IP addresses of the outbound traffic packets to their originating applications. This was achieved by correlating the packet UID extracted using VpnService API with Android's package manager. 
 
-In the tests that were done to find out the accuracy of IP to application mapping, Threat Detector managed to achieve almost 91\% accuracy. From 11 applications tested, only one report was incorrect that stems from the intercepted outbound packets from Android built-in services and not the third party applications. These sorts of incorrect associations can occur mainly when background services reuse sockets or when apps share a common UID due to system-level permissions. 
+In the tests that were done to find out the accuracy of IP to application mapping, Threat Detector managed to achieve almost 91\% accuracy as shown in \cref{fig:app_mapping_accuracy}. From 11 applications tested, only one report was incorrect that stems from the intercepted outbound packets from Android built-in services and not the third party applications. These sorts of incorrect associations can occur mainly when background services reuse sockets or when apps share a common UID due to system-level permissions. 
 
 %The tests include browser, Spotify, Telegram, WhatsApp, Instagram, WG-Gesucht, imo, etc.
 
