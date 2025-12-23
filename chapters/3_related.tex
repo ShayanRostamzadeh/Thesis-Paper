@@ -11,7 +11,7 @@ Network monitoring and inspection solutions are essential to detect suspicious c
 
 Among a large number of prominent solutions developed in this area, \textbf{PCAPdroid, MopEye}, and \textbf{AntMonitor} have illustrated notable progress towards enhancing transparency along with control over mobile network traffic. PCAPdroid provides a non-root approach towards packet capture and employs Android's VpnService API to intercept and record traffic in PCAP/PCAPNG format allowing comprehensive network inspection without the need for elevated privileges. On the other hand, MopEye aims its focus towards large-scale network measurements and data aggregation for further research and monitoring purposes. It considerably contributes to mobile network performance and security. AntMonitor however, takes a privacy-oriented approach by enabling real-time analysis of application traffic, providing thorough visibility into how user data is transmitted over a network.
 
-These existing tools have constructively contributed to the advancement of mobile traffic analysis. However, each of them also presents limitations in terms of integration, flexibility, and real-time threat intelligence and detection. The following sections provide an overview in details, highlighting their architectures, capabilities along with their constraints, which consequently became the motivating factors for Threat Detector development.
+These existing tools have constructively contributed to the advancement of mobile traffic analysis. However, each of them also presents limitations in terms of integration, flexibility, and real-time threat intelligence and detection. The following sections provide an overview in details, highlighting their architectures and capabilities along with their constraints, which consequently became the motivating factors for Threat Detector development.
 
 
 \section{PCAPdroid} 
@@ -19,7 +19,7 @@ As one of the most recognized open-source Android applications for capturing and
 
 When it comes to PCAPdroid's architecture, it establishes a user-space VPN that intercepts both TCP and UDP packets. Once these packets are captured they are parsed locally or can be transferred to a remote system for further analysis as data streams in real-time. This is the very characteristic of PCAPdroid that makes it an efficient bridge between on-device data collection and remote analysis systems. This design enables PCAPdroid to include support for packet filtering, payload decoding, and also per-application traffic mapping. This, as mentioned before, takes place by correlating sockets with applications' UIDs.
 
-PCAPdroid's primary advantage lies within its non-root nature, making it an attractive option for users, enterprises, and researches who cannot or do not wish for a drastic modification in their device operating system. Worth to mention that mission of such applications is to assist securing mobile devices and rooting or jail-breaking removes the security measures implemented on those devices, making them susceptible and puts them in significant risk of attacks. While providing a functional application without rooting the device, PCAPdroid also maintains the balance between technical depth by visualizing live traffic statistics and sustaining the compatibility with standard PCAP/PCAPNG workflow. These can be observed in the screenshot of PCAPdroid's settings in the previous chapter and also in \cref{fig:PCAPdroid_Scressnshots}.
+PCAPdroid's primary advantage lies within its non-root nature, making it an attractive option for users, enterprises, and researches who cannot or do not wish for a drastic modification in their device's operating system. Worth to mention that the mission of such applications is to assist securing mobile devices and rooting or jail-breaking removes the security measures implemented on those devices, making them susceptible and thereby putting them in significant risk of attacks. While providing a functional application without rooting the device, PCAPdroid also maintains the balance between technical depth by visualizing live traffic statistics and sustaining the compatibility with standard PCAP/PCAPNG workflow. These can be observed in the screenshot of PCAPdroid's settings in the previous chapter and also in \cref{fig:PCAPdroid_Scressnshots}.
 
 \begin{figure}[H]
 	\centering
@@ -81,7 +81,7 @@ In \cref{fig:AntMonitor Privacy-aware Architecture} you can see the privacy-awar
 
 AntMonitor also features a framework for server-side traffic analysis. It accumulates anonymized data from multiple devices to build global statistics about mobile data leakages and application behaviours. This can be considered as a hybrid approach to combine local inspection with cloud-based aggregation, allowing scaling of  modern mobile privacy studies.
 
-In \cref{fig:AntMonitor Logging Features} you can see the aggregation options regarding anonymized logs and the applications contributing to them.
+\cref{fig:AntMonitor Logging Features} illustrates the aggregation options regarding anonymized logs and the applications contributing to them.
 
 \begin{figure}[H]
 	\centering
@@ -142,7 +142,7 @@ However, as a solution primarily focused on macroscopic network traffic analysis
 \section{Comparison}
 Even though PCAPdroid, AntMonitor, and MopEye share common goals to achieve, increasing visibility of mobile network traffic, their objectives and design philosophies are substantially different.
 
-In the following table you can observe their functionalities and subsequent differences.
+\cref{tab:comparison_tools} shows their functionalities and subsequent differences.
 
 \begin{table}[H]
 	\centering
@@ -170,12 +170,12 @@ In the following table you can observe their functionalities and subsequent diff
 \end{table}
 
 
-As illustrated in table 3.1, PCAPdroid excels in network visibility on packet-level, making it a suitable option for forensic or research-centric traffic analysis. On the other hand however, it lacks intelligence for automatic threat detection and classification. AntMonitor brings along useful user privacy insights but does not incorporate extensive traffic inspection, neither does it support automatic response mechanisms. As a contributor to macroscopic network analytics, MopEye provides complementary information about the overall network condition but does not highlight application-specific data.
+As illustrated in table 3.1, PCAPdroid excels in network visibility on packet-level, making it a suitable option for forensic or research-centric traffic analysis. On the other hand, it lacks intelligence for automatic threat detection and classification. AntMonitor brings along useful user privacy insights but does not incorporate extensive traffic inspection, neither does it support automatic response mechanisms. As a contributor to macroscopic network analytics, MopEye provides complementary information about the overall network condition but does not highlight application-specific data.
 
-In contrast however, Threat Detector developed in this thesis aims to accomplish what the above-mentioned solutions lack in their implementation. It seeks to bridge the gap between passive network traffic monitoring and active threat detection. By integrating the packet-capture capabilities provided by PCAPdroid with additional intelligence modules to query external threat intelligence sources (e.g. AbuseIPDB), Threat Detector improves security awareness on the device. The integration of PCAPdroid and Threat Detector enables real-time detection of suspicious IPs, provides mapping functionality to associate network packets with their originating application, addressing some of the limitations observed in existing tools.
+In contrast, Threat Detector developed in this thesis aims to accomplish what the above-mentioned solutions lack in their implementation. It seeks to bridge the gap between passive network traffic monitoring and active threat detection. By integrating the packet-capture capabilities provided by PCAPdroid with additional intelligence modules to query external threat intelligence sources (e.g. AbuseIPDB), Threat Detector improves security awareness on the device. The integration of PCAPdroid and Threat Detector enables real-time detection of suspicious IPs, provides mapping functionality to associate network packets with their originating application, addressing some of the limitations observed in existing tools.
 
 \section{Scientific Literature}
-This section goes through some of the scientific literatures that have taken a similar approach towards the implementation of malware and threat detection on Android devices.
+This section goes through some of the scientific literature that have taken a similar approach towards the implementation of malware and threat detection on Android devices.
 
 In addition to the static and dynamic malware detection approaches, recent literature has increasingly focused on techniques that leverage network traffic with behavioural features for a more comprehensive detection. As an instance, a hybrid-Falcon framework integrates dynamic network traffic features with static code graphs, which transforms the flows into a 2D image representation. It uses a neural network graph to achieve a malware detection accuracy of over 90\%. Additionally, it has a family categorization of the detected threat with the accuracy over 80\% \cite{xu2022hybridfalconhybridpatternmalware}. A similar work from Muzaffar et al. and Hani Ragab Hassan shows that while static features alone can achieve a high accuracy, TCP network analysis belongs to the most reliable and predictive dynamic features that can be of use to determine the potential threats \cite{muzaffar2025reassessingfeaturebasedandroidmalware}.
 
@@ -183,9 +183,9 @@ Graph-based techniques have also shown promising results. For example, HAWK \cit
 
 Beyond graph-based and hybrid methods mentioned above, researchers have also delved into deep learning on sequential traffic data. In a paper from Fallah and Bidgoly \cite{Fallah2022} an LSTM-based model is proposed that treats network flows as sequences. This approach not only allows binary malware detection, but also family identification achieving very high AUC (Area Under Curve) metrics in the captured data. In a more recent work \cite{Naseer2025} containing the integration of Large Language Models (GPT-2) data scarcity was addressed to generate synthetic TCP malware traffic followed by malware family classification to overcome privacy and sampling limitations in real-world datasets.
 
-Another interesting approach \cite{Demmese2023} took the direction of image-based traffic visualization. In this paper, network traffic is converted into images that capture statistical patterns which are then used as input for Machine Learning classifiers. This approach has achieved over 99\% of accuracy in detecting \emph{fileless malware}\footnote{\url{https://en.wikipedia.org/wiki/Fileless_malware}}.
+Another interesting approach \cite{Demmese2023} took the direction of image-based traffic visualization. In this paper, network traffic is converted into images that capture statistical patterns which are then used as input for Machine Learning classifiers. This approach has achieved over 99\% accuracy in detecting \emph{fileless malware}\footnote{\url{https://en.wikipedia.org/wiki/Fileless_malware}}.
 
-Furthermore, researchers have also explored more typical category-based malware detection, determining not only the presence of malware but its type (e.g adware, ransomware, banking trojans). For instance, Manzil and Naik have proposed a feature-vector generation method based on Huffman encoding of system call frequencies achieving over 98\% of malware categorization \cite{Manzil2023}.
+Furthermore, researchers have also explored more typical category-based malware detection, determining not only the presence of malware but its type (e.g adware, ransomware, banking trojans). For instance, Manzil and Naik have proposed a feature-vector generation method based on Huffman encoding of system call frequencies achieving over 98\% malware categorization \cite{Manzil2023}.
 
 Moreover on network behaviour analysis, Zhenxiang Chen. investigates the first few minutes of network behaviour analysing various features like DNS query patterns, HTTP packets lengths, and upload/download ratios. The trace analysis shows that more than 70\% of malware generate detectable traffic \cite{Chen2015}.
 

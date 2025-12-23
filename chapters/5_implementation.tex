@@ -8,9 +8,9 @@
 \section{Overview}
 This chapter explains the practical implementation of Threat Detector, which is a functionality extension of the open-source application PCAPdroid. The main objective of this implementation was to design a passive network monitoring solution that is capable of identifying the source application and the destination IP address of outbound internet packets, followed by an assessment of the potential risks those connections might bring along using AbuseIPDB as a threat intelligence platform.
 
-The practical implementation of Threat Detector follows a modular architecture that separates the responsibilities of packet capture and processing, data retrieval, and visualization. Unlike PCAPdroid and similar solutions that focus on low-level packet capture and forwarding, Threat Detector does not implement its own VPN-based interception. Instead of doing so, it operates as a server application for PCAPdroid as its client through a local TCP server, which receives real-time information in PCAP format. This design and the subsequent implementation ensures Threat Detector remains lightweight and modular while keeping the focusness on data retrieval and presentation of network intelligence rather than traffic interception and manipulation.
+The practical implementation of Threat Detector follows a modular architecture that separates the responsibilities of packet capture and processing, data retrieval, and visualization. Unlike PCAPdroid and similar solutions that focus on low-level packet capture and forwarding, Threat Detector does not implement its own VPN-based interception. Instead of doing so, it operates as a server application for PCAPdroid as its client through a local TCP server, which receives real-time information in PCAP format. This design and the subsequent implementation ensures Threat Detector remains lightweight and modular while keeping the focus on data retrieval and presentation of network intelligence rather than traffic interception and manipulation.
 
-The following sections describe the Threat Detector's system architecture, its internal components, and the integration with AbuseIPDB alongside the communication interface with PCAPdroid.
+The following sections describe Threat Detector's system architecture, its internal components, and the integration with AbuseIPDB alongside the communication interface with PCAPdroid.
 
 \section{System Architecture}
 Threat Detector's system architecture consists of four main layers:
@@ -19,7 +19,7 @@ Threat Detector's system architecture consists of four main layers:
 	\item \textbf{Traffic capture layer} which is handled by PCAPdroid using Android's VpnService API to capture network traffic and subsequently build a PCAP file based upon the captured information. 
 	\item \textbf{Data transport layer}, handled by Threat Detector which is responsible for transmission of the captured data from PCAPdroid to Threat Detector using a local TCP socket.
 	\item \textbf{Threat analysis layer}, implemented in Threat Detector which parses the data, queries AbuseIPDB, and assesses the reputation score.
-	\item \textbf{Presentation layer} that is the graphical user interface responsible for depiction of the results and configuration options to the user/administrator.
+	\item \textbf{Presentation layer} graphically depicting the results and configuration options to the user/administrator.
 \end{enumerate}
 
 In this constellation, PCAPdroid acts as a data aggregator, while Threat Detector functions as a data processing and visualization unit.
@@ -66,9 +66,9 @@ Figure \cref{fig:architecture} shows this flow:
 
 
 \section{Development Environment and Setup}
-The implementation and the development of Threat Detector was carried out using Android Studio (Narwhal 3 Feature Drop | 2025.1.3) with target SDK (Software Development Kit) version 34 in mind. This project is programmed primarily in Kotlin providing modern language features and improved coroutine support for better asynchronous network operations. Moreover, this implementation also utilises Android's \emph{Jetpack Compose}\footnote{\url{https://developer.android.com/compose}} which is the state-of-the-art Android's recommended toolkit for building native UI. It centralizes the back-end and frond-end code simplifying the management of UI updates based on changes that take place on the back-end side.
+The implementation and the development of Threat Detector was carried out using Android Studio (Narwhal 3 Feature Drop | 2025.1.3) with target SDK (Software Development Kit) version 34 in mind. This project is programmed primarily in Kotlin providing modern language features and improved coroutine support for better asynchronous network operations. Moreover, this implementation also utilises Android's \emph{Jetpack Compose}\footnote{\url{https://developer.android.com/compose}} which is the Android's recommended toolkit for building native UI. It centralizes the back-end and frond-end code simplifying the management of UI updates based on changes that take place on the back-end side.
 
-Development of Threat Detector follows \emph{MVVM (Model-View-Viewmodel)}\footnote{\url{https://en.wikipedia.org/wiki/Model\%E2\%80\%93view\%E2\%80\%93viewmodel}} which is a modern architectural pattern in computer software that separates the development of a graphical user interface (view) and the business or back-end logic (model). According to \emph{Android's developer website}\footnote{\url{https://developer.android.com/topic/libraries/architecture/viewmodel}}, by using instance state mechanism provided by view model, the data is not destroyed upon configuration changes such as navigation between various activities. This ensures data persistent and addresses the configuration change issues that utilizing plain-class-approach introduces.
+Development of Threat Detector follows \emph{MVVM (Model-View-Viewmodel)}\footnote{\url{https://en.wikipedia.org/wiki/Model\%E2\%80\%93view\%E2\%80\%93viewmodel}} which is a modern architectural pattern in computer software that separates the development of a graphical user interface (view) and the business or back-end logic (model). According to \emph{Android's developer website}\footnote{\url{https://developer.android.com/topic/libraries/architecture/viewmodel}}, by using instance state mechanism provided by view model, the data is not destroyed upon configuration changes such as navigation between various activities. This ensures data persistence and addresses the configuration change issues that utilizing the plain-class-approach introduces.
 
 Testing was performed on a physical device (Samsung Galaxy S22 - Android 15) using the standard APIs available through Android Studio and the following external/third-party APIs:
 
@@ -78,7 +78,7 @@ Testing was performed on a physical device (Samsung Galaxy S22 - Android 15) usi
 	\item \textbf{Material-Component\footnote{\url{https://m3.material.io/components}}} for user interface design.
 \end{itemize}
 
-Threat Detector targets Android 12 (API 31) and above to ensure compatibility with the majority of Android devices in use and alignment with new Android's permission and network models.
+Threat Detector targets Android 12 (API 31) and above to ensure compatibility with the majority of Android devices in use and alignment with Android's new permission and network models.
 
 
 \section{PCAPdroid Configuration and Data Export}
@@ -100,7 +100,7 @@ After adjusting the settings mentioned above, when PCAPdroid is launched and act
 \clearpage
 
 \section{TCP Server Implementation in Threat Detector}
-One of the core functionalities of Threat Detector is its TCP server running locally on the Android device. It listens to the incoming connections on a specified port (default set to 1234 - an arbitrary port that does not have any conflicts with critical background services in Android systems) and handles each connection request in a separate thread.
+One of the core functionalities of Threat Detector is its TCP server running locally on the Android device. It listens to the incoming connections on a specified port (default set to 1234 - an arbitrary port that does not interfere with critical background services in Android systems) and handles each connection request in a separate thread.
 
 Simplified version of the server implementation can be viewed in figure \cref{fig:Threat_Detector_Server_Pseudo_code} 
 
@@ -136,7 +136,7 @@ Even thought the packets arrive in PCAP format, the received data should be reco
 	\label{fig:FAANG_IP_Addresses}
 \end{figure}
 
-In \cref{fig:Full_Packet_Dump} the extracted information including the destination IP addresses are added to a queue for further analysis and queries from AbuseIPDB.
+In \cref{fig:Full_Packet_Dump} the extracted information including the destination IP addresses are added to a queue for further analysis and querying from AbuseIPDB.
 
 Worth to mention that the IP addresses are cached to prevent redundant API calls and they are filtered against FAANG (Facebook-Meta, Apple, Amazon, Netflix, Google) IP addresses that are frequently utilised by third-party applications to save API calls. This is illustrated in \cref{fig:FAANG_IP_Addresses}.
 
@@ -191,7 +191,7 @@ These Preferences are as follows:
 	\item AbuseIPDB API key 
 \end{itemize}
 
-The application page that makes use of \texttt{SharePreferences} in Threat Detector is shown in \cref{fig:Threat_Detector_Settings_Page}.
+The application page that uses \texttt{SharePreferences} in Threat Detector is shown in \cref{fig:Threat_Detector_Settings_Page}.
 
 \begin{figure}[H]
 	\centering
@@ -221,8 +221,8 @@ Threat Detector's user interface was designed based on \emph{Material Design 3}\
 
 Threat Detector's interface consists of the following sections:
 \begin{itemize}
-	\item \textbf{Monitor Page - \cref{fig:Monitor_Page.jpg}:} provides the functionality to start/stop the local TCP server alongside depicting the server activation status and user-defined IP confidence score.
-	\item \textbf{Logs Page - \cref{fig:Logs_Page}:} provides user with a scrollable list of the applications that attempted to communicate with external IP addresses. Each list Entry shows the application name and icon along with the IP address and its confidence score.
+	\item \textbf{Monitor Page - \cref{fig:Monitor_Page.jpg}:} provides the functionality to start/stop the local TCP server alongside depicting the server's activation status and user-defined IP confidence score.
+	\item \textbf{Logs Page - \cref{fig:Logs_Page}:} provides the user with a scrollable list of the applications that attempted to communicate with external IP addresses. Each list Entry shows the application name and icon along with the IP address and its confidence score.
 	\item \textbf{IP Details Page - \cref{fig:IP_Details_Page}:} depicts additional information regarding the queried IP address including the countries that the IP address has been reported in, categories of attack, source port, etc. 
 	\item \textbf{API Exhaustion Page - \cref{fig:IP_Exhaustion_Page}:} it appears as a notification page when the user has exhausted the free daily API calls from AbuseIPDB.
 	\item \textbf{Settings Page - \cref{fig:SharedPreferences_Code}:} it is used to save user's preferences such as TCP server port, API key, and minimum IP confidence score.
@@ -264,7 +264,7 @@ Threat Detector's interface consists of the following sections:
 	\caption{Screenshots from Threat Detector, Own Creation}
 \end{figure}
 
-The user interface components update dynamically as new incoming data is registered by the TCP server. This includes the real time automatic updates to modify the items shown in Logs page, the colour change indicating the server status in Monitor page, and the illustration of IP Exhaustion Page as a pop-up when the user runs out of free API calls.
+The user interface components update dynamically as new incoming data is registered by the TCP server. This includes the real time automatic updates to modify the items shown in the Logs page, the colour change indicating the server status in Monitor page, and the illustration of the	 IP Exhaustion Page as a pop-up when the user runs out of free API calls.
 
 \section{Communication Flow and Synchronization}
 The communication between Threat Detector and its companion application, PCAPdroid, takes place in a purely local context. The TCP connection socket is established through a loopback interface provided by Android's basic APIs, which ensures that no external component is involved. The server runs in a background thread, so that managing its lifecycle and configuration changes do not block the main UI thread leading to performance flaws.
@@ -276,7 +276,7 @@ Threat Detector is designed with conservation of user's privacy in mind. All the
 
 Some additional precautions include:
 \begin{itemize}
-	\item Secure storage of the API key in private application folder.
+	\item Secure storage of the API key in the private application folder.
 	\item Local communication is restricted to local host (127.0.0.1). 
 	\item Use of HTTPS for external queries from AbuseIPDB.
 	\item No conservation of raw PCAP data than real-time analysis.

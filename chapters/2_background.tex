@@ -38,7 +38,7 @@ After the full development of the application based on the initial idea, Threat 
 \subsection{VpnService API - Android's VPN Functionality}
 The APIs provided by Android as an OS (Operating System) include a wide range that includes functions to handle network traffic based on the user context (e.g. normal or root). According to the Android's \emph{official API website}\footnote{\url{https://developer.Android.com/reference/android/net/VpnService}}, the preferred approach towards network traffic interception is utilization of VpnService API. This API provides an active interception of network and internet traffic by routing the packets through a gateway (normally the default gateway of the device's NIC (Network Interface Card)). This implementation ensures that the commute of network packets takes place only through one communication path. As a result, inspection of network traffic can be carried out only on that gateway simplifying packet handling and re-routing. 
 
-As shown in the following code snippet (\cref{fig:VpnService Builder Code Snippet.png}) provided on Android \emph{developer website}\footnote{\url{https://developer.Android.com/develop/connectivity/vpn}}, Android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them though the localhost address.
+As shown in the following code snippet (\cref{fig:VpnService Builder Code Snippet.png}) provided on Android \emph{developer website}\footnote{\url{https://developer.Android.com/develop/connectivity/vpn}}, Android system establishes a TUN (Tunnel) interface to route all the packets utilizing a VpnService builder and routes them through the localhost address.
 
 \begin{figure}[H]
 	\centering
@@ -93,7 +93,7 @@ Here is a partial depiction of VpnService implementation in the initial idea:
 	\label{fig:Reading Incoming/Outgoing Data}
 \end{figure}
 
-In the screenshots provided in \cref{fig:Defining Default Gateway} and \cref{fig:Reading Incoming/Outgoing Data}, you can see the VpnService builder implementation that is responsible to route all the traffic to the default gateway alongside a ParcelFileDescriptor. This is an Android class that acts as a wrapper around a Linux file descriptor. A file descriptor is a handle used by the operating system to access files, sockets, pipes, and I/O resources. However, luckily Android provides a high-level, safe, Kotlin/Java friendly version of that through ParcelFileDescriptor API. In this implementation, the ParcelFileDescriptor instance represents a virtual network interface created by VpnService to handle the transfer of packets through tunnelling.
+In the screenshots provided in \cref{fig:Defining Default Gateway} and \cref{fig:Reading Incoming/Outgoing Data}, it is shown that the VpnService builder implementation that is responsible to route all the traffic to the default gateway alongside a ParcelFileDescriptor. This is an Android class that acts as a wrapper around a Linux file descriptor. A file descriptor is a handle used by the operating system to access files, sockets, pipes, and I/O resources. However, Android provides a high-level, safe, Kotlin/Java friendly version of that through ParcelFileDescriptor API. In this implementation, the ParcelFileDescriptor instance represents a virtual network interface created by VpnService to handle the transfer of packets through tunnelling.
 
 \begin{figure}[H]
 	\centering
@@ -107,7 +107,7 @@ In the screenshots provided in \cref{fig:Defining Default Gateway} and \cref{fig
 \cref{fig:Extracting Destination IP Address from Raw Packets} depicts the extraction of destination IPv4 address from a raw IP packet header. This IP address will be parsed to a threat intelligence database for an inquiry regarding the maliciousness of the address.
 
 \subsection{Application Name and Icon Extraction}
-As depicted in screenshots of the initial idea, the inspected application name and possibly the its icon should be illustrated for a more user-friendly exhibition of outbound network connections and their originating applications.
+As depicted in screenshots of the initial idea, the inspected application name and possibly its icon should be illustrated for a more user-friendly exhibition of outbound network connections and their originating applications.
 
 Intercepted packets using Android's VpnService API only provide source/destination IP address, ports, protocols, and payload data (normally encrypted via SSL/TLS). Thus, retrieving which application is responsible for the out-going transmission of a specific packet is not feasible.
 
@@ -126,7 +126,7 @@ The way that a VPN service functions is to create a connection point between mul
 
 The referenced implementation of VpnService from the official developer website also lacks the APIs that comply with guidelines vital for correct functionality of a VPN. As a result, additional modifications are needed to handle the packet redirection in a VPN system, designed on top of VpnService.
 
-In the most VPN protocols including IPsec, network traffic is transmitted using encapsulated IP packets. This means an IP packet is placed inside another one which results in two distinct headers. Inner and outer headers. Inner header contains the original IP header and the payload, while the outer header is added for transport across the network and is removed once the packet reaches its destination.
+In the most VPN protocols including IPsec, network traffic is transmitted using encapsulated IP packets. This means an IP packet is placed inside another one which results in two distinct headers. Inner and outer headers. The inner header contains the original IP header and the payload, while the outer header is added for transport across the network and is removed once the packet reaches its destination.
 
 A fully functional VPN that meets all the requirements of this approach needs to determine a default gateway, route all the traffic through it, transmit packets across network using IP packet encapsulation, and finally use other Android APIs such as streams to correctly handle the incoming and outgoing TCP/UDP streams while ensuring efficient buffering. 
 
@@ -174,7 +174,7 @@ Among the aforementioned solutions PCAPdroid is an open-source solution that has
 \end{figure}
 
 
-As shown in the \cref{fig:PCAPdroid Traffic Dump and Packet Capture Settings} above with employment of TCP exporter functionality and activation of PCAPdroid extensions, majority of the limitations and inherent restrictions that stem from Android's ecosystem and architecture can be overcome. The TCP exporter enables information transfer using TCP protocol and PCAPdroid extensions provides the application package name that can be easily utilized to extract the application name and icon necessary to meet the original idea of this thesis project.
+As shown in the \cref{fig:PCAPdroid Traffic Dump and Packet Capture Settings} above with employment of TCP exporter functionality and activation of PCAPdroid extensions,the majority of the limitations and inherent restrictions that stem from Android's ecosystem and architecture can be overcome. The TCP exporter enables information transfer using TCP protocol and PCAPdroid extensions provides the application package name that can be easily utilized to extract the application name and icon necessary to meet the original idea of this thesis project.
 
 \section{Integration with PCAPDroid}
 As explained, for Threat Detector to function properly and for the requirements of this thesis to be met, integration/implementation of an approach to route and intercept network traffic and access to \texttt{/proc} filesystem are of utmost importance. However, since a thorough execution of them is unfeasible for this project, integration of those functionalities through a communication medium can potentially be a proper solution. 

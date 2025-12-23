@@ -15,45 +15,65 @@ Warning--entry type for "AbuseIPDBDocumentation" isn't style-file defined
 --line 61 of file Bibliography.bib
 Warning--entry type for "Splunk" isn't style-file defined
 --line 69 of file Bibliography.bib
-You've used 17 entries,
+Warning--entry type for "androidx-benchmark" isn't style-file defined
+--line 203 of file Bibliography.bib
+Warning--entry type for "android-systrace" isn't style-file defined
+--line 211 of file Bibliography.bib
+Warning--entry type for "perfetto" isn't style-file defined
+--line 219 of file Bibliography.bib
+Warning--entry type for "android-battery-historian" isn't style-file defined
+--line 227 of file Bibliography.bib
+Warning--entry type for "android-Espresso" isn't style-file defined
+--line 235 of file Bibliography.bib
+Warning--entry type for "android-Junit" isn't style-file defined
+--line 243 of file Bibliography.bib
+Warning--entry type for "General-Data-Protection-Regulation" isn't style-file defined
+--line 251 of file Bibliography.bib
+Warning--entry type for "Virustotal" isn't style-file defined
+--line 259 of file Bibliography.bib
+Warning--entry type for "AlienVaultOTX" isn't style-file defined
+--line 267 of file Bibliography.bib
+Warning--entry type for "GreyNoise" isn't style-file defined
+--line 275 of file Bibliography.bib
+You've used 27 entries,
             2481 wiz_defined-function locations,
-            676 strings with 8388 characters,
-and the built_in function-call counts, 6786 in all, are:
-= -- 563
-> -- 413
-< -- 9
-+ -- 159
-- -- 124
-* -- 533
-:= -- 1112
-add.period$ -- 80
-call.type$ -- 17
-change.case$ -- 34
-chr.to.int$ -- 16
-cite$ -- 17
-duplicate$ -- 313
-empty$ -- 574
-format.name$ -- 145
-if$ -- 1448
-int.to.chr$ -- 2
-int.to.str$ -- 18
+            720 strings with 9525 characters,
+and the built_in function-call counts, 9456 in all, are:
+= -- 803
+> -- 483
+< -- 19
++ -- 203
+- -- 144
+* -- 653
+:= -- 1519
+add.period$ -- 120
+call.type$ -- 27
+change.case$ -- 54
+chr.to.int$ -- 22
+cite$ -- 27
+duplicate$ -- 453
+empty$ -- 874
+format.name$ -- 175
+if$ -- 2038
+int.to.chr$ -- 6
+int.to.str$ -- 28
 missing$ -- 8
-newline$ -- 119
-num.names$ -- 51
-pop$ -- 157
+newline$ -- 179
+num.names$ -- 81
+pop$ -- 277
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 27
 quote$ -- 0
-skip$ -- 211
+skip$ -- 315
 stack$ -- 0
-substring$ -- 135
-swap$ -- 74
+substring$ -- 155
+swap$ -- 99
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 119
+type$ -- 189
 warning$ -- 0
-while$ -- 41
+while$ -- 61
 width$ -- 0
-write$ -- 274
-(There were 5 warnings)
+write$ -- 414
+(There were 15 warnings)

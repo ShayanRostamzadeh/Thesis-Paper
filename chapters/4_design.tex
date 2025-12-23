@@ -8,9 +8,9 @@
 \section{Overview}
 This chapter represents the design architecture of the proposed mobile network monitoring system, Threat Detector. This application aims to detect the potentially malicious network traffic on Android devices with a passive packet sniffing approach. It is developed as an enhancement and an extension for the open-source applicaion PCAPdroid, integrating additional modules for IP reputation checking and application-to-ip mapping, while using the state-of-the-art user interface and user experience implementations to meet the design expectations of a modern Android application.
 
-As covered further in this chapter, Overview elaborates on system components, depicting a modular approach that is employed to develop Threat Detector. It is then followed by some illustrations, explaining the application's function though the use of a flow diagram. Finally, the reasons behind those decisions are summarized.
+This overview elaborates on system components, depicting a modular approach that is employed to develop Threat Detector. It is then followed by some illustrations, explaining the application's function though the use of a flow diagram. Finally, the reasons behind those decisions are summarized.
 
-Application's architecture is designed based on three main objectives:
+The application's architecture is designed based on three main objectives:
 
 \begin{itemize}
 	\item \textbf{Transparency:} Intercepting and logging of network traffic without altering or blocking the normal traffic flow.
@@ -20,7 +20,7 @@ Application's architecture is designed based on three main objectives:
 
 The overall structure of Threat Detector follows a modular design which ensures separation between packet capture, user interface, and data processing.
 
-As shown in \cref{fig:system_architecture_overview}, the first layer is handled by the Android operating system which provides access to the applications' network traffic. Second layer is implemented by PCAPdroid that forwards all of the sniffed packets to a local gateway for centralized analysis. As the final layer that PCAPdroid is responsible for, data assembly layer builds the PCAP/PCAPNG files and transmits them to a local server using TCP. Subsequently, Threat Detector analyses the received data, queries AbuseIPDB for IP reputation, and notifies the user.
+As shown in \cref{fig:system_architecture_overview}, the first layer is handled by the Android operating system which provides access to the applications' network traffic. The second layer is implemented by PCAPdroid that forwards all of the sniffed packets to a local gateway for centralized analysis. As the final layer that PCAPdroid is responsible for, the data assembly layer builds the PCAP/PCAPNG files and transmits them to a local server using TCP. Subsequently, Threat Detector analyses the received data, queries AbuseIPDB for IP reputation, and notifies the user.
 
 
 \begin{figure}[H]
@@ -63,7 +63,7 @@ As shown in \cref{fig:system_architecture_overview}, the first layer is handled 
 
 
 \section{System Components}
-Threat Detector as a systems is composed of several independent stand-alone components responsible for a seamless functionality that follow the "Separation of Concerns" model for ease of debugging and further development. 
+Threat Detector as a system is composed of several independent stand-alone components responsible for a seamless functionality that follows the "Separation of Concerns" model for ease of debugging and further development. 
 
 
 \subsection{VPN-based packet Capture Module}
@@ -102,13 +102,13 @@ This module comes with some the following design considerations:
 
 
 \subsection{Inter-Application Communication}
-This module enables an enhanced architecture to include a local TCP servers for the communication between PCAPdroid and Threat Detector to take place. The captured data is then transferred between the two in a form of PCAP/PCAPNG file.
+This module enables an enhanced architecture to include a local TCP server for the communication between PCAPdroid and Threat Detector to take place. The captured data is then transferred between the two in a form of PCAP/PCAPNG file.
 
 Functions of this module are as follows:
 \begin{itemize}
 	\item Creation and establishment of a TCP socket server within Threat Detector.
 	\item Transmission of captured packets from PCAPdroid to Threat Detector.
-	\item Enabling Threat Detector to parse, analyse, and visualize data for user.
+	\item Enabling Threat Detector to parse, analyse, and visualize data for the user.
 \end{itemize}
 
 The aforementioned design ensure modularity and scalability. It allows Threat Detector to evolve independently while receiving live traffic information from PCAPdroid.
@@ -142,7 +142,7 @@ The data flow (\cref{fig:Threat_Detector_Flow_Diagram}) follows a clear path fro
 
 \clearpage
 
-The implementation this project follows to fulfill threat assessment, can be explained by steps below:
+The implementation this project follows to fulfill threat assessment, can be explained by the steps below:
 \begin{itemize}
 	\item \textbf{VpnService Capture:} Traffic from all of the applications are accumulated and redirected to the virtual interface; in this case default gateway.
 	\item \textbf{Packet Capture and Forwarding:} Packets are handed over to PCAPdroid processor for UID and destination IP address extraction, followed by mapping to the originating application.

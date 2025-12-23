@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -141,5 +141,68 @@ Splunk.
 \newblock Splunk website, 2025.
 \newblock URL \url{https://www.splunk.com/}.
 \newblock Accessed: 9 November 2025.
+
+\bibitem[Android(2025{\natexlab{a}})]{androidx-benchmark}
+Android.
+\newblock Android benchmark webpage, 2025{\natexlab{a}}.
+\newblock URL
+  \url{https://developer.android.com/jetpack/androidx/releases/benchmark}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[Android(2025{\natexlab{b}})]{android-systrace}
+Android.
+\newblock Android systrace documentation, 2025{\natexlab{b}}.
+\newblock URL \url{https://source.android.com/docs/core/tests/debug/systrace}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[Perfetto(2025)]{perfetto}
+Perfetto.
+\newblock Perfetto website, 2025.
+\newblock URL \url{https://perfetto.dev/}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[Android(2025{\natexlab{c}})]{android-battery-historian}
+Android.
+\newblock Android battery historian webpage, 2025{\natexlab{c}}.
+\newblock URL
+  \url{https://developer.android.com/topic/performance/power/battery-historian}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[Android(2025{\natexlab{d}})]{android-Espresso}
+Android.
+\newblock Android espresso webpage, 2025{\natexlab{d}}.
+\newblock URL \url{https://developer.android.com/training/testing/espresso/}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[Android(2025{\natexlab{e}})]{android-Junit}
+Android.
+\newblock Android local testing webpage, 2025{\natexlab{e}}.
+\newblock URL \url{https://developer.android.com/training/testing/local-tests}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[GDPR.eu(2025)]{General-Data-Protection-Regulation}
+GDPR.eu.
+\newblock Gdpr website, 2025.
+\newblock URL \url{https://gdpr-info.eu/}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[VirusTotal(2025)]{Virustotal}
+VirusTotal.
+\newblock Virustotal website, 2025.
+\newblock URL
+  \url{https://blog.virustotal.com/2023/02/monitoring-infrastructure.html}.
+\newblock Accessed: 11 November 2025.
+
+\bibitem[AlienVault(2025)]{AlienVaultOTX}
+AlienVault.
+\newblock Alienvault website, 2025.
+\newblock URL \url{https://otx.alienvault.com/}.
+\newblock Accessed: 11 November 2025, Open Threat Intelligence Community.
+
+\bibitem[GreyNoise(2025)]{GreyNoise}
+GreyNoise.
+\newblock Greynoise website, 2025.
+\newblock URL \url{https://www.greynoise.io/}.
+\newblock Accessed: 11 November 2025, Detecting Attacks on Edge Systems.
 
 \end{thebibliography}
